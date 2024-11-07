@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\bin\Debug\TemperaturaMedia.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\bin\Debug\TemperaturaMedia.exe
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\bin\Debug\TemperaturaMedia.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.exe
+C:\Users\natal\source\repos\ejerciciosLaura\TemperaturaMedia\TemperaturaMedia\obj\Debug\TemperaturaMedia.pdb
