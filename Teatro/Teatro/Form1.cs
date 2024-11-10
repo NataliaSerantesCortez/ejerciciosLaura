@@ -36,7 +36,7 @@ namespace Teatro
                     0.90 * valorEntrada * entradaTipo3 + 0.75 * valorEntrada * entradaTipo4 +
                     0.65 * valorEntrada * entradaTipo5 + 0.5 * valorEntrada * entradaTipo6;
 
-                tbTotal.Text = precioTotal.ToString("F2");
+                tbTotal.Text = precioTotal.ToString("F2") + " €";
             }
             else if ( numeroTotalEntradas > 5 )
             {
