@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\bin\Debug\Teatro.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\bin\Debug\Teatro.exe
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\bin\Debug\Teatro.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.exe
+C:\Users\natal\source\repos\ejerciciosLaura\Teatro\Teatro\obj\Debug\Teatro.pdb
