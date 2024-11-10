@@ -46,6 +46,9 @@
             this.nbViernes = new System.Windows.Forms.NumericUpDown();
             this.nbSabado = new System.Windows.Forms.NumericUpDown();
             this.nbDomingo = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.imagenSol = new System.Windows.Forms.PictureBox();
+            this.imagenNieve = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nbLunes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbMartes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbMiercoles)).BeginInit();
@@ -53,16 +56,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.nbViernes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbSabado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbDomingo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenSol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenNieve)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 16);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 13);
+            this.label1.Size = new System.Drawing.Size(191, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Introduce las temperaturas de la semana";
+            this.label1.Text = "Introduce las temperaturas";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -89,8 +95,9 @@
             this.tfMedia.Location = new System.Drawing.Point(144, 288);
             this.tfMedia.Name = "tfMedia";
             this.tfMedia.ReadOnly = true;
-            this.tfMedia.Size = new System.Drawing.Size(100, 20);
+            this.tfMedia.Size = new System.Drawing.Size(56, 20);
             this.tfMedia.TabIndex = 10;
+            this.tfMedia.TextChanged += new System.EventHandler(this.tfMedia_TextChanged);
             // 
             // label3
             // 
@@ -160,7 +167,7 @@
             0,
             -2147483648});
             this.nbLunes.Name = "nbLunes";
-            this.nbLunes.Size = new System.Drawing.Size(120, 20);
+            this.nbLunes.Size = new System.Drawing.Size(64, 20);
             this.nbLunes.TabIndex = 17;
             // 
             // nbMartes
@@ -177,7 +184,7 @@
             0,
             -2147483648});
             this.nbMartes.Name = "nbMartes";
-            this.nbMartes.Size = new System.Drawing.Size(120, 20);
+            this.nbMartes.Size = new System.Drawing.Size(64, 20);
             this.nbMartes.TabIndex = 18;
             // 
             // nbMiercoles
@@ -194,7 +201,7 @@
             0,
             -2147483648});
             this.nbMiercoles.Name = "nbMiercoles";
-            this.nbMiercoles.Size = new System.Drawing.Size(120, 20);
+            this.nbMiercoles.Size = new System.Drawing.Size(64, 20);
             this.nbMiercoles.TabIndex = 19;
             // 
             // nbJueves
@@ -211,7 +218,7 @@
             0,
             -2147483648});
             this.nbJueves.Name = "nbJueves";
-            this.nbJueves.Size = new System.Drawing.Size(120, 20);
+            this.nbJueves.Size = new System.Drawing.Size(64, 20);
             this.nbJueves.TabIndex = 20;
             // 
             // nbViernes
@@ -228,7 +235,7 @@
             0,
             -2147483648});
             this.nbViernes.Name = "nbViernes";
-            this.nbViernes.Size = new System.Drawing.Size(120, 20);
+            this.nbViernes.Size = new System.Drawing.Size(64, 20);
             this.nbViernes.TabIndex = 21;
             // 
             // nbSabado
@@ -245,7 +252,7 @@
             0,
             -2147483648});
             this.nbSabado.Name = "nbSabado";
-            this.nbSabado.Size = new System.Drawing.Size(120, 20);
+            this.nbSabado.Size = new System.Drawing.Size(64, 20);
             this.nbSabado.TabIndex = 22;
             // 
             // nbDomingo
@@ -262,14 +269,47 @@
             0,
             -2147483648});
             this.nbDomingo.Name = "nbDomingo";
-            this.nbDomingo.Size = new System.Drawing.Size(120, 20);
+            this.nbDomingo.Size = new System.Drawing.Size(64, 20);
             this.nbDomingo.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(72, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(151, 16);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "de la semana (en °C)";
+            // 
+            // imagenSol
+            // 
+            this.imagenSol.Image = global::TemperaturaMedia.Properties.Resources.iconfinder_weather_weather_forecast_hot_sun_day_3859136_121222;
+            this.imagenSol.Location = new System.Drawing.Point(192, 144);
+            this.imagenSol.Name = "imagenSol";
+            this.imagenSol.Size = new System.Drawing.Size(64, 64);
+            this.imagenSol.TabIndex = 25;
+            this.imagenSol.TabStop = false;
+            this.imagenSol.Visible = false;
+            // 
+            // imagenNieve
+            // 
+            this.imagenNieve.Image = global::TemperaturaMedia.Properties.Resources.weather_snow_snowflake_winter_freeze_icon_189094;
+            this.imagenNieve.Location = new System.Drawing.Point(192, 144);
+            this.imagenNieve.Name = "imagenNieve";
+            this.imagenNieve.Size = new System.Drawing.Size(64, 64);
+            this.imagenNieve.TabIndex = 26;
+            this.imagenNieve.TabStop = false;
+            this.imagenNieve.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 320);
+            this.ClientSize = new System.Drawing.Size(289, 320);
+            this.Controls.Add(this.imagenNieve);
+            this.Controls.Add(this.imagenSol);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.nbDomingo);
             this.Controls.Add(this.nbSabado);
             this.Controls.Add(this.nbViernes);
@@ -297,6 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nbViernes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbSabado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbDomingo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenSol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenNieve)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,6 +363,9 @@
         private System.Windows.Forms.NumericUpDown nbViernes;
         private System.Windows.Forms.NumericUpDown nbSabado;
         private System.Windows.Forms.NumericUpDown nbDomingo;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox imagenSol;
+        private System.Windows.Forms.PictureBox imagenNieve;
     }
 }
 

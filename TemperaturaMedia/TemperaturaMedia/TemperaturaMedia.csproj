@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="Resources\thermometer_icon-icons.com_65086.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-weather-weather-forecast-hot-sun-day-3859136_121222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather_snow_snowflake_winter_freeze_icon_189094.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

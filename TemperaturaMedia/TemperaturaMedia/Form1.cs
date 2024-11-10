@@ -37,7 +37,25 @@ namespace TemperaturaMedia
             temperaturaMedia = (temperaturaLunes + temperaturaMartes + temperaturaMiercoles
                 + temperaturaJueves + temperaturaViernes + temperaturaSabado + temperaturaDomingo)/7.0;
 
-            tfMedia.Text = "" + temperaturaMedia;
+            tfMedia.Text = temperaturaMedia.ToString("F2");
+
+            if (temperaturaMedia <= 0.0)
+            {
+                imagenSol.Visible = false;
+                imagenNieve.Visible = true;
+            } else if (temperaturaMedia >= 30.0)
+            {
+                imagenSol.Visible = true;
+                imagenNieve.Visible= false;
+            } else if (temperaturaMedia > 0 && temperaturaMedia < 30.0){
+                imagenSol.Visible = false;
+                imagenNieve.Visible = false;
+            }
+        }
+
+        private void tfMedia_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

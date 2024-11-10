@@ -61,12 +61,32 @@ namespace TemperaturaMedia.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_weather_weather_forecast_hot_sun_day_3859136_121222 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder-weather-weather-forecast-hot-sun-day-3859136_121222", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
         internal static System.Drawing.Icon thermometer_icon_icons_com_65086 {
             get {
                 object obj = ResourceManager.GetObject("thermometer_icon_icons_com_65086", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weather_snow_snowflake_winter_freeze_icon_189094 {
+            get {
+                object obj = ResourceManager.GetObject("weather_snow_snowflake_winter_freeze_icon_189094", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
