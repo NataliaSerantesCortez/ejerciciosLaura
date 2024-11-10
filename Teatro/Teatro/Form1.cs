@@ -38,9 +38,13 @@ namespace Teatro
 
                 tbTotal.Text = precioTotal.ToString("F2");
             }
-            else
+            else if ( numeroTotalEntradas > 5 )
             {
-                MessageBox.Show("El número de entradas por cliente debe ser entre 1 y 5.", "Error");
+                MessageBox.Show("El número máximo de entradas por cliente es 5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                MessageBox.Show("No has seleccionado ninguna entrada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
 
         }

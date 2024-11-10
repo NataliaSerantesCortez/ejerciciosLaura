@@ -46,6 +46,7 @@
             this.btnComprar = new System.Windows.Forms.Button();
             this.tbTotal = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quintoDescuento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuartoDescuento)).BeginInit();
@@ -61,7 +62,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 40);
+            this.panel1.Size = new System.Drawing.Size(263, 40);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -209,7 +210,7 @@
             // btnComprar
             // 
             this.btnComprar.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprar.Location = new System.Drawing.Point(40, 320);
+            this.btnComprar.Location = new System.Drawing.Point(40, 344);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(75, 23);
             this.btnComprar.TabIndex = 13;
@@ -219,7 +220,7 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(152, 320);
+            this.tbTotal.Location = new System.Drawing.Point(152, 344);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.ReadOnly = true;
             this.tbTotal.Size = new System.Drawing.Size(72, 20);
@@ -235,11 +236,23 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Valor entrada 8,20 €";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label9.Location = new System.Drawing.Point(24, 320);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(173, 15);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Máximo 5 entradas por compra.";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 361);
+            this.ClientSize = new System.Drawing.Size(257, 378);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbTotal);
             this.Controls.Add(this.btnComprar);
@@ -291,6 +304,7 @@
         private System.Windows.Forms.Button btnComprar;
         private System.Windows.Forms.TextBox tbTotal;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
 
