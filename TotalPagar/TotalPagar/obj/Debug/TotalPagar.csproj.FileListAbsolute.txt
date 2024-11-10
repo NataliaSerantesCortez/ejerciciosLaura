@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\bin\Debug\TotalPagar.exe.config
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\bin\Debug\TotalPagar.exe
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\bin\Debug\TotalPagar.pdb
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.Form1.resources
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.Properties.Resources.resources
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.exe
+C:\Users\natal\source\repos\TotalPagar\TotalPagar\obj\Debug\TotalPagar.pdb
