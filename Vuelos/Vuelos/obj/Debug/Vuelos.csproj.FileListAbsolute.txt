@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\bin\Debug\Vuelos.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\bin\Debug\Vuelos.exe
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\bin\Debug\Vuelos.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.exe
+C:\Users\natal\source\repos\ejerciciosLaura\Vuelos\Vuelos\obj\Debug\Vuelos.pdb
