@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\bin\Debug\MaquinaRefrescos.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\bin\Debug\MaquinaRefrescos.exe
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\bin\Debug\MaquinaRefrescos.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.exe
+C:\Users\natal\source\repos\ejerciciosLaura\MaquinaRefrescos\MaquinaRefrescos\obj\Debug\MaquinaRefrescos.pdb
