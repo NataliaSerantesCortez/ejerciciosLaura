@@ -101,5 +101,14 @@
   <ItemGroup>
     <None Include="Resources\Bottle_of_Water_icon-icons.com_68778.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25998-1-euro-coin-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-euro_icon-icons.com_51032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euro_coin_finance_icon_125512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

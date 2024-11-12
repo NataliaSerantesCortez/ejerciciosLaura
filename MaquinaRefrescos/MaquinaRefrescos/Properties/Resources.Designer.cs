@@ -63,6 +63,16 @@ namespace MaquinaRefrescos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _25998_1_euro_coin_clipart {
+            get {
+                object obj = ResourceManager.GetObject("25998-1-euro-coin-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bottle_of_Water_icon_icons_com_68778 {
             get {
                 object obj = ResourceManager.GetObject("Bottle_of_Water_icon-icons.com_68778", resourceCulture);
@@ -96,6 +106,26 @@ namespace MaquinaRefrescos.Properties {
         internal static System.Drawing.Bitmap cocacola_logo_icon_1703581 {
             get {
                 object obj = ResourceManager.GetObject("cocacola_logo_icon_1703581", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coin_euro_icon_icons_com_51032 {
+            get {
+                object obj = ResourceManager.GetObject("coin-euro_icon-icons.com_51032", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap euro_coin_finance_icon_125512 {
+            get {
+                object obj = ResourceManager.GetObject("euro_coin_finance_icon_125512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
