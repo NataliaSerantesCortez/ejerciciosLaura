@@ -73,9 +73,39 @@ namespace MaquinaRefrescos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bluehand_116109 {
+            get {
+                object obj = ResourceManager.GetObject("bluehand_116109", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bottle_of_Water_icon_icons_com_68778 {
             get {
                 object obj = ResourceManager.GetObject("Bottle_of_Water_icon-icons.com_68778", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buy_click_button_hand_gesture_icon_124675 {
+            get {
+                object obj = ResourceManager.GetObject("buy_click_button_hand_gesture_icon_124675", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buy_now_icon_icons_com_51016 {
+            get {
+                object obj = ResourceManager.GetObject("buy-now_icon-icons.com_51016", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -107,6 +137,16 @@ namespace MaquinaRefrescos.Properties {
             get {
                 object obj = ResourceManager.GetObject("cocacola_logo_icon_1703581", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon cocacola_logo_icon_1703582 {
+            get {
+                object obj = ResourceManager.GetObject("cocacola_logo_icon_1703582", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

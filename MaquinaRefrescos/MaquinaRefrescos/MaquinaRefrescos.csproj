@@ -110,5 +110,17 @@
   <ItemGroup>
     <None Include="Resources\euro_coin_finance_icon_125512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluehand_116109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy-now_icon-icons.com_51016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy_click_button_hand_gesture_icon_124675.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocacola_logo_icon_170358.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
