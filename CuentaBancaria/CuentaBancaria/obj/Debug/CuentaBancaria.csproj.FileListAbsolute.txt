@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\bin\Debug\CuentaBancaria.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\bin\Debug\CuentaBancaria.exe
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\bin\Debug\CuentaBancaria.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.exe
+C:\Users\natal\source\repos\ejerciciosLaura\CuentaBancaria\CuentaBancaria\obj\Debug\CuentaBancaria.pdb
