@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\bin\Debug\PizzaOrder.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\bin\Debug\PizzaOrder.exe
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\bin\Debug\PizzaOrder.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.exe
+C:\Users\natal\source\repos\ejerciciosLaura\PizzaOrder\PizzaOrder\obj\Debug\PizzaOrder.pdb
