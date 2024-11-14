@@ -17,6 +17,9 @@
             {
                 components.Dispose();
             }
+            Microsoft.Win32.SystemEvents.UserPreferenceChanged
+           -= new Microsoft.Win32.UserPreferenceChangedEventHandler(
+           this.UserPreferenceChanged);
             base.Dispose(disposing);
         }
 
@@ -50,7 +53,7 @@
             this.Logotipo.AccessibleName = "Logotipo de la empresa";
             this.Logotipo.BackColor = System.Drawing.Color.Blue;
             this.Logotipo.Image = global::PizzaOrder.Properties.Resources.logo_orange_domino_pizza_icon_134362;
-            this.Logotipo.Location = new System.Drawing.Point(24, 32);
+            this.Logotipo.Location = new System.Drawing.Point(48, 32);
             this.Logotipo.Name = "Logotipo";
             this.Logotipo.Size = new System.Drawing.Size(64, 64);
             this.Logotipo.TabIndex = 0;
@@ -64,7 +67,7 @@
             this.labelEmpresa.BackColor = System.Drawing.Color.Blue;
             this.labelEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmpresa.ForeColor = System.Drawing.Color.Yellow;
-            this.labelEmpresa.Location = new System.Drawing.Point(168, 48);
+            this.labelEmpresa.Location = new System.Drawing.Point(192, 48);
             this.labelEmpresa.Name = "labelEmpresa";
             this.labelEmpresa.Size = new System.Drawing.Size(176, 29);
             this.labelEmpresa.TabIndex = 1;
@@ -75,7 +78,7 @@
             this.labelCliente.AccessibleDescription = "Etiqueta de nombre de cliente";
             this.labelCliente.AccessibleName = "Etiqueta de nombre de cliente";
             this.labelCliente.AutoSize = true;
-            this.labelCliente.Location = new System.Drawing.Point(216, 112);
+            this.labelCliente.Location = new System.Drawing.Point(240, 112);
             this.labelCliente.Name = "labelCliente";
             this.labelCliente.Size = new System.Drawing.Size(56, 16);
             this.labelCliente.TabIndex = 2;
@@ -85,7 +88,7 @@
             // 
             this.nombreCliente.AccessibleDescription = "Nombre del cliente";
             this.nombreCliente.AccessibleName = "Nombre del cliente";
-            this.nombreCliente.Location = new System.Drawing.Point(288, 104);
+            this.nombreCliente.Location = new System.Drawing.Point(312, 104);
             this.nombreCliente.Name = "nombreCliente";
             this.nombreCliente.Size = new System.Drawing.Size(100, 22);
             this.nombreCliente.TabIndex = 3;
@@ -96,7 +99,7 @@
             this.opcionesTamanio.AccessibleName = "Opciones de tamaño de pizza";
             this.opcionesTamanio.Controls.Add(this.pizzaPequenia);
             this.opcionesTamanio.Controls.Add(this.pizzaGrande);
-            this.opcionesTamanio.Location = new System.Drawing.Point(16, 168);
+            this.opcionesTamanio.Location = new System.Drawing.Point(40, 168);
             this.opcionesTamanio.Name = "opcionesTamanio";
             this.opcionesTamanio.Size = new System.Drawing.Size(200, 100);
             this.opcionesTamanio.TabIndex = 4;
@@ -108,12 +111,10 @@
             this.pizzaPequenia.AccessibleDescription = "Pizza pequeña";
             this.pizzaPequenia.AccessibleName = "Pizza pequeña";
             this.pizzaPequenia.AutoSize = true;
-            this.pizzaPequenia.Checked = true;
             this.pizzaPequenia.Location = new System.Drawing.Point(24, 32);
             this.pizzaPequenia.Name = "pizzaPequenia";
             this.pizzaPequenia.Size = new System.Drawing.Size(114, 20);
             this.pizzaPequenia.TabIndex = 0;
-            this.pizzaPequenia.TabStop = true;
             this.pizzaPequenia.Text = "&Pequeña 6.00€";
             this.pizzaPequenia.UseVisualStyleBackColor = true;
             // 
@@ -134,7 +135,7 @@
             this.labelToppings.AccessibleDescription = "Etiqueta de ingredientes";
             this.labelToppings.AccessibleName = "Etiqueta de ingredientes";
             this.labelToppings.AutoSize = true;
-            this.labelToppings.Location = new System.Drawing.Point(240, 168);
+            this.labelToppings.Location = new System.Drawing.Point(264, 168);
             this.labelToppings.Name = "labelToppings";
             this.labelToppings.Size = new System.Drawing.Size(166, 16);
             this.labelToppings.TabIndex = 5;
@@ -151,7 +152,7 @@
             "Alejandro",
             "Paul",
             "Sergio"});
-            this.toppings.Location = new System.Drawing.Point(240, 192);
+            this.toppings.Location = new System.Drawing.Point(264, 192);
             this.toppings.Name = "toppings";
             this.toppings.Size = new System.Drawing.Size(120, 89);
             this.toppings.TabIndex = 6;
@@ -160,23 +161,25 @@
             // 
             this.botonCancelar.AccessibleDescription = "Cancelar el pedido";
             this.botonCancelar.AccessibleName = "Cancelar el pedido";
-            this.botonCancelar.Location = new System.Drawing.Point(88, 312);
+            this.botonCancelar.Location = new System.Drawing.Point(112, 312);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(75, 23);
             this.botonCancelar.TabIndex = 8;
             this.botonCancelar.Text = "&Cancelar";
             this.botonCancelar.UseVisualStyleBackColor = true;
+            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
             // botonPedir
             // 
             this.botonPedir.AccessibleDescription = "Total del pedido";
             this.botonPedir.AccessibleName = "Total del pedido";
-            this.botonPedir.Location = new System.Drawing.Point(240, 312);
+            this.botonPedir.Location = new System.Drawing.Point(264, 312);
             this.botonPedir.Name = "botonPedir";
             this.botonPedir.Size = new System.Drawing.Size(75, 23);
             this.botonPedir.TabIndex = 7;
             this.botonPedir.Text = "&Pedir";
             this.botonPedir.UseVisualStyleBackColor = true;
+            this.botonPedir.Click += new System.EventHandler(this.botonPedir_Click);
             // 
             // Form1
             // 
@@ -184,7 +187,7 @@
             this.AccessibleName = "Formulario de pedido";
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 365);
+            this.ClientSize = new System.Drawing.Size(466, 365);
             this.Controls.Add(this.botonPedir);
             this.Controls.Add(this.botonCancelar);
             this.Controls.Add(this.toppings);
@@ -199,6 +202,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Formulario de pedidos de pizza - Natalia Serantes";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logotipo)).EndInit();
             this.opcionesTamanio.ResumeLayout(false);
             this.opcionesTamanio.PerformLayout();
