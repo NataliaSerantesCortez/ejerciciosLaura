@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\bin\Debug\ahorcado.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\bin\Debug\ahorcado.exe
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\bin\Debug\ahorcado.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.exe
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.pdb

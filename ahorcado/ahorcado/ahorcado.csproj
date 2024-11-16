@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ahorcado</RootNamespace>
+    <AssemblyName>ahorcado</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-08-harry-potter-colour-chamber-of-secrets-key-2730321_88178.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-06-harry-potter-colour-sorting-hat-2730319_88134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech-balloon-green-a256_icon-icons.com_62637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-05-harry-potter-colour-death-eater-tattoo-2730318_88128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-11-harry-potter-colour-quill-2730324_88144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-37-harry-potter-colour-spectrespecs-2730311_88140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-37-harry-potter-colour-spectrespecs-2730311_88140 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-12-harry-potter-colour-harrys-lightning-scar-2730325_88172.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_88126.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_19742.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-34-harry-potter-colour-horcrux-ring-2730345_88152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gem-pendant_39134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-45-harry-potter-colour-hufflepuff-cup-2730355_88164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crown_king_queen_icon_161518.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\492snake_100855.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_88126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_881261.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
