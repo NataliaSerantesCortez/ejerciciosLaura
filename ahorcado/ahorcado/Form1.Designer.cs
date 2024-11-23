@@ -125,6 +125,7 @@
             this.labelAvada = new System.Windows.Forms.Label();
             this.imagenMarcaTeneborsa = new System.Windows.Forms.PictureBox();
             this.labelSubtAvada = new System.Windows.Forms.Label();
+            this.labelPalabraOculta = new System.Windows.Forms.Label();
             this.gbDificultad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPluma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGafasLuna)).BeginInit();
@@ -545,6 +546,7 @@
             this.btnLetraA.Text = "A";
             this.btnLetraA.UseVisualStyleBackColor = false;
             this.btnLetraA.Visible = false;
+            this.btnLetraA.Click += new System.EventHandler(this.btnLetraA_Click);
             // 
             // btnLetraB
             // 
@@ -1036,7 +1038,7 @@
             // 
             // imagenPluma
             // 
-            this.imagenPluma.Image = global::ahorcado.Properties.Resources.if_11_harry_potter_colour_quill_2730324_88144;
+            this.imagenPluma.Image = ((System.Drawing.Image)(resources.GetObject("imagenPluma.Image")));
             this.imagenPluma.Location = new System.Drawing.Point(1144, 472);
             this.imagenPluma.Name = "imagenPluma";
             this.imagenPluma.Size = new System.Drawing.Size(64, 64);
@@ -1046,7 +1048,7 @@
             // 
             // imagenGafasLuna
             // 
-            this.imagenGafasLuna.Image = global::ahorcado.Properties.Resources.if_37_harry_potter_colour_spectrespecs_2730311_88140__1_;
+            this.imagenGafasLuna.Image = ((System.Drawing.Image)(resources.GetObject("imagenGafasLuna.Image")));
             this.imagenGafasLuna.Location = new System.Drawing.Point(1056, 320);
             this.imagenGafasLuna.Name = "imagenGafasLuna";
             this.imagenGafasLuna.Size = new System.Drawing.Size(32, 32);
@@ -1067,7 +1069,7 @@
             // 
             // imagenHorrocrux4
             // 
-            this.imagenHorrocrux4.Image = global::ahorcado.Properties.Resources.if_45_harry_potter_colour_hufflepuff_cup_2730355_88164;
+            this.imagenHorrocrux4.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux4.Image")));
             this.imagenHorrocrux4.Location = new System.Drawing.Point(1152, 64);
             this.imagenHorrocrux4.Name = "imagenHorrocrux4";
             this.imagenHorrocrux4.Size = new System.Drawing.Size(56, 56);
@@ -1077,7 +1079,7 @@
             // 
             // imagenHorrocrux6
             // 
-            this.imagenHorrocrux6.Image = global::ahorcado.Properties.Resources._492snake_100855;
+            this.imagenHorrocrux6.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux6.Image")));
             this.imagenHorrocrux6.Location = new System.Drawing.Point(1048, 136);
             this.imagenHorrocrux6.Name = "imagenHorrocrux6";
             this.imagenHorrocrux6.Size = new System.Drawing.Size(56, 50);
@@ -1087,7 +1089,7 @@
             // 
             // imagenHorrocrux5
             // 
-            this.imagenHorrocrux5.Image = global::ahorcado.Properties.Resources.crown_king_queen_icon_161518;
+            this.imagenHorrocrux5.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux5.Image")));
             this.imagenHorrocrux5.Location = new System.Drawing.Point(976, 136);
             this.imagenHorrocrux5.Name = "imagenHorrocrux5";
             this.imagenHorrocrux5.Size = new System.Drawing.Size(56, 50);
@@ -1097,7 +1099,7 @@
             // 
             // imagenHorrocrux3
             // 
-            this.imagenHorrocrux3.Image = global::ahorcado.Properties.Resources.gem_pendant_39134;
+            this.imagenHorrocrux3.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux3.Image")));
             this.imagenHorrocrux3.Location = new System.Drawing.Point(1080, 72);
             this.imagenHorrocrux3.Name = "imagenHorrocrux3";
             this.imagenHorrocrux3.Size = new System.Drawing.Size(56, 50);
@@ -1107,7 +1109,7 @@
             // 
             // imagenHorrocrux2
             // 
-            this.imagenHorrocrux2.Image = global::ahorcado.Properties.Resources.if_34_harry_potter_colour_horcrux_ring_2730345_88152;
+            this.imagenHorrocrux2.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux2.Image")));
             this.imagenHorrocrux2.Location = new System.Drawing.Point(1008, 72);
             this.imagenHorrocrux2.Name = "imagenHorrocrux2";
             this.imagenHorrocrux2.Size = new System.Drawing.Size(56, 50);
@@ -1117,7 +1119,7 @@
             // 
             // imagenVoldemort
             // 
-            this.imagenVoldemort.Image = global::ahorcado.Properties.Resources.if_11_harry_potter_colour_quill_2730324_88144;
+            this.imagenVoldemort.Image = ((System.Drawing.Image)(resources.GetObject("imagenVoldemort.Image")));
             this.imagenVoldemort.Location = new System.Drawing.Point(840, 88);
             this.imagenVoldemort.Name = "imagenVoldemort";
             this.imagenVoldemort.Size = new System.Drawing.Size(64, 64);
@@ -1127,7 +1129,7 @@
             // 
             // imagenHorrocrux1
             // 
-            this.imagenHorrocrux1.Image = global::ahorcado.Properties.Resources.book_19742;
+            this.imagenHorrocrux1.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux1.Image")));
             this.imagenHorrocrux1.Location = new System.Drawing.Point(936, 72);
             this.imagenHorrocrux1.Name = "imagenHorrocrux1";
             this.imagenHorrocrux1.Size = new System.Drawing.Size(56, 50);
@@ -1137,7 +1139,7 @@
             // 
             // imagenSombrero
             // 
-            this.imagenSombrero.Image = global::ahorcado.Properties.Resources.if_06_harry_potter_colour_sorting_hat_2730319_88134;
+            this.imagenSombrero.Image = ((System.Drawing.Image)(resources.GetObject("imagenSombrero.Image")));
             this.imagenSombrero.Location = new System.Drawing.Point(120, 216);
             this.imagenSombrero.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.imagenSombrero.Name = "imagenSombrero";
@@ -1147,7 +1149,7 @@
             // 
             // imagenLlave
             // 
-            this.imagenLlave.Image = global::ahorcado.Properties.Resources.if_08_harry_potter_colour_chamber_of_secrets_key_2730321_88178;
+            this.imagenLlave.Image = ((System.Drawing.Image)(resources.GetObject("imagenLlave.Image")));
             this.imagenLlave.Location = new System.Drawing.Point(531, 0);
             this.imagenLlave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.imagenLlave.Name = "imagenLlave";
@@ -1171,7 +1173,7 @@
             // 
             // imagenTrofeo
             // 
-            this.imagenTrofeo.Image = global::ahorcado.Properties.Resources.if_27_harry_potter_colour_triwizard_cup_27303391_88129;
+            this.imagenTrofeo.Image = ((System.Drawing.Image)(resources.GetObject("imagenTrofeo.Image")));
             this.imagenTrofeo.Location = new System.Drawing.Point(568, 184);
             this.imagenTrofeo.Name = "imagenTrofeo";
             this.imagenTrofeo.Size = new System.Drawing.Size(48, 50);
@@ -1228,7 +1230,7 @@
             // 
             // imagenMarcaTeneborsa
             // 
-            this.imagenMarcaTeneborsa.Image = global::ahorcado.Properties.Resources.if_05_harry_potter_colour_death_eater_tattoo_2730318_88128;
+            this.imagenMarcaTeneborsa.Image = ((System.Drawing.Image)(resources.GetObject("imagenMarcaTeneborsa.Image")));
             this.imagenMarcaTeneborsa.Location = new System.Drawing.Point(576, 128);
             this.imagenMarcaTeneborsa.Name = "imagenMarcaTeneborsa";
             this.imagenMarcaTeneborsa.Size = new System.Drawing.Size(48, 50);
@@ -1247,11 +1249,21 @@
             this.labelSubtAvada.Text = "Voldemort ha vuelto.";
             this.labelSubtAvada.Visible = false;
             // 
+            // labelPalabraOculta
+            // 
+            this.labelPalabraOculta.AutoSize = true;
+            this.labelPalabraOculta.Location = new System.Drawing.Point(32, 704);
+            this.labelPalabraOculta.Name = "labelPalabraOculta";
+            this.labelPalabraOculta.Size = new System.Drawing.Size(0, 23);
+            this.labelPalabraOculta.TabIndex = 140;
+            this.labelPalabraOculta.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 749);
+            this.Controls.Add(this.labelPalabraOculta);
             this.Controls.Add(this.labelSubtAvada);
             this.Controls.Add(this.imagenMarcaTeneborsa);
             this.Controls.Add(this.labelAvada);
@@ -1350,6 +1362,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 6, 2, 6);
             this.Name = "Form1";
             this.Text = "Ahorcado";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbDificultad.ResumeLayout(false);
             this.gbDificultad.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPluma)).EndInit();
@@ -1469,6 +1482,7 @@
         private System.Windows.Forms.Label labelAvada;
         private System.Windows.Forms.PictureBox imagenMarcaTeneborsa;
         private System.Windows.Forms.Label labelSubtAvada;
+        private System.Windows.Forms.Label labelPalabraOculta;
     }
 }
 

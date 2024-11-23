@@ -129,9 +129,11 @@
     <None Include="Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_881261.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Archivos\harryPotter.txt" />
     <Content Include="Resources\harryPotter.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
