@@ -59,18 +59,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -87,16 +87,10 @@
     <None Include="Resources\if-06-harry-potter-colour-sorting-hat-2730319_88134.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\speech-balloon-green-a256_icon-icons.com_62637.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\if-05-harry-potter-colour-death-eater-tattoo-2730318_88128.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if-11-harry-potter-colour-quill-2730324_88144.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\if-37-harry-potter-colour-spectrespecs-2730311_88140.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if-37-harry-potter-colour-spectrespecs-2730311_88140 %281%29.png" />
@@ -129,7 +123,15 @@
     <None Include="Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_88126.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\if-27-harry-potter-colour-triwizard-cup-27303391_88129.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_881261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\harryPotter.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

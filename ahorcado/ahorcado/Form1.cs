@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +15,7 @@ namespace ahorcado
 {
     public partial class Form1 : Form
     {
-        private BindingList<string> palabras = new BindingList<string>();
+        private List<string> palabras = new List<string>();
 
         public Form1()
         {
@@ -22,14 +24,14 @@ namespace ahorcado
 
         private void leerPalabras()
         {
-            string url = "ruta_del_archivo.txt";
+            string url = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "harryPotter.txt");
 
             if (File.Exists(url))
             {
-                palabras.Clear(); // Limpia la lista antes de cargar nuevas palabras
+                palabras.Clear();
                 foreach (string line in File.ReadAllLines(url))
                 {
-                    palabras.Add(line); // Añade cada línea a la BindingList
+                    palabras.Add(line.Trim());
                 }
 
                 MessageBox.Show("Palabras cargadas con éxito.");
@@ -40,23 +42,31 @@ namespace ahorcado
             }
         }
 
-        private void escribirPalabra()
+        private void escribirPalabra( String nuevaPalabra )
         {
-            string filePath = "ruta_del_archivo.txt"; // Ruta del archivo
-            string nuevaPalabra = tfPalabra.Text; // TextBox para ingresar nueva palabra
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "harryPotter.txt");
 
             if (!string.IsNullOrWhiteSpace(nuevaPalabra))
             {
-                palabras.Add(nuevaPalabra); // Añade a la BindingList (UI se actualiza automáticamente)
-                File.AppendAllText(filePath, nuevaPalabra + Environment.NewLine); // Añade al archivo
+                palabras.Add(nuevaPalabra);
+                File.AppendAllText(filePath, Environment.NewLine + nuevaPalabra);
 
                 MessageBox.Show("Palabra añadida con éxito.");
-                tfPalabra.Clear();
             }
             else
             {
                 MessageBox.Show("Por favor, introduce una palabra válida.");
             }
+
+            // Verifica el contenido del archivo
+            //if (File.Exists(filePath))
+            //{
+            //    string[] lines = File.ReadAllLines(filePath);
+            //    foreach (string line in lines)
+            //    {
+            //        Console.WriteLine(line);  // O muestra en un MessageBox
+            //    }
+            //}
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -73,6 +83,10 @@ namespace ahorcado
         {
             hacerInvisiblePanelInicio();
             hacerVisiblePanelPartida();
+
+            leerPalabras();
+
+            //String palabraRandom = palabras[new Random().Next(0, palabras.Count)];
         }
         public void hacerInvisiblePanelPartida()
         {
@@ -193,6 +207,7 @@ namespace ahorcado
         {
             hacerVisiblePanelInicio();
             hacerInvisiblePanelLogin();
+            limpiarCamposLogin();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -200,19 +215,7 @@ namespace ahorcado
             String usuario = tfUsuario.Text;
             String password = tfPassword.Text;
 
-            //if (usuario == null)
-            //{
-            //    MessageBox.Show("El campo Usuario es obligatorio.", "Error", 
-            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
-            //if (password == null)
-            //{
-            //    MessageBox.Show("El campo Contraseña es obligatorio.", "Error",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
-            if (usuario != null && password != null)
+            if (!string.IsNullOrWhiteSpace(usuario) && !string.IsNullOrWhiteSpace(password))
             {
                 if (usuario.Equals("admin") && password.Equals("1234"))
                 {
@@ -220,11 +223,16 @@ namespace ahorcado
                     hacerVisiblePanelAdmin();
                 } else
                 {
-                    MessageBox.Show("Las credenciales son incorrectas.", "Error",
+                    MessageBox.Show("Credenciales incorrectas.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 limpiarCamposLogin();
+            }
+            else
+            {
+                MessageBox.Show("Los campos son obligatorios.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -232,6 +240,54 @@ namespace ahorcado
         {
             hacerInvisiblePanelAdmin();
             hacerVisiblePanelInicio();
+            tfPalabra.Text = "";
+        }
+
+        private void imagenGafasLuna_Click(object sender, EventArgs e)
+        {
+            if ( tfPassword.PasswordChar == '*')
+            {
+                tfPassword.PasswordChar = '\0';
+            } else
+            {
+                tfPassword.PasswordChar = '*';
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {            
+            String palabraNueva = tfPalabra.Text;
+
+            if (!string.IsNullOrWhiteSpace(palabraNueva))
+            {
+                if (palabraNueva.Length <= 13 && !palabraNueva.Contains(" "))
+                {
+                    leerPalabras();
+                    palabraNueva = palabraNueva.ToUpper().Trim();
+
+                    if (palabras.Contains(palabraNueva))
+                    {
+                        MessageBox.Show("La palabra YA pertenece a la lista.", "Error",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        escribirPalabra(palabraNueva);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Palabra inválida.", "Error",
+                      MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("El campo nueva palabra es obligatorio.", "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            tfPalabra.Text = "";
         }
     }
 }

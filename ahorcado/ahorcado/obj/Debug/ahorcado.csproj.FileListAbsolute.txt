@@ -8,3 +8,4 @@ C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado
 C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.csproj.CoreCompileInputs.cache
 C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.exe
 C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\obj\Debug\ahorcado.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\ahorcado\ahorcado\bin\Debug\Resources\harryPotter.txt

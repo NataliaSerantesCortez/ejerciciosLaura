@@ -101,6 +101,58 @@ namespace ahorcado.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a LONGBOTTOM  
+        ///MCGONAGALL  
+        ///LESTRANGE  
+        ///DIGGORY  
+        ///LOVEGOOD  
+        ///MALFOY  
+        ///WEASLEY  
+        ///GRANGER  
+        ///POTTER  
+        ///BLACK  
+        ///DELACOUR  
+        ///MAXIME  
+        ///KARKAROV  
+        ///KRUM  
+        ///RIDDLE  
+        ///DUMBLEDORE  
+        ///UMBRIDGE  
+        ///GRINDELWALD  
+        ///TRELAWNEY  
+        ///POMFREY  
+        ///PETTIGREW  
+        ///DURSLEY  
+        ///GODRIC  
+        ///ANIMAGO  
+        ///COLAGUSANO  
+        ///CORNAMENTA  
+        ///LUNATICO  
+        ///CANUTO  
+        ///MORTIFAGOS  
+        ///MUGGLES  
+        ///SQUIB  
+        ///INFERIUS  
+        ///BOGGART  
+        ///DEMENTOR  
+        ///FENIX  
+        ///BASILISCO  
+        ///CENTAURO  
+        ///HIPOGRIFO  
+        ///ESCARBATO  
+        ///THESTRAL  
+        ///NARGLES  
+        ///ACROMANTULA  
+        ///GRINDYLOW  
+        ///UNICO [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string harryPotter {
+            get {
+                return ResourceManager.GetString("harryPotter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap if_05_harry_potter_colour_death_eater_tattoo_2730318_88128 {
@@ -163,9 +215,9 @@ namespace ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap if_34_harry_potter_colour_horcrux_ring_2730345_88152 {
+        internal static System.Drawing.Bitmap if_27_harry_potter_colour_triwizard_cup_27303391_88129 {
             get {
-                object obj = ResourceManager.GetObject("if-34-harry-potter-colour-horcrux-ring-2730345_88152", resourceCulture);
+                object obj = ResourceManager.GetObject("if-27-harry-potter-colour-triwizard-cup-27303391_88129", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +225,9 @@ namespace ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap if_37_harry_potter_colour_spectrespecs_2730311_88140 {
+        internal static System.Drawing.Bitmap if_34_harry_potter_colour_horcrux_ring_2730345_88152 {
             get {
-                object obj = ResourceManager.GetObject("if-37-harry-potter-colour-spectrespecs-2730311_88140", resourceCulture);
+                object obj = ResourceManager.GetObject("if-34-harry-potter-colour-horcrux-ring-2730345_88152", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,16 +248,6 @@ namespace ahorcado.Properties {
         internal static System.Drawing.Bitmap if_45_harry_potter_colour_hufflepuff_cup_2730355_88164 {
             get {
                 object obj = ResourceManager.GetObject("if-45-harry-potter-colour-hufflepuff-cup-2730355_88164", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap speech_balloon_green_a256_icon_icons_com_62637 {
-            get {
-                object obj = ResourceManager.GetObject("speech-balloon-green-a256_icon-icons.com_62637", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

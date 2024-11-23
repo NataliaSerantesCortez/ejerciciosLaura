@@ -118,6 +118,13 @@
             this.imagenSombrero = new System.Windows.Forms.PictureBox();
             this.imagenLlave = new System.Windows.Forms.PictureBox();
             this.btnAbandonarPartida = new System.Windows.Forms.Button();
+            this.imagenTrofeo = new System.Windows.Forms.PictureBox();
+            this.labelFelicitaciones = new System.Windows.Forms.Label();
+            this.labelSubtFelicitaciones = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.labelAvada = new System.Windows.Forms.Label();
+            this.imagenMarcaTeneborsa = new System.Windows.Forms.PictureBox();
+            this.labelSubtAvada = new System.Windows.Forms.Label();
             this.gbDificultad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPluma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGafasLuna)).BeginInit();
@@ -131,6 +138,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenHorrocrux1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenSombrero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenLlave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenTrofeo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenMarcaTeneborsa)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAhorcado
@@ -928,6 +937,7 @@
             // 
             this.tfPassword.Location = new System.Drawing.Point(936, 328);
             this.tfPassword.Name = "tfPassword";
+            this.tfPassword.PasswordChar = '*';
             this.tfPassword.Size = new System.Drawing.Size(100, 29);
             this.tfPassword.TabIndex = 120;
             this.tfPassword.Visible = false;
@@ -998,6 +1008,7 @@
             this.btnAgregar.Text = "Añadir";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Visible = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCerrarSesion
             // 
@@ -1042,10 +1053,11 @@
             this.imagenGafasLuna.TabIndex = 121;
             this.imagenGafasLuna.TabStop = false;
             this.imagenGafasLuna.Visible = false;
+            this.imagenGafasLuna.Click += new System.EventHandler(this.imagenGafasLuna_Click);
             // 
             // imagenHorrocrux7
             // 
-            this.imagenHorrocrux7.Image = global::ahorcado.Properties.Resources.if_21_harry_potter_colour_glasses_and_scar_2730334_881261;
+            this.imagenHorrocrux7.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux7.Image")));
             this.imagenHorrocrux7.Location = new System.Drawing.Point(1120, 136);
             this.imagenHorrocrux7.Name = "imagenHorrocrux7";
             this.imagenHorrocrux7.Size = new System.Drawing.Size(56, 48);
@@ -1157,11 +1169,96 @@
             this.btnAbandonarPartida.Visible = false;
             this.btnAbandonarPartida.Click += new System.EventHandler(this.btnAbandonarPartida_Click);
             // 
+            // imagenTrofeo
+            // 
+            this.imagenTrofeo.Image = global::ahorcado.Properties.Resources.if_27_harry_potter_colour_triwizard_cup_27303391_88129;
+            this.imagenTrofeo.Location = new System.Drawing.Point(568, 184);
+            this.imagenTrofeo.Name = "imagenTrofeo";
+            this.imagenTrofeo.Size = new System.Drawing.Size(48, 50);
+            this.imagenTrofeo.TabIndex = 132;
+            this.imagenTrofeo.TabStop = false;
+            this.imagenTrofeo.Visible = false;
+            // 
+            // labelFelicitaciones
+            // 
+            this.labelFelicitaciones.AutoSize = true;
+            this.labelFelicitaciones.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFelicitaciones.Location = new System.Drawing.Point(632, 192);
+            this.labelFelicitaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelFelicitaciones.Name = "labelFelicitaciones";
+            this.labelFelicitaciones.Size = new System.Drawing.Size(128, 31);
+            this.labelFelicitaciones.TabIndex = 133;
+            this.labelFelicitaciones.Text = "¡Felicitaciones!";
+            this.labelFelicitaciones.Visible = false;
+            // 
+            // labelSubtFelicitaciones
+            // 
+            this.labelSubtFelicitaciones.AutoSize = true;
+            this.labelSubtFelicitaciones.Location = new System.Drawing.Point(592, 240);
+            this.labelSubtFelicitaciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSubtFelicitaciones.Name = "labelSubtFelicitaciones";
+            this.labelSubtFelicitaciones.Size = new System.Drawing.Size(161, 23);
+            this.labelSubtFelicitaciones.TabIndex = 134;
+            this.labelSubtFelicitaciones.Text = "Has derrotado a Voldemort.";
+            this.labelSubtFelicitaciones.Visible = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.Location = new System.Drawing.Point(616, 280);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(104, 32);
+            this.btnSalir.TabIndex = 136;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Visible = false;
+            // 
+            // labelAvada
+            // 
+            this.labelAvada.AutoSize = true;
+            this.labelAvada.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAvada.Location = new System.Drawing.Point(624, 192);
+            this.labelAvada.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAvada.Name = "labelAvada";
+            this.labelAvada.Size = new System.Drawing.Size(142, 31);
+            this.labelAvada.TabIndex = 137;
+            this.labelAvada.Text = "¡Avada Kedavra!";
+            this.labelAvada.Visible = false;
+            // 
+            // imagenMarcaTeneborsa
+            // 
+            this.imagenMarcaTeneborsa.Image = global::ahorcado.Properties.Resources.if_05_harry_potter_colour_death_eater_tattoo_2730318_88128;
+            this.imagenMarcaTeneborsa.Location = new System.Drawing.Point(576, 128);
+            this.imagenMarcaTeneborsa.Name = "imagenMarcaTeneborsa";
+            this.imagenMarcaTeneborsa.Size = new System.Drawing.Size(48, 50);
+            this.imagenMarcaTeneborsa.TabIndex = 138;
+            this.imagenMarcaTeneborsa.TabStop = false;
+            this.imagenMarcaTeneborsa.Visible = false;
+            // 
+            // labelSubtAvada
+            // 
+            this.labelSubtAvada.AutoSize = true;
+            this.labelSubtAvada.Location = new System.Drawing.Point(608, 240);
+            this.labelSubtAvada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSubtAvada.Name = "labelSubtAvada";
+            this.labelSubtAvada.Size = new System.Drawing.Size(123, 23);
+            this.labelSubtAvada.TabIndex = 139;
+            this.labelSubtAvada.Text = "Voldemort ha vuelto.";
+            this.labelSubtAvada.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 749);
+            this.Controls.Add(this.labelSubtAvada);
+            this.Controls.Add(this.imagenMarcaTeneborsa);
+            this.Controls.Add(this.labelAvada);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.labelSubtFelicitaciones);
+            this.Controls.Add(this.labelFelicitaciones);
+            this.Controls.Add(this.imagenTrofeo);
             this.Controls.Add(this.btnAbandonarPartida);
             this.Controls.Add(this.imagenPluma);
             this.Controls.Add(this.labelAclaracion);
@@ -1267,6 +1364,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenHorrocrux1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenSombrero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenLlave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenTrofeo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenMarcaTeneborsa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1363,6 +1462,13 @@
         private System.Windows.Forms.Label labelAclaracion;
         private System.Windows.Forms.PictureBox imagenPluma;
         private System.Windows.Forms.Button btnAbandonarPartida;
+        private System.Windows.Forms.PictureBox imagenTrofeo;
+        private System.Windows.Forms.Label labelFelicitaciones;
+        private System.Windows.Forms.Label labelSubtFelicitaciones;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label labelAvada;
+        private System.Windows.Forms.PictureBox imagenMarcaTeneborsa;
+        private System.Windows.Forms.Label labelSubtAvada;
     }
 }
 
