@@ -123,6 +123,7 @@ namespace ahorcado
 
         private void btnIniciarPartida_Click(object sender, EventArgs e)
         {
+            limpiarLetras();
             hacerInvisiblePanelInicio();
             hacerVisiblePanelPartida();
 
@@ -145,7 +146,6 @@ namespace ahorcado
                 {
                     hacerVisibleControl(i, controlesHuecos);
                     escribirLetraEnControl(palabra[i].ToString(), i, controlesLetras);
-
                 }
             }
             else if (tamanio == 12 || tamanio == 11 )
@@ -183,12 +183,28 @@ namespace ahorcado
 
         public void hacerVisibleControl( int i, Control[] controles)
         {
-            controles[i].Visible = true;
+            if (i >= 0 && i < controles.Length)
+            {
+                controles[i].Visible = true;
+            }
+        }
+
+        public void hacerInvisibleControl(int i, Control[] controles)
+        {
+            if (i >= 0 && i < controles.Length)
+            {
+                controles[i].Visible = false;
+            }
         }
 
         public void escribirLetraEnControl(String letra, int i, Control[] controles)
         {
-            controles[i].Text = letra;
+            if (i >= 0 && i < controles.Length)
+            {
+                controles[i].Visible = true;
+                controles[i].Text = letra;
+                controles[i].Visible = false;
+            }
         }
 
         public void hacerInvisiblePanelPartida()
@@ -205,6 +221,14 @@ namespace ahorcado
             hacerInvisibles(controlesHorrocruxes);
         }
 
+        public void limpiarLetras()
+        {
+            foreach (var control in controlesLetras)
+            {
+                control.Text = "";
+            }
+        }
+
         public void hacerInvisibleHuecosYLetras()
         {
             hacerInvisibles(controlesLetras);
@@ -213,6 +237,8 @@ namespace ahorcado
 
         public void hacerVisiblePanelPartida()
         {
+            fallosPermitidos.Text = "7";
+            labelContadorOculto.Text = "0";
             hacerVisibleAbecedario();
             hacerVisibles(btnAbandonarPartida, imagenVoldemort, labelNodejes, labelHorrocruxes, fallosPermitidos );
         }
@@ -263,11 +289,13 @@ namespace ahorcado
 
         public void hacerVisibleAbecedario()
         {
-            //tengo que habilitarlos y ponerles el color amarillo
-            hacerVisibles(btnLetraA, btnLetraB, btnLetraC, btnLetraD, btnLetraD, btnLetraE, btnLetraF, btnLetraG,
+            Control[] letras = {btnLetraA, btnLetraB, btnLetraC, btnLetraD, btnLetraD, btnLetraE, btnLetraF, btnLetraG,
                 btnLetraH, btnLetraI, btnLetraJ, btnLetraK, btnLetraL, btnLetraM, btnLetraN, btnLetraGN, btnLetraO,
                 btnLetraP, btnLetraQ, btnLetraR, btnLetraS, btnLetraT, btnLetraU, btnLetraV, btnLetraW, btnLetraX,
-                btnLetraY, btnLetraZ);
+                btnLetraY, btnLetraZ };
+
+            habilitarBotonLetra(letras);
+            hacerVisibles(letras);
         }
 
         public void hacerInvisibles(params Control[] controles)
@@ -396,15 +424,23 @@ namespace ahorcado
             
         }
 
-        public void mecanismoDeVerificacion( String letraSeleccionada, String palabraAdivinar)
+        public async void mecanismoDeVerificacion( String letraSeleccionada, String palabraAdivinar)
         {
+            int fallos = int.Parse(fallosPermitidos.Text);
+            int tamanio = palabraAdivinar.Length;
+            int contador = int.Parse(labelContadorOculto.Text);
+
             if (palabraAdivinar.Contains(letraSeleccionada))
             {
                 for (int i = 0; i < 13; i++)
                 {
-                    if (controlesLetras[i].Equals(letraSeleccionada))
+                    String letra = controlesLetras[i].Text;
+                    if (letra.Equals(letraSeleccionada))
                     {
                         hacerVisibleControl(i, controlesLetras);
+                        contador++;
+                        labelContadorOculto.Text = contador.ToString();
+                        //MessageBox.Show("" +contador);
                     }
                 }
 
@@ -412,7 +448,6 @@ namespace ahorcado
             }
             else
             {
-                int fallos = int.Parse(fallosPermitidos.Text);
                 hacerVisibleControl(7 - fallos, controlesHorrocruxes);
 
                 mensajes.Text = "¡La letra " + letraSeleccionada + " es incorrecta!";
@@ -420,12 +455,54 @@ namespace ahorcado
                 fallosPermitidos.Text = (fallos - 1).ToString();
             }
 
+            hacerVisibles(mensajes);
+
+            fallos = int.Parse(fallosPermitidos.Text);
+
+            if ( fallos == 0)
+            {
+                await Task.Delay(400);
+                hacerInvisiblePanelPartida();
+                mostrarMensajePerdedor(palabraAdivinar);
+            }
+
+            if ( contador == tamanio)
+            {
+                await Task.Delay(400);
+                hacerInvisiblePanelPartida();
+                mostrarMensajeGanador();
+            }     
+        }
+
+        public void mostrarMensajePerdedor ( String palabra )
+        {
+            labelLapalabra.Text = "La palabra era " + palabra + ".";
+            hacerVisibles(imagenMarcaTeneborsa, labelAvada, labelSubtAvada, labelLapalabra , btnSalir);
+        }
+        public void mostrarMensajeGanador()
+        {
+            hacerVisibles(imagenTrofeo, labelFelicitaciones, labelSubtFelicitaciones, btnSalir);
+        }
+
+        public void hacerInvisiblePanelMensaje()
+        {
+            hacerInvisibles(imagenTrofeo, labelFelicitaciones, labelSubtFelicitaciones, btnSalir,
+                imagenMarcaTeneborsa, labelAvada, labelSubtAvada, labelLapalabra);
         }
 
         public void inhabilitarBotonLetra( Control boton)
         {
             boton.Enabled = false;
             boton.BackColor = Color.FromArgb(192, 0, 0);
+        }
+
+        public void habilitarBotonLetra(params Control[] controles)
+        {
+            foreach (var control in controles)
+            {
+                control.Enabled = true;
+                control.BackColor = Color.DarkOrange;
+            }      
         }
 
         private void btnLetraA_Click(object sender, EventArgs e)
@@ -436,6 +513,272 @@ namespace ahorcado
             mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);           
 
             inhabilitarBotonLetra(btnLetraA);
+        }
+
+        private void btnLetraB_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "B";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraB);
+        }
+
+        private void btnLetraC_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "C";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraC);
+        }
+
+        private void btnLetraD_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "D";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraD);
+        }
+
+        private void btnLetraE_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "E";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraE);
+        }
+
+        private void btnLetraF_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "F";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraF);
+        }
+
+        private void btnLetraG_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "G";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraG);
+        }
+
+        private void btnLetraH_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "H";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraH);
+        }
+
+        private void btnLetraI_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "I";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraI);
+        }
+
+        private void btnLetraJ_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "J";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraJ);
+        }
+
+        private void btnLetraK_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "K";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraK);
+        }
+
+        private void btnLetraL_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "L";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraL);
+        }
+
+        private void btnLetraM_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "M";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraM);
+        }
+
+        private void btnLetraN_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "N";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraN);
+        }
+
+        private void btnLetraGN_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "Ñ";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraGN);
+        }
+
+        private void btnLetraO_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "O";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraO);
+        }
+
+        private void btnLetraP_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "P";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraP);
+        }
+
+        private void btnLetraQ_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "Q";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraQ);
+        }
+
+        private void btnLetraR_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "R";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraR);
+        }
+
+        private void btnLetraS_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "S";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraS);
+        }
+
+        private void btnLetraT_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "T";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraT);
+        }
+
+        private void btnLetraU_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "U";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraU);
+        }
+
+        private void btnLetraV_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "V";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraV);
+        }
+
+        private void btnLetraW_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "W";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraW);
+        }
+
+        private void btnLetraX_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "X";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraX);
+        }
+
+        private void btnLetraY_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "Y";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraY);
+        }
+
+        private void btnLetraZ_Click(object sender, EventArgs e)
+        {
+            String letraSeleccionada = "Z";
+            String palabraAdivinar = labelPalabraOculta.Text;
+
+            mecanismoDeVerificacion(letraSeleccionada, palabraAdivinar);
+
+            inhabilitarBotonLetra(btnLetraZ);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            hacerVisiblePanelInicio();
+            hacerInvisiblePanelMensaje();
         }
     }
 }

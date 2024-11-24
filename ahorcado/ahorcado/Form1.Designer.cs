@@ -126,6 +126,8 @@
             this.imagenMarcaTeneborsa = new System.Windows.Forms.PictureBox();
             this.labelSubtAvada = new System.Windows.Forms.Label();
             this.labelPalabraOculta = new System.Windows.Forms.Label();
+            this.labelLapalabra = new System.Windows.Forms.Label();
+            this.labelContadorOculto = new System.Windows.Forms.Label();
             this.gbDificultad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPluma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGafasLuna)).BeginInit();
@@ -233,10 +235,8 @@
             this.letra2.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra2.Location = new System.Drawing.Point(136, 440);
             this.letra2.Name = "letra2";
-            this.letra2.Size = new System.Drawing.Size(19, 24);
+            this.letra2.Size = new System.Drawing.Size(0, 24);
             this.letra2.TabIndex = 6;
-            this.letra2.Text = "2";
-            this.letra2.Visible = false;
             // 
             // guion2
             // 
@@ -256,10 +256,8 @@
             this.letra3.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra3.Location = new System.Drawing.Point(184, 440);
             this.letra3.Name = "letra3";
-            this.letra3.Size = new System.Drawing.Size(19, 24);
+            this.letra3.Size = new System.Drawing.Size(0, 24);
             this.letra3.TabIndex = 24;
-            this.letra3.Text = "3";
-            this.letra3.Visible = false;
             // 
             // guion3
             // 
@@ -278,10 +276,8 @@
             this.letra5.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra5.Location = new System.Drawing.Point(280, 440);
             this.letra5.Name = "letra5";
-            this.letra5.Size = new System.Drawing.Size(19, 24);
+            this.letra5.Size = new System.Drawing.Size(0, 24);
             this.letra5.TabIndex = 28;
-            this.letra5.Text = "5";
-            this.letra5.Visible = false;
             // 
             // guion5
             // 
@@ -300,10 +296,8 @@
             this.letra4.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra4.Location = new System.Drawing.Point(232, 440);
             this.letra4.Name = "letra4";
-            this.letra4.Size = new System.Drawing.Size(19, 24);
+            this.letra4.Size = new System.Drawing.Size(0, 24);
             this.letra4.TabIndex = 26;
-            this.letra4.Text = "4";
-            this.letra4.Visible = false;
             // 
             // guion4
             // 
@@ -322,10 +316,8 @@
             this.letra9.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra9.Location = new System.Drawing.Point(472, 440);
             this.letra9.Name = "letra9";
-            this.letra9.Size = new System.Drawing.Size(18, 24);
+            this.letra9.Size = new System.Drawing.Size(0, 24);
             this.letra9.TabIndex = 36;
-            this.letra9.Text = "9";
-            this.letra9.Visible = false;
             // 
             // guion9
             // 
@@ -344,10 +336,8 @@
             this.letra8.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra8.Location = new System.Drawing.Point(424, 440);
             this.letra8.Name = "letra8";
-            this.letra8.Size = new System.Drawing.Size(20, 24);
+            this.letra8.Size = new System.Drawing.Size(0, 24);
             this.letra8.TabIndex = 34;
-            this.letra8.Text = "8";
-            this.letra8.Visible = false;
             // 
             // guion8
             // 
@@ -366,10 +356,8 @@
             this.letra7.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra7.Location = new System.Drawing.Point(376, 440);
             this.letra7.Name = "letra7";
-            this.letra7.Size = new System.Drawing.Size(19, 24);
+            this.letra7.Size = new System.Drawing.Size(0, 24);
             this.letra7.TabIndex = 32;
-            this.letra7.Text = "7";
-            this.letra7.Visible = false;
             // 
             // guion7
             // 
@@ -388,10 +376,8 @@
             this.letra6.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra6.Location = new System.Drawing.Point(328, 440);
             this.letra6.Name = "letra6";
-            this.letra6.Size = new System.Drawing.Size(18, 24);
+            this.letra6.Size = new System.Drawing.Size(0, 24);
             this.letra6.TabIndex = 30;
-            this.letra6.Text = "6";
-            this.letra6.Visible = false;
             // 
             // guion6
             // 
@@ -410,10 +396,8 @@
             this.letra0.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra0.Location = new System.Drawing.Point(40, 440);
             this.letra0.Name = "letra0";
-            this.letra0.Size = new System.Drawing.Size(20, 24);
+            this.letra0.Size = new System.Drawing.Size(0, 24);
             this.letra0.TabIndex = 44;
-            this.letra0.Text = "0";
-            this.letra0.Visible = false;
             // 
             // guion0
             // 
@@ -432,10 +416,8 @@
             this.letra12.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra12.Location = new System.Drawing.Point(616, 440);
             this.letra12.Name = "letra12";
-            this.letra12.Size = new System.Drawing.Size(26, 24);
+            this.letra12.Size = new System.Drawing.Size(0, 24);
             this.letra12.TabIndex = 42;
-            this.letra12.Text = "12";
-            this.letra12.Visible = false;
             // 
             // guion12
             // 
@@ -454,10 +436,8 @@
             this.letra11.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra11.Location = new System.Drawing.Point(568, 440);
             this.letra11.Name = "letra11";
-            this.letra11.Size = new System.Drawing.Size(24, 24);
+            this.letra11.Size = new System.Drawing.Size(0, 24);
             this.letra11.TabIndex = 40;
-            this.letra11.Text = "11";
-            this.letra11.Visible = false;
             // 
             // guion11
             // 
@@ -476,10 +456,8 @@
             this.letra10.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra10.Location = new System.Drawing.Point(520, 440);
             this.letra10.Name = "letra10";
-            this.letra10.Size = new System.Drawing.Size(27, 24);
+            this.letra10.Size = new System.Drawing.Size(0, 24);
             this.letra10.TabIndex = 38;
-            this.letra10.Text = "10";
-            this.letra10.Visible = false;
             // 
             // guion10
             // 
@@ -498,10 +476,8 @@
             this.letra1.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.letra1.Location = new System.Drawing.Point(88, 440);
             this.letra1.Name = "letra1";
-            this.letra1.Size = new System.Drawing.Size(17, 24);
+            this.letra1.Size = new System.Drawing.Size(0, 24);
             this.letra1.TabIndex = 46;
-            this.letra1.Text = "1";
-            this.letra1.Visible = false;
             // 
             // guion1
             // 
@@ -560,6 +536,7 @@
             this.btnLetraB.Text = "B";
             this.btnLetraB.UseVisualStyleBackColor = false;
             this.btnLetraB.Visible = false;
+            this.btnLetraB.Click += new System.EventHandler(this.btnLetraB_Click);
             // 
             // btnLetraC
             // 
@@ -573,6 +550,7 @@
             this.btnLetraC.Text = "C";
             this.btnLetraC.UseVisualStyleBackColor = false;
             this.btnLetraC.Visible = false;
+            this.btnLetraC.Click += new System.EventHandler(this.btnLetraC_Click);
             // 
             // btnLetraD
             // 
@@ -586,6 +564,7 @@
             this.btnLetraD.Text = "D";
             this.btnLetraD.UseVisualStyleBackColor = false;
             this.btnLetraD.Visible = false;
+            this.btnLetraD.Click += new System.EventHandler(this.btnLetraD_Click);
             // 
             // btnLetraH
             // 
@@ -599,6 +578,7 @@
             this.btnLetraH.Text = "H";
             this.btnLetraH.UseVisualStyleBackColor = false;
             this.btnLetraH.Visible = false;
+            this.btnLetraH.Click += new System.EventHandler(this.btnLetraH_Click);
             // 
             // btnLetraG
             // 
@@ -612,6 +592,7 @@
             this.btnLetraG.Text = "G";
             this.btnLetraG.UseVisualStyleBackColor = false;
             this.btnLetraG.Visible = false;
+            this.btnLetraG.Click += new System.EventHandler(this.btnLetraG_Click);
             // 
             // btnLetraF
             // 
@@ -625,6 +606,7 @@
             this.btnLetraF.Text = "F";
             this.btnLetraF.UseVisualStyleBackColor = false;
             this.btnLetraF.Visible = false;
+            this.btnLetraF.Click += new System.EventHandler(this.btnLetraF_Click);
             // 
             // btnLetraE
             // 
@@ -638,6 +620,7 @@
             this.btnLetraE.Text = "E";
             this.btnLetraE.UseVisualStyleBackColor = false;
             this.btnLetraE.Visible = false;
+            this.btnLetraE.Click += new System.EventHandler(this.btnLetraE_Click);
             // 
             // btnLetraI
             // 
@@ -651,6 +634,7 @@
             this.btnLetraI.Text = "I";
             this.btnLetraI.UseVisualStyleBackColor = false;
             this.btnLetraI.Visible = false;
+            this.btnLetraI.Click += new System.EventHandler(this.btnLetraI_Click);
             // 
             // btnLetraQ
             // 
@@ -664,6 +648,7 @@
             this.btnLetraQ.Text = "Q";
             this.btnLetraQ.UseVisualStyleBackColor = false;
             this.btnLetraQ.Visible = false;
+            this.btnLetraQ.Click += new System.EventHandler(this.btnLetraQ_Click);
             // 
             // btnLetraP
             // 
@@ -677,6 +662,7 @@
             this.btnLetraP.Text = "P";
             this.btnLetraP.UseVisualStyleBackColor = false;
             this.btnLetraP.Visible = false;
+            this.btnLetraP.Click += new System.EventHandler(this.btnLetraP_Click);
             // 
             // btnLetraO
             // 
@@ -690,6 +676,7 @@
             this.btnLetraO.Text = "O";
             this.btnLetraO.UseVisualStyleBackColor = false;
             this.btnLetraO.Visible = false;
+            this.btnLetraO.Click += new System.EventHandler(this.btnLetraO_Click);
             // 
             // btnLetraGN
             // 
@@ -703,6 +690,7 @@
             this.btnLetraGN.Text = "Ñ";
             this.btnLetraGN.UseVisualStyleBackColor = false;
             this.btnLetraGN.Visible = false;
+            this.btnLetraGN.Click += new System.EventHandler(this.btnLetraGN_Click);
             // 
             // btnLetraN
             // 
@@ -716,6 +704,7 @@
             this.btnLetraN.Text = "N";
             this.btnLetraN.UseVisualStyleBackColor = false;
             this.btnLetraN.Visible = false;
+            this.btnLetraN.Click += new System.EventHandler(this.btnLetraN_Click);
             // 
             // btnLetraM
             // 
@@ -729,6 +718,7 @@
             this.btnLetraM.Text = "M";
             this.btnLetraM.UseVisualStyleBackColor = false;
             this.btnLetraM.Visible = false;
+            this.btnLetraM.Click += new System.EventHandler(this.btnLetraM_Click);
             // 
             // btnLetraL
             // 
@@ -742,6 +732,7 @@
             this.btnLetraL.Text = "L";
             this.btnLetraL.UseVisualStyleBackColor = false;
             this.btnLetraL.Visible = false;
+            this.btnLetraL.Click += new System.EventHandler(this.btnLetraL_Click);
             // 
             // btnLetraK
             // 
@@ -755,6 +746,7 @@
             this.btnLetraK.Text = "K";
             this.btnLetraK.UseVisualStyleBackColor = false;
             this.btnLetraK.Visible = false;
+            this.btnLetraK.Click += new System.EventHandler(this.btnLetraK_Click);
             // 
             // btnLetraJ
             // 
@@ -768,6 +760,7 @@
             this.btnLetraJ.Text = "J";
             this.btnLetraJ.UseVisualStyleBackColor = false;
             this.btnLetraJ.Visible = false;
+            this.btnLetraJ.Click += new System.EventHandler(this.btnLetraJ_Click);
             // 
             // btnLetraZ
             // 
@@ -781,6 +774,7 @@
             this.btnLetraZ.Text = "Z";
             this.btnLetraZ.UseVisualStyleBackColor = false;
             this.btnLetraZ.Visible = false;
+            this.btnLetraZ.Click += new System.EventHandler(this.btnLetraZ_Click);
             // 
             // btnLetraY
             // 
@@ -794,6 +788,7 @@
             this.btnLetraY.Text = "Y";
             this.btnLetraY.UseVisualStyleBackColor = false;
             this.btnLetraY.Visible = false;
+            this.btnLetraY.Click += new System.EventHandler(this.btnLetraY_Click);
             // 
             // btnLetraX
             // 
@@ -807,6 +802,7 @@
             this.btnLetraX.Text = "X";
             this.btnLetraX.UseVisualStyleBackColor = false;
             this.btnLetraX.Visible = false;
+            this.btnLetraX.Click += new System.EventHandler(this.btnLetraX_Click);
             // 
             // btnLetraW
             // 
@@ -820,6 +816,7 @@
             this.btnLetraW.Text = "W";
             this.btnLetraW.UseVisualStyleBackColor = false;
             this.btnLetraW.Visible = false;
+            this.btnLetraW.Click += new System.EventHandler(this.btnLetraW_Click);
             // 
             // btnLetraV
             // 
@@ -833,6 +830,7 @@
             this.btnLetraV.Text = "V";
             this.btnLetraV.UseVisualStyleBackColor = false;
             this.btnLetraV.Visible = false;
+            this.btnLetraV.Click += new System.EventHandler(this.btnLetraV_Click);
             // 
             // btnLetraU
             // 
@@ -846,6 +844,7 @@
             this.btnLetraU.Text = "U";
             this.btnLetraU.UseVisualStyleBackColor = false;
             this.btnLetraU.Visible = false;
+            this.btnLetraU.Click += new System.EventHandler(this.btnLetraU_Click);
             // 
             // btnLetraT
             // 
@@ -859,6 +858,7 @@
             this.btnLetraT.Text = "T";
             this.btnLetraT.UseVisualStyleBackColor = false;
             this.btnLetraT.Visible = false;
+            this.btnLetraT.Click += new System.EventHandler(this.btnLetraT_Click);
             // 
             // btnLetraS
             // 
@@ -872,6 +872,7 @@
             this.btnLetraS.Text = "S";
             this.btnLetraS.UseVisualStyleBackColor = false;
             this.btnLetraS.Visible = false;
+            this.btnLetraS.Click += new System.EventHandler(this.btnLetraS_Click);
             // 
             // btnLetraR
             // 
@@ -885,6 +886,7 @@
             this.btnLetraR.Text = "R";
             this.btnLetraR.UseVisualStyleBackColor = false;
             this.btnLetraR.Visible = false;
+            this.btnLetraR.Click += new System.EventHandler(this.btnLetraR_Click);
             // 
             // fallosPermitidos
             // 
@@ -1162,7 +1164,7 @@
             // 
             this.btnAbandonarPartida.BackColor = System.Drawing.Color.DarkOrange;
             this.btnAbandonarPartida.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAbandonarPartida.Location = new System.Drawing.Point(488, 688);
+            this.btnAbandonarPartida.Location = new System.Drawing.Point(488, 664);
             this.btnAbandonarPartida.Name = "btnAbandonarPartida";
             this.btnAbandonarPartida.Size = new System.Drawing.Size(128, 40);
             this.btnAbandonarPartida.TabIndex = 131;
@@ -1174,7 +1176,7 @@
             // imagenTrofeo
             // 
             this.imagenTrofeo.Image = ((System.Drawing.Image)(resources.GetObject("imagenTrofeo.Image")));
-            this.imagenTrofeo.Location = new System.Drawing.Point(568, 184);
+            this.imagenTrofeo.Location = new System.Drawing.Point(568, 192);
             this.imagenTrofeo.Name = "imagenTrofeo";
             this.imagenTrofeo.Size = new System.Drawing.Size(48, 50);
             this.imagenTrofeo.TabIndex = 132;
@@ -1185,7 +1187,7 @@
             // 
             this.labelFelicitaciones.AutoSize = true;
             this.labelFelicitaciones.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFelicitaciones.Location = new System.Drawing.Point(632, 192);
+            this.labelFelicitaciones.Location = new System.Drawing.Point(616, 192);
             this.labelFelicitaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFelicitaciones.Name = "labelFelicitaciones";
             this.labelFelicitaciones.Size = new System.Drawing.Size(128, 31);
@@ -1196,7 +1198,7 @@
             // labelSubtFelicitaciones
             // 
             this.labelSubtFelicitaciones.AutoSize = true;
-            this.labelSubtFelicitaciones.Location = new System.Drawing.Point(592, 240);
+            this.labelSubtFelicitaciones.Location = new System.Drawing.Point(592, 248);
             this.labelSubtFelicitaciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSubtFelicitaciones.Name = "labelSubtFelicitaciones";
             this.labelSubtFelicitaciones.Size = new System.Drawing.Size(161, 23);
@@ -1215,12 +1217,13 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Visible = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // labelAvada
             // 
             this.labelAvada.AutoSize = true;
             this.labelAvada.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAvada.Location = new System.Drawing.Point(624, 192);
+            this.labelAvada.Location = new System.Drawing.Point(616, 192);
             this.labelAvada.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAvada.Name = "labelAvada";
             this.labelAvada.Size = new System.Drawing.Size(142, 31);
@@ -1231,7 +1234,7 @@
             // imagenMarcaTeneborsa
             // 
             this.imagenMarcaTeneborsa.Image = ((System.Drawing.Image)(resources.GetObject("imagenMarcaTeneborsa.Image")));
-            this.imagenMarcaTeneborsa.Location = new System.Drawing.Point(576, 128);
+            this.imagenMarcaTeneborsa.Location = new System.Drawing.Point(568, 192);
             this.imagenMarcaTeneborsa.Name = "imagenMarcaTeneborsa";
             this.imagenMarcaTeneborsa.Size = new System.Drawing.Size(48, 50);
             this.imagenMarcaTeneborsa.TabIndex = 138;
@@ -1241,7 +1244,7 @@
             // labelSubtAvada
             // 
             this.labelSubtAvada.AutoSize = true;
-            this.labelSubtAvada.Location = new System.Drawing.Point(608, 240);
+            this.labelSubtAvada.Location = new System.Drawing.Point(624, 224);
             this.labelSubtAvada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSubtAvada.Name = "labelSubtAvada";
             this.labelSubtAvada.Size = new System.Drawing.Size(123, 23);
@@ -1258,11 +1261,34 @@
             this.labelPalabraOculta.TabIndex = 140;
             this.labelPalabraOculta.Visible = false;
             // 
+            // labelLapalabra
+            // 
+            this.labelLapalabra.AutoSize = true;
+            this.labelLapalabra.Location = new System.Drawing.Point(592, 248);
+            this.labelLapalabra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLapalabra.Name = "labelLapalabra";
+            this.labelLapalabra.Size = new System.Drawing.Size(90, 23);
+            this.labelLapalabra.TabIndex = 141;
+            this.labelLapalabra.Text = "La palabra era";
+            this.labelLapalabra.Visible = false;
+            // 
+            // labelContadorOculto
+            // 
+            this.labelContadorOculto.AutoSize = true;
+            this.labelContadorOculto.Location = new System.Drawing.Point(96, 712);
+            this.labelContadorOculto.Name = "labelContadorOculto";
+            this.labelContadorOculto.Size = new System.Drawing.Size(19, 23);
+            this.labelContadorOculto.TabIndex = 142;
+            this.labelContadorOculto.Text = "0";
+            this.labelContadorOculto.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 749);
+            this.Controls.Add(this.labelContadorOculto);
+            this.Controls.Add(this.labelLapalabra);
             this.Controls.Add(this.labelPalabraOculta);
             this.Controls.Add(this.labelSubtAvada);
             this.Controls.Add(this.imagenMarcaTeneborsa);
@@ -1483,6 +1509,8 @@
         private System.Windows.Forms.PictureBox imagenMarcaTeneborsa;
         private System.Windows.Forms.Label labelSubtAvada;
         private System.Windows.Forms.Label labelPalabraOculta;
+        private System.Windows.Forms.Label labelLapalabra;
+        private System.Windows.Forms.Label labelContadorOculto;
     }
 }
 
