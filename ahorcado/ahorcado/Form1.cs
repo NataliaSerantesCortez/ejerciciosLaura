@@ -104,7 +104,7 @@ namespace ahorcado
                     palabras.Add(line.Trim());
                 }
 
-                MessageBox.Show("Palabras cargadas con éxito.");
+                //MessageBox.Show("Palabras cargadas con éxito.");
             }
             else
             {
@@ -159,7 +159,7 @@ namespace ahorcado
             leerPalabras();           
 
             String palabraRandom = palabras[new Random().Next(0, palabras.Count)];
-            MessageBox.Show(palabraRandom);
+            //MessageBox.Show(palabraRandom);
             labelPalabraOculta.Text = palabraRandom;
             String palabraAdivinar = labelPalabraOculta.Text;
 
@@ -282,7 +282,7 @@ namespace ahorcado
         public void hacerInvisiblePanelPartida()
         {
             hacerInvisibleAbecedario();
-            hacerInvisibles(btnAbandonarPartida, imagenVoldemort, labelNodejes, labelHorrocruxes, 
+            hacerInvisibles(panelAbecedario, btnAbandonarPartida, imagenVoldemort, labelNodejes, labelHorrocruxes, 
                 fallosPermitidos, mensajes);
             hacerInvisibleHorrocruxes();
             hacerInvisibleHuecosYLetras();
@@ -291,6 +291,7 @@ namespace ahorcado
         public void hacerInvisibleHorrocruxes() 
         {
             hacerInvisibles(controlesHorrocruxes);
+            hacerInvisibles(panelHorrocruxes);
         }
 
         public void limpiarLetras()
@@ -312,7 +313,7 @@ namespace ahorcado
             fallosPermitidos.Text = "7";
             labelContadorOculto.Text = "0";
             hacerVisibleAbecedario();
-            hacerVisibles(btnAbandonarPartida, imagenVoldemort, labelNodejes, labelHorrocruxes, fallosPermitidos );
+            hacerVisibles(panelAbecedario, panelHorrocruxes, btnAbandonarPartida, imagenVoldemort, labelNodejes, labelHorrocruxes, fallosPermitidos);
         }
 
         public void hacerInvisiblePanelInicio()
@@ -330,25 +331,25 @@ namespace ahorcado
 
         public void hacerInvisiblePanelLogin()
         {
-            hacerInvisibles(labelUsuario, labelContrasenia, tfUsuario, tfPassword, imagenGafasLuna,
+            hacerInvisibles(panelLogin, labelUsuario, labelContrasenia, tfUsuario, tfPassword, imagenGafasLuna,
                 btnIniciarSesion, btnAtras);
         }
 
         public void hacerVisiblePanelLogin()
         {
-            hacerVisibles(labelUsuario, labelContrasenia, tfUsuario, tfPassword, imagenGafasLuna,
+            hacerVisibles(panelLogin, labelUsuario, labelContrasenia, tfUsuario, tfPassword, imagenGafasLuna,
                 btnIniciarSesion, btnAtras);
         }
 
         public void hacerInvisiblePanelAdmin()
         {
-            hacerInvisibles(imagenPluma, labelaniadir, labelAclaracion, labelNuevaPalabra, tfPalabra,
+            hacerInvisibles(panelAdmin, imagenPluma, labelaniadir, labelAclaracion, labelNuevaPalabra, tfPalabra,
                 btnCerrarSesion, btnAgregar);
         }
 
         public void hacerVisiblePanelAdmin()
         {
-            hacerVisibles(imagenPluma, labelaniadir, labelAclaracion, labelNuevaPalabra, tfPalabra,
+            hacerVisibles(panelAdmin, imagenPluma, labelaniadir, labelAclaracion, labelNuevaPalabra, tfPalabra,
                 btnCerrarSesion, btnAgregar);
         }
 
@@ -542,16 +543,16 @@ namespace ahorcado
         public void mostrarMensajePerdedor ( String palabra )
         {
             labelLapalabra.Text = "La palabra era " + palabra + ".";
-            hacerVisibles(imagenMarcaTeneborsa, labelAvada, labelSubtAvada, labelLapalabra , btnSalir);
+            hacerVisibles(panelMensaje, imagenMarcaTeneborsa, labelAvada, labelSubtAvada, labelLapalabra , btnSalir);
         }
         public void mostrarMensajeGanador()
         {
-            hacerVisibles(imagenTrofeo, labelFelicitaciones, labelSubtFelicitaciones, btnSalir);
+            hacerVisibles(panelMensaje, imagenTrofeo, labelFelicitaciones, labelSubtFelicitaciones, btnSalir);
         }
 
         public void hacerInvisiblePanelMensaje()
         {
-            hacerInvisibles(imagenTrofeo, labelFelicitaciones, labelSubtFelicitaciones, btnSalir,
+            hacerInvisibles(panelMensaje, imagenTrofeo, labelFelicitaciones, labelSubtFelicitaciones, btnSalir,
                 imagenMarcaTeneborsa, labelAvada, labelSubtAvada, labelLapalabra);
         }
 

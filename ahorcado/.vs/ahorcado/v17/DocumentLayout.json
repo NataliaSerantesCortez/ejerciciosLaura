@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\ahorcado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}|ahorcado\\ahorcado.csproj|C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}|ahorcado\\ahorcado.csproj|c:\\users\\natal\\source\\repos\\ejercicioslaura\\ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}|ahorcado\\ahorcado.csproj|solutionrelative:ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}|ahorcado\\ahorcado.csproj|c:\\users\\natal\\source\\repos\\ejercicioslaura\\ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}|ahorcado\\ahorcado.csproj|C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4DF6F83-AC49-4C85-87CA-CD02C5046AF4}|ahorcado\\ahorcado.csproj|solutionrelative:ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,7 +42,7 @@
               "RelativeDocumentMoniker": "ahorcado\\Form1.cs",
               "ToolTip": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\ahorcado\\ahorcado\\Form1.cs",
               "RelativeToolTip": "ahorcado\\Form1.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAwwLQAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAwKEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:46:55.139Z",
               "EditorCaption": ""

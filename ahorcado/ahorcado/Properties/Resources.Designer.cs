@@ -83,6 +83,16 @@ namespace ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap corona {
+            get {
+                object obj = ResourceManager.GetObject("corona", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap crown_king_queen_icon_161518 {
             get {
                 object obj = ResourceManager.GetObject("crown_king_queen_icon_161518", resourceCulture);
@@ -255,9 +265,29 @@ namespace ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap libro {
+            get {
+                object obj = ResourceManager.GetObject("libro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap relicario2 {
             get {
                 object obj = ResourceManager.GetObject("relicario2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap voldemort {
+            get {
+                object obj = ResourceManager.GetObject("voldemort", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

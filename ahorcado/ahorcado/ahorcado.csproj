@@ -130,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Archivos\harryPotter.txt" />
+    <None Include="Resources\voldemort.png" />
+    <None Include="Resources\libro.png" />
+    <None Include="Resources\corona.png" />
     <Content Include="Resources\harryPotter.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

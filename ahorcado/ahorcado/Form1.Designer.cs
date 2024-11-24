@@ -35,6 +35,9 @@
             this.nivelMedio = new System.Windows.Forms.RadioButton();
             this.nivelAvanzado = new System.Windows.Forms.RadioButton();
             this.nivelBasico = new System.Windows.Forms.RadioButton();
+            this.labelLapalabra = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.labelSubtFelicitaciones = new System.Windows.Forms.Label();
             this.btnIniciarPartida = new System.Windows.Forms.Button();
             this.letra2 = new System.Windows.Forms.Label();
             this.guion2 = new System.Windows.Forms.Label();
@@ -120,14 +123,16 @@
             this.btnAbandonarPartida = new System.Windows.Forms.Button();
             this.imagenTrofeo = new System.Windows.Forms.PictureBox();
             this.labelFelicitaciones = new System.Windows.Forms.Label();
-            this.labelSubtFelicitaciones = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.labelAvada = new System.Windows.Forms.Label();
             this.imagenMarcaTeneborsa = new System.Windows.Forms.PictureBox();
             this.labelSubtAvada = new System.Windows.Forms.Label();
             this.labelPalabraOculta = new System.Windows.Forms.Label();
-            this.labelLapalabra = new System.Windows.Forms.Label();
             this.labelContadorOculto = new System.Windows.Forms.Label();
+            this.panelMensaje = new System.Windows.Forms.Panel();
+            this.panelLogin = new System.Windows.Forms.Panel();
+            this.panelAdmin = new System.Windows.Forms.Panel();
+            this.panelHorrocruxes = new System.Windows.Forms.Panel();
+            this.panelAbecedario = new System.Windows.Forms.Panel();
             this.gbDificultad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPluma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGafasLuna)).BeginInit();
@@ -143,6 +148,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenLlave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenTrofeo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenMarcaTeneborsa)).BeginInit();
+            this.panelMensaje.SuspendLayout();
+            this.panelLogin.SuspendLayout();
+            this.panelAdmin.SuspendLayout();
+            this.panelHorrocruxes.SuspendLayout();
+            this.panelAbecedario.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelAhorcado
@@ -216,6 +226,41 @@
             this.nivelBasico.UseVisualStyleBackColor = true;
             this.nivelBasico.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // labelLapalabra
+            // 
+            this.labelLapalabra.AutoSize = true;
+            this.labelLapalabra.Location = new System.Drawing.Point(40, 84);
+            this.labelLapalabra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLapalabra.Name = "labelLapalabra";
+            this.labelLapalabra.Size = new System.Drawing.Size(90, 23);
+            this.labelLapalabra.TabIndex = 141;
+            this.labelLapalabra.Text = "La palabra era";
+            this.labelLapalabra.Visible = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.Location = new System.Drawing.Point(64, 112);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(104, 32);
+            this.btnSalir.TabIndex = 136;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Visible = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // labelSubtFelicitaciones
+            // 
+            this.labelSubtFelicitaciones.AutoSize = true;
+            this.labelSubtFelicitaciones.Location = new System.Drawing.Point(40, 84);
+            this.labelSubtFelicitaciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSubtFelicitaciones.Name = "labelSubtFelicitaciones";
+            this.labelSubtFelicitaciones.Size = new System.Drawing.Size(161, 23);
+            this.labelSubtFelicitaciones.TabIndex = 134;
+            this.labelSubtFelicitaciones.Text = "Has derrotado a Voldemort.";
+            this.labelSubtFelicitaciones.Visible = false;
+            // 
             // btnIniciarPartida
             // 
             this.btnIniciarPartida.BackColor = System.Drawing.Color.DarkOrange;
@@ -232,7 +277,7 @@
             // 
             this.letra2.AutoSize = true;
             this.letra2.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra2.Location = new System.Drawing.Point(136, 440);
+            this.letra2.Location = new System.Drawing.Point(152, 48);
             this.letra2.Name = "letra2";
             this.letra2.Size = new System.Drawing.Size(0, 24);
             this.letra2.TabIndex = 6;
@@ -241,7 +286,7 @@
             // 
             this.guion2.AutoSize = true;
             this.guion2.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion2.Location = new System.Drawing.Point(128, 432);
+            this.guion2.Location = new System.Drawing.Point(144, 40);
             this.guion2.Name = "guion2";
             this.guion2.Size = new System.Drawing.Size(38, 43);
             this.guion2.TabIndex = 7;
@@ -253,7 +298,7 @@
             // 
             this.letra3.AutoSize = true;
             this.letra3.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra3.Location = new System.Drawing.Point(184, 440);
+            this.letra3.Location = new System.Drawing.Point(200, 48);
             this.letra3.Name = "letra3";
             this.letra3.Size = new System.Drawing.Size(0, 24);
             this.letra3.TabIndex = 24;
@@ -262,7 +307,7 @@
             // 
             this.guion3.AutoSize = true;
             this.guion3.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion3.Location = new System.Drawing.Point(176, 432);
+            this.guion3.Location = new System.Drawing.Point(192, 40);
             this.guion3.Name = "guion3";
             this.guion3.Size = new System.Drawing.Size(38, 43);
             this.guion3.TabIndex = 25;
@@ -273,7 +318,7 @@
             // 
             this.letra5.AutoSize = true;
             this.letra5.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra5.Location = new System.Drawing.Point(280, 440);
+            this.letra5.Location = new System.Drawing.Point(296, 48);
             this.letra5.Name = "letra5";
             this.letra5.Size = new System.Drawing.Size(0, 24);
             this.letra5.TabIndex = 28;
@@ -282,7 +327,7 @@
             // 
             this.guion5.AutoSize = true;
             this.guion5.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion5.Location = new System.Drawing.Point(272, 432);
+            this.guion5.Location = new System.Drawing.Point(288, 40);
             this.guion5.Name = "guion5";
             this.guion5.Size = new System.Drawing.Size(38, 43);
             this.guion5.TabIndex = 29;
@@ -293,7 +338,7 @@
             // 
             this.letra4.AutoSize = true;
             this.letra4.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra4.Location = new System.Drawing.Point(232, 440);
+            this.letra4.Location = new System.Drawing.Point(248, 48);
             this.letra4.Name = "letra4";
             this.letra4.Size = new System.Drawing.Size(0, 24);
             this.letra4.TabIndex = 26;
@@ -302,7 +347,7 @@
             // 
             this.guion4.AutoSize = true;
             this.guion4.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion4.Location = new System.Drawing.Point(224, 432);
+            this.guion4.Location = new System.Drawing.Point(240, 40);
             this.guion4.Name = "guion4";
             this.guion4.Size = new System.Drawing.Size(38, 43);
             this.guion4.TabIndex = 27;
@@ -313,7 +358,7 @@
             // 
             this.letra9.AutoSize = true;
             this.letra9.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra9.Location = new System.Drawing.Point(472, 440);
+            this.letra9.Location = new System.Drawing.Point(488, 48);
             this.letra9.Name = "letra9";
             this.letra9.Size = new System.Drawing.Size(0, 24);
             this.letra9.TabIndex = 36;
@@ -322,7 +367,7 @@
             // 
             this.guion9.AutoSize = true;
             this.guion9.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion9.Location = new System.Drawing.Point(464, 432);
+            this.guion9.Location = new System.Drawing.Point(480, 40);
             this.guion9.Name = "guion9";
             this.guion9.Size = new System.Drawing.Size(38, 43);
             this.guion9.TabIndex = 37;
@@ -333,7 +378,7 @@
             // 
             this.letra8.AutoSize = true;
             this.letra8.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra8.Location = new System.Drawing.Point(424, 440);
+            this.letra8.Location = new System.Drawing.Point(440, 48);
             this.letra8.Name = "letra8";
             this.letra8.Size = new System.Drawing.Size(0, 24);
             this.letra8.TabIndex = 34;
@@ -342,7 +387,7 @@
             // 
             this.guion8.AutoSize = true;
             this.guion8.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion8.Location = new System.Drawing.Point(416, 432);
+            this.guion8.Location = new System.Drawing.Point(432, 40);
             this.guion8.Name = "guion8";
             this.guion8.Size = new System.Drawing.Size(38, 43);
             this.guion8.TabIndex = 35;
@@ -353,7 +398,7 @@
             // 
             this.letra7.AutoSize = true;
             this.letra7.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra7.Location = new System.Drawing.Point(376, 440);
+            this.letra7.Location = new System.Drawing.Point(392, 48);
             this.letra7.Name = "letra7";
             this.letra7.Size = new System.Drawing.Size(0, 24);
             this.letra7.TabIndex = 32;
@@ -362,7 +407,7 @@
             // 
             this.guion7.AutoSize = true;
             this.guion7.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion7.Location = new System.Drawing.Point(368, 432);
+            this.guion7.Location = new System.Drawing.Point(384, 40);
             this.guion7.Name = "guion7";
             this.guion7.Size = new System.Drawing.Size(38, 43);
             this.guion7.TabIndex = 33;
@@ -373,7 +418,7 @@
             // 
             this.letra6.AutoSize = true;
             this.letra6.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra6.Location = new System.Drawing.Point(328, 440);
+            this.letra6.Location = new System.Drawing.Point(344, 48);
             this.letra6.Name = "letra6";
             this.letra6.Size = new System.Drawing.Size(0, 24);
             this.letra6.TabIndex = 30;
@@ -382,7 +427,7 @@
             // 
             this.guion6.AutoSize = true;
             this.guion6.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion6.Location = new System.Drawing.Point(320, 432);
+            this.guion6.Location = new System.Drawing.Point(336, 40);
             this.guion6.Name = "guion6";
             this.guion6.Size = new System.Drawing.Size(38, 43);
             this.guion6.TabIndex = 31;
@@ -393,7 +438,7 @@
             // 
             this.letra0.AutoSize = true;
             this.letra0.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra0.Location = new System.Drawing.Point(40, 440);
+            this.letra0.Location = new System.Drawing.Point(56, 48);
             this.letra0.Name = "letra0";
             this.letra0.Size = new System.Drawing.Size(0, 24);
             this.letra0.TabIndex = 44;
@@ -402,7 +447,7 @@
             // 
             this.guion0.AutoSize = true;
             this.guion0.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion0.Location = new System.Drawing.Point(32, 432);
+            this.guion0.Location = new System.Drawing.Point(48, 40);
             this.guion0.Name = "guion0";
             this.guion0.Size = new System.Drawing.Size(38, 43);
             this.guion0.TabIndex = 45;
@@ -413,7 +458,7 @@
             // 
             this.letra12.AutoSize = true;
             this.letra12.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra12.Location = new System.Drawing.Point(616, 440);
+            this.letra12.Location = new System.Drawing.Point(632, 48);
             this.letra12.Name = "letra12";
             this.letra12.Size = new System.Drawing.Size(0, 24);
             this.letra12.TabIndex = 42;
@@ -422,7 +467,7 @@
             // 
             this.guion12.AutoSize = true;
             this.guion12.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion12.Location = new System.Drawing.Point(608, 432);
+            this.guion12.Location = new System.Drawing.Point(624, 40);
             this.guion12.Name = "guion12";
             this.guion12.Size = new System.Drawing.Size(38, 43);
             this.guion12.TabIndex = 43;
@@ -433,7 +478,7 @@
             // 
             this.letra11.AutoSize = true;
             this.letra11.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra11.Location = new System.Drawing.Point(568, 440);
+            this.letra11.Location = new System.Drawing.Point(584, 48);
             this.letra11.Name = "letra11";
             this.letra11.Size = new System.Drawing.Size(0, 24);
             this.letra11.TabIndex = 40;
@@ -442,7 +487,7 @@
             // 
             this.guion11.AutoSize = true;
             this.guion11.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion11.Location = new System.Drawing.Point(560, 432);
+            this.guion11.Location = new System.Drawing.Point(576, 40);
             this.guion11.Name = "guion11";
             this.guion11.Size = new System.Drawing.Size(38, 43);
             this.guion11.TabIndex = 41;
@@ -453,7 +498,7 @@
             // 
             this.letra10.AutoSize = true;
             this.letra10.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra10.Location = new System.Drawing.Point(520, 440);
+            this.letra10.Location = new System.Drawing.Point(536, 48);
             this.letra10.Name = "letra10";
             this.letra10.Size = new System.Drawing.Size(0, 24);
             this.letra10.TabIndex = 38;
@@ -462,7 +507,7 @@
             // 
             this.guion10.AutoSize = true;
             this.guion10.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion10.Location = new System.Drawing.Point(512, 432);
+            this.guion10.Location = new System.Drawing.Point(528, 40);
             this.guion10.Name = "guion10";
             this.guion10.Size = new System.Drawing.Size(38, 43);
             this.guion10.TabIndex = 39;
@@ -473,7 +518,7 @@
             // 
             this.letra1.AutoSize = true;
             this.letra1.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letra1.Location = new System.Drawing.Point(88, 440);
+            this.letra1.Location = new System.Drawing.Point(104, 48);
             this.letra1.Name = "letra1";
             this.letra1.Size = new System.Drawing.Size(0, 24);
             this.letra1.TabIndex = 46;
@@ -482,7 +527,7 @@
             // 
             this.guion1.AutoSize = true;
             this.guion1.Font = new System.Drawing.Font("Chiller", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guion1.Location = new System.Drawing.Point(80, 432);
+            this.guion1.Location = new System.Drawing.Point(96, 40);
             this.guion1.Name = "guion1";
             this.guion1.Size = new System.Drawing.Size(38, 43);
             this.guion1.TabIndex = 47;
@@ -492,7 +537,7 @@
             // mensajes
             // 
             this.mensajes.AutoSize = true;
-            this.mensajes.Location = new System.Drawing.Point(32, 664);
+            this.mensajes.Location = new System.Drawing.Point(136, 248);
             this.mensajes.Name = "mensajes";
             this.mensajes.Size = new System.Drawing.Size(143, 23);
             this.mensajes.TabIndex = 75;
@@ -502,7 +547,7 @@
             // labelNodejes
             // 
             this.labelNodejes.AutoSize = true;
-            this.labelNodejes.Location = new System.Drawing.Point(856, 32);
+            this.labelNodejes.Location = new System.Drawing.Point(32, 8);
             this.labelNodejes.Name = "labelNodejes";
             this.labelNodejes.Size = new System.Drawing.Size(243, 23);
             this.labelNodejes.TabIndex = 76;
@@ -514,7 +559,7 @@
             this.btnLetraA.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraA.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraA.Location = new System.Drawing.Point(128, 520);
+            this.btnLetraA.Location = new System.Drawing.Point(144, 104);
             this.btnLetraA.Name = "btnLetraA";
             this.btnLetraA.Size = new System.Drawing.Size(35, 32);
             this.btnLetraA.TabIndex = 80;
@@ -528,7 +573,7 @@
             this.btnLetraB.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraB.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraB.Location = new System.Drawing.Point(176, 520);
+            this.btnLetraB.Location = new System.Drawing.Point(192, 104);
             this.btnLetraB.Name = "btnLetraB";
             this.btnLetraB.Size = new System.Drawing.Size(35, 32);
             this.btnLetraB.TabIndex = 81;
@@ -542,7 +587,7 @@
             this.btnLetraC.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraC.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraC.Location = new System.Drawing.Point(224, 520);
+            this.btnLetraC.Location = new System.Drawing.Point(240, 104);
             this.btnLetraC.Name = "btnLetraC";
             this.btnLetraC.Size = new System.Drawing.Size(35, 32);
             this.btnLetraC.TabIndex = 82;
@@ -556,7 +601,7 @@
             this.btnLetraD.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraD.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraD.Location = new System.Drawing.Point(272, 520);
+            this.btnLetraD.Location = new System.Drawing.Point(288, 104);
             this.btnLetraD.Name = "btnLetraD";
             this.btnLetraD.Size = new System.Drawing.Size(35, 32);
             this.btnLetraD.TabIndex = 83;
@@ -570,7 +615,7 @@
             this.btnLetraH.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraH.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraH.Location = new System.Drawing.Point(464, 520);
+            this.btnLetraH.Location = new System.Drawing.Point(480, 104);
             this.btnLetraH.Name = "btnLetraH";
             this.btnLetraH.Size = new System.Drawing.Size(35, 32);
             this.btnLetraH.TabIndex = 87;
@@ -584,7 +629,7 @@
             this.btnLetraG.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraG.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraG.Location = new System.Drawing.Point(416, 520);
+            this.btnLetraG.Location = new System.Drawing.Point(432, 104);
             this.btnLetraG.Name = "btnLetraG";
             this.btnLetraG.Size = new System.Drawing.Size(35, 32);
             this.btnLetraG.TabIndex = 86;
@@ -598,7 +643,7 @@
             this.btnLetraF.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraF.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraF.Location = new System.Drawing.Point(368, 520);
+            this.btnLetraF.Location = new System.Drawing.Point(384, 104);
             this.btnLetraF.Name = "btnLetraF";
             this.btnLetraF.Size = new System.Drawing.Size(35, 32);
             this.btnLetraF.TabIndex = 85;
@@ -612,7 +657,7 @@
             this.btnLetraE.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraE.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraE.Location = new System.Drawing.Point(320, 520);
+            this.btnLetraE.Location = new System.Drawing.Point(336, 104);
             this.btnLetraE.Name = "btnLetraE";
             this.btnLetraE.Size = new System.Drawing.Size(35, 32);
             this.btnLetraE.TabIndex = 84;
@@ -626,7 +671,7 @@
             this.btnLetraI.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraI.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraI.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraI.Location = new System.Drawing.Point(512, 520);
+            this.btnLetraI.Location = new System.Drawing.Point(528, 104);
             this.btnLetraI.Name = "btnLetraI";
             this.btnLetraI.Size = new System.Drawing.Size(35, 32);
             this.btnLetraI.TabIndex = 88;
@@ -640,7 +685,7 @@
             this.btnLetraQ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraQ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraQ.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraQ.Location = new System.Drawing.Point(512, 560);
+            this.btnLetraQ.Location = new System.Drawing.Point(528, 144);
             this.btnLetraQ.Name = "btnLetraQ";
             this.btnLetraQ.Size = new System.Drawing.Size(35, 32);
             this.btnLetraQ.TabIndex = 97;
@@ -654,7 +699,7 @@
             this.btnLetraP.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraP.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraP.Location = new System.Drawing.Point(464, 560);
+            this.btnLetraP.Location = new System.Drawing.Point(480, 144);
             this.btnLetraP.Name = "btnLetraP";
             this.btnLetraP.Size = new System.Drawing.Size(35, 32);
             this.btnLetraP.TabIndex = 96;
@@ -668,7 +713,7 @@
             this.btnLetraO.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraO.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraO.Location = new System.Drawing.Point(416, 560);
+            this.btnLetraO.Location = new System.Drawing.Point(432, 144);
             this.btnLetraO.Name = "btnLetraO";
             this.btnLetraO.Size = new System.Drawing.Size(35, 32);
             this.btnLetraO.TabIndex = 95;
@@ -682,7 +727,7 @@
             this.btnLetraGN.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraGN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraGN.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraGN.Location = new System.Drawing.Point(368, 560);
+            this.btnLetraGN.Location = new System.Drawing.Point(384, 144);
             this.btnLetraGN.Name = "btnLetraGN";
             this.btnLetraGN.Size = new System.Drawing.Size(35, 32);
             this.btnLetraGN.TabIndex = 94;
@@ -696,7 +741,7 @@
             this.btnLetraN.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraN.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraN.Location = new System.Drawing.Point(320, 560);
+            this.btnLetraN.Location = new System.Drawing.Point(336, 144);
             this.btnLetraN.Name = "btnLetraN";
             this.btnLetraN.Size = new System.Drawing.Size(35, 32);
             this.btnLetraN.TabIndex = 93;
@@ -710,7 +755,7 @@
             this.btnLetraM.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraM.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraM.Location = new System.Drawing.Point(272, 560);
+            this.btnLetraM.Location = new System.Drawing.Point(288, 144);
             this.btnLetraM.Name = "btnLetraM";
             this.btnLetraM.Size = new System.Drawing.Size(35, 32);
             this.btnLetraM.TabIndex = 92;
@@ -724,7 +769,7 @@
             this.btnLetraL.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraL.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraL.Location = new System.Drawing.Point(224, 560);
+            this.btnLetraL.Location = new System.Drawing.Point(240, 144);
             this.btnLetraL.Name = "btnLetraL";
             this.btnLetraL.Size = new System.Drawing.Size(35, 32);
             this.btnLetraL.TabIndex = 91;
@@ -738,7 +783,7 @@
             this.btnLetraK.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraK.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraK.Location = new System.Drawing.Point(176, 560);
+            this.btnLetraK.Location = new System.Drawing.Point(192, 144);
             this.btnLetraK.Name = "btnLetraK";
             this.btnLetraK.Size = new System.Drawing.Size(35, 32);
             this.btnLetraK.TabIndex = 90;
@@ -752,7 +797,7 @@
             this.btnLetraJ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraJ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraJ.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraJ.Location = new System.Drawing.Point(128, 560);
+            this.btnLetraJ.Location = new System.Drawing.Point(144, 144);
             this.btnLetraJ.Name = "btnLetraJ";
             this.btnLetraJ.Size = new System.Drawing.Size(35, 32);
             this.btnLetraJ.TabIndex = 89;
@@ -766,7 +811,7 @@
             this.btnLetraZ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraZ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraZ.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraZ.Location = new System.Drawing.Point(512, 600);
+            this.btnLetraZ.Location = new System.Drawing.Point(528, 184);
             this.btnLetraZ.Name = "btnLetraZ";
             this.btnLetraZ.Size = new System.Drawing.Size(35, 32);
             this.btnLetraZ.TabIndex = 106;
@@ -780,7 +825,7 @@
             this.btnLetraY.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraY.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraY.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraY.Location = new System.Drawing.Point(464, 600);
+            this.btnLetraY.Location = new System.Drawing.Point(480, 184);
             this.btnLetraY.Name = "btnLetraY";
             this.btnLetraY.Size = new System.Drawing.Size(35, 32);
             this.btnLetraY.TabIndex = 105;
@@ -794,7 +839,7 @@
             this.btnLetraX.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraX.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraX.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraX.Location = new System.Drawing.Point(416, 600);
+            this.btnLetraX.Location = new System.Drawing.Point(432, 184);
             this.btnLetraX.Name = "btnLetraX";
             this.btnLetraX.Size = new System.Drawing.Size(35, 32);
             this.btnLetraX.TabIndex = 104;
@@ -808,7 +853,7 @@
             this.btnLetraW.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraW.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraW.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraW.Location = new System.Drawing.Point(368, 600);
+            this.btnLetraW.Location = new System.Drawing.Point(384, 184);
             this.btnLetraW.Name = "btnLetraW";
             this.btnLetraW.Size = new System.Drawing.Size(35, 32);
             this.btnLetraW.TabIndex = 103;
@@ -822,7 +867,7 @@
             this.btnLetraV.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraV.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraV.Location = new System.Drawing.Point(320, 600);
+            this.btnLetraV.Location = new System.Drawing.Point(336, 184);
             this.btnLetraV.Name = "btnLetraV";
             this.btnLetraV.Size = new System.Drawing.Size(35, 32);
             this.btnLetraV.TabIndex = 102;
@@ -836,7 +881,7 @@
             this.btnLetraU.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraU.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraU.Location = new System.Drawing.Point(272, 600);
+            this.btnLetraU.Location = new System.Drawing.Point(288, 184);
             this.btnLetraU.Name = "btnLetraU";
             this.btnLetraU.Size = new System.Drawing.Size(35, 32);
             this.btnLetraU.TabIndex = 101;
@@ -850,7 +895,7 @@
             this.btnLetraT.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraT.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraT.Location = new System.Drawing.Point(224, 600);
+            this.btnLetraT.Location = new System.Drawing.Point(240, 184);
             this.btnLetraT.Name = "btnLetraT";
             this.btnLetraT.Size = new System.Drawing.Size(35, 32);
             this.btnLetraT.TabIndex = 100;
@@ -864,7 +909,7 @@
             this.btnLetraS.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraS.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraS.Location = new System.Drawing.Point(176, 600);
+            this.btnLetraS.Location = new System.Drawing.Point(192, 184);
             this.btnLetraS.Name = "btnLetraS";
             this.btnLetraS.Size = new System.Drawing.Size(35, 32);
             this.btnLetraS.TabIndex = 99;
@@ -878,7 +923,7 @@
             this.btnLetraR.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLetraR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLetraR.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLetraR.Location = new System.Drawing.Point(128, 600);
+            this.btnLetraR.Location = new System.Drawing.Point(144, 184);
             this.btnLetraR.Name = "btnLetraR";
             this.btnLetraR.Size = new System.Drawing.Size(35, 32);
             this.btnLetraR.TabIndex = 98;
@@ -891,7 +936,7 @@
             // 
             this.fallosPermitidos.AutoSize = true;
             this.fallosPermitidos.Font = new System.Drawing.Font("Chiller", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fallosPermitidos.Location = new System.Drawing.Point(1112, 32);
+            this.fallosPermitidos.Location = new System.Drawing.Point(288, 8);
             this.fallosPermitidos.Name = "fallosPermitidos";
             this.fallosPermitidos.Size = new System.Drawing.Size(22, 27);
             this.fallosPermitidos.TabIndex = 107;
@@ -901,7 +946,7 @@
             // labelHorrocruxes
             // 
             this.labelHorrocruxes.AutoSize = true;
-            this.labelHorrocruxes.Location = new System.Drawing.Point(1152, 32);
+            this.labelHorrocruxes.Location = new System.Drawing.Point(328, 8);
             this.labelHorrocruxes.Name = "labelHorrocruxes";
             this.labelHorrocruxes.Size = new System.Drawing.Size(78, 23);
             this.labelHorrocruxes.TabIndex = 109;
@@ -911,7 +956,7 @@
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Location = new System.Drawing.Point(840, 288);
+            this.labelUsuario.Location = new System.Drawing.Point(32, 24);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(49, 23);
             this.labelUsuario.TabIndex = 117;
@@ -921,7 +966,7 @@
             // labelContrasenia
             // 
             this.labelContrasenia.AutoSize = true;
-            this.labelContrasenia.Location = new System.Drawing.Point(840, 336);
+            this.labelContrasenia.Location = new System.Drawing.Point(32, 72);
             this.labelContrasenia.Name = "labelContrasenia";
             this.labelContrasenia.Size = new System.Drawing.Size(74, 23);
             this.labelContrasenia.TabIndex = 118;
@@ -930,7 +975,7 @@
             // 
             // tfUsuario
             // 
-            this.tfUsuario.Location = new System.Drawing.Point(936, 280);
+            this.tfUsuario.Location = new System.Drawing.Point(120, 24);
             this.tfUsuario.Name = "tfUsuario";
             this.tfUsuario.Size = new System.Drawing.Size(100, 29);
             this.tfUsuario.TabIndex = 119;
@@ -938,7 +983,7 @@
             // 
             // tfPassword
             // 
-            this.tfPassword.Location = new System.Drawing.Point(936, 328);
+            this.tfPassword.Location = new System.Drawing.Point(120, 64);
             this.tfPassword.Name = "tfPassword";
             this.tfPassword.PasswordChar = '*';
             this.tfPassword.Size = new System.Drawing.Size(100, 29);
@@ -949,7 +994,7 @@
             // 
             this.labelaniadir.AutoSize = true;
             this.labelaniadir.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelaniadir.Location = new System.Drawing.Point(840, 480);
+            this.labelaniadir.Location = new System.Drawing.Point(24, 16);
             this.labelaniadir.Name = "labelaniadir";
             this.labelaniadir.Size = new System.Drawing.Size(283, 31);
             this.labelaniadir.TabIndex = 122;
@@ -959,7 +1004,7 @@
             // labelNuevaPalabra
             // 
             this.labelNuevaPalabra.AutoSize = true;
-            this.labelNuevaPalabra.Location = new System.Drawing.Point(840, 536);
+            this.labelNuevaPalabra.Location = new System.Drawing.Point(32, 80);
             this.labelNuevaPalabra.Name = "labelNuevaPalabra";
             this.labelNuevaPalabra.Size = new System.Drawing.Size(93, 23);
             this.labelNuevaPalabra.TabIndex = 123;
@@ -968,7 +1013,7 @@
             // 
             // tfPalabra
             // 
-            this.tfPalabra.Location = new System.Drawing.Point(944, 528);
+            this.tfPalabra.Location = new System.Drawing.Point(144, 72);
             this.tfPalabra.Name = "tfPalabra";
             this.tfPalabra.Size = new System.Drawing.Size(100, 29);
             this.tfPalabra.TabIndex = 124;
@@ -978,7 +1023,7 @@
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.Color.DarkOrange;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(984, 408);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(176, 128);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(104, 32);
             this.btnIniciarSesion.TabIndex = 125;
@@ -991,7 +1036,7 @@
             // 
             this.btnAtras.BackColor = System.Drawing.Color.DarkOrange;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAtras.Location = new System.Drawing.Point(840, 408);
+            this.btnAtras.Location = new System.Drawing.Point(40, 128);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(104, 32);
             this.btnAtras.TabIndex = 126;
@@ -1004,7 +1049,7 @@
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar.Location = new System.Drawing.Point(984, 608);
+            this.btnAgregar.Location = new System.Drawing.Point(208, 136);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(104, 32);
             this.btnAgregar.TabIndex = 127;
@@ -1017,7 +1062,7 @@
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.DarkOrange;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(840, 608);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(72, 136);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(104, 32);
             this.btnCerrarSesion.TabIndex = 128;
@@ -1030,7 +1075,7 @@
             // 
             this.labelAclaracion.AutoSize = true;
             this.labelAclaracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelAclaracion.Location = new System.Drawing.Point(840, 664);
+            this.labelAclaracion.Location = new System.Drawing.Point(32, 200);
             this.labelAclaracion.Name = "labelAclaracion";
             this.labelAclaracion.Size = new System.Drawing.Size(331, 23);
             this.labelAclaracion.TabIndex = 129;
@@ -1040,7 +1085,7 @@
             // imagenPluma
             // 
             this.imagenPluma.Image = ((System.Drawing.Image)(resources.GetObject("imagenPluma.Image")));
-            this.imagenPluma.Location = new System.Drawing.Point(1144, 472);
+            this.imagenPluma.Location = new System.Drawing.Point(328, 32);
             this.imagenPluma.Name = "imagenPluma";
             this.imagenPluma.Size = new System.Drawing.Size(64, 64);
             this.imagenPluma.TabIndex = 130;
@@ -1050,7 +1095,7 @@
             // imagenGafasLuna
             // 
             this.imagenGafasLuna.Image = ((System.Drawing.Image)(resources.GetObject("imagenGafasLuna.Image")));
-            this.imagenGafasLuna.Location = new System.Drawing.Point(1056, 320);
+            this.imagenGafasLuna.Location = new System.Drawing.Point(232, 56);
             this.imagenGafasLuna.Name = "imagenGafasLuna";
             this.imagenGafasLuna.Size = new System.Drawing.Size(32, 32);
             this.imagenGafasLuna.TabIndex = 121;
@@ -1061,7 +1106,7 @@
             // imagenHorrocrux7
             // 
             this.imagenHorrocrux7.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux7.Image")));
-            this.imagenHorrocrux7.Location = new System.Drawing.Point(1120, 136);
+            this.imagenHorrocrux7.Location = new System.Drawing.Point(296, 112);
             this.imagenHorrocrux7.Name = "imagenHorrocrux7";
             this.imagenHorrocrux7.Size = new System.Drawing.Size(56, 48);
             this.imagenHorrocrux7.TabIndex = 116;
@@ -1071,7 +1116,7 @@
             // imagenHorrocrux4
             // 
             this.imagenHorrocrux4.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux4.Image")));
-            this.imagenHorrocrux4.Location = new System.Drawing.Point(1152, 64);
+            this.imagenHorrocrux4.Location = new System.Drawing.Point(328, 40);
             this.imagenHorrocrux4.Name = "imagenHorrocrux4";
             this.imagenHorrocrux4.Size = new System.Drawing.Size(56, 56);
             this.imagenHorrocrux4.TabIndex = 115;
@@ -1081,7 +1126,7 @@
             // imagenHorrocrux6
             // 
             this.imagenHorrocrux6.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux6.Image")));
-            this.imagenHorrocrux6.Location = new System.Drawing.Point(1048, 136);
+            this.imagenHorrocrux6.Location = new System.Drawing.Point(224, 112);
             this.imagenHorrocrux6.Name = "imagenHorrocrux6";
             this.imagenHorrocrux6.Size = new System.Drawing.Size(56, 50);
             this.imagenHorrocrux6.TabIndex = 114;
@@ -1090,8 +1135,8 @@
             // 
             // imagenHorrocrux5
             // 
-            this.imagenHorrocrux5.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux5.Image")));
-            this.imagenHorrocrux5.Location = new System.Drawing.Point(976, 136);
+            this.imagenHorrocrux5.Image = global::ahorcado.Properties.Resources.corona;
+            this.imagenHorrocrux5.Location = new System.Drawing.Point(152, 112);
             this.imagenHorrocrux5.Name = "imagenHorrocrux5";
             this.imagenHorrocrux5.Size = new System.Drawing.Size(56, 50);
             this.imagenHorrocrux5.TabIndex = 113;
@@ -1101,7 +1146,7 @@
             // imagenHorrocrux3
             // 
             this.imagenHorrocrux3.Image = global::ahorcado.Properties.Resources.relicario2;
-            this.imagenHorrocrux3.Location = new System.Drawing.Point(1080, 72);
+            this.imagenHorrocrux3.Location = new System.Drawing.Point(256, 48);
             this.imagenHorrocrux3.Name = "imagenHorrocrux3";
             this.imagenHorrocrux3.Size = new System.Drawing.Size(56, 50);
             this.imagenHorrocrux3.TabIndex = 112;
@@ -1111,7 +1156,7 @@
             // imagenHorrocrux2
             // 
             this.imagenHorrocrux2.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux2.Image")));
-            this.imagenHorrocrux2.Location = new System.Drawing.Point(1008, 72);
+            this.imagenHorrocrux2.Location = new System.Drawing.Point(184, 48);
             this.imagenHorrocrux2.Name = "imagenHorrocrux2";
             this.imagenHorrocrux2.Size = new System.Drawing.Size(56, 50);
             this.imagenHorrocrux2.TabIndex = 111;
@@ -1120,8 +1165,8 @@
             // 
             // imagenVoldemort
             // 
-            this.imagenVoldemort.Image = ((System.Drawing.Image)(resources.GetObject("imagenVoldemort.Image")));
-            this.imagenVoldemort.Location = new System.Drawing.Point(840, 88);
+            this.imagenVoldemort.Image = global::ahorcado.Properties.Resources.voldemort;
+            this.imagenVoldemort.Location = new System.Drawing.Point(16, 64);
             this.imagenVoldemort.Name = "imagenVoldemort";
             this.imagenVoldemort.Size = new System.Drawing.Size(64, 64);
             this.imagenVoldemort.TabIndex = 110;
@@ -1130,8 +1175,8 @@
             // 
             // imagenHorrocrux1
             // 
-            this.imagenHorrocrux1.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux1.Image")));
-            this.imagenHorrocrux1.Location = new System.Drawing.Point(936, 72);
+            this.imagenHorrocrux1.Image = global::ahorcado.Properties.Resources.libro;
+            this.imagenHorrocrux1.Location = new System.Drawing.Point(112, 48);
             this.imagenHorrocrux1.Name = "imagenHorrocrux1";
             this.imagenHorrocrux1.Size = new System.Drawing.Size(56, 50);
             this.imagenHorrocrux1.TabIndex = 108;
@@ -1163,7 +1208,7 @@
             // 
             this.btnAbandonarPartida.BackColor = System.Drawing.Color.DarkOrange;
             this.btnAbandonarPartida.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAbandonarPartida.Location = new System.Drawing.Point(488, 664);
+            this.btnAbandonarPartida.Location = new System.Drawing.Point(536, 240);
             this.btnAbandonarPartida.Name = "btnAbandonarPartida";
             this.btnAbandonarPartida.Size = new System.Drawing.Size(128, 40);
             this.btnAbandonarPartida.TabIndex = 131;
@@ -1175,7 +1220,7 @@
             // imagenTrofeo
             // 
             this.imagenTrofeo.Image = ((System.Drawing.Image)(resources.GetObject("imagenTrofeo.Image")));
-            this.imagenTrofeo.Location = new System.Drawing.Point(568, 192);
+            this.imagenTrofeo.Location = new System.Drawing.Point(16, 32);
             this.imagenTrofeo.Name = "imagenTrofeo";
             this.imagenTrofeo.Size = new System.Drawing.Size(48, 50);
             this.imagenTrofeo.TabIndex = 132;
@@ -1186,7 +1231,7 @@
             // 
             this.labelFelicitaciones.AutoSize = true;
             this.labelFelicitaciones.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFelicitaciones.Location = new System.Drawing.Point(616, 192);
+            this.labelFelicitaciones.Location = new System.Drawing.Point(80, 24);
             this.labelFelicitaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFelicitaciones.Name = "labelFelicitaciones";
             this.labelFelicitaciones.Size = new System.Drawing.Size(128, 31);
@@ -1194,35 +1239,11 @@
             this.labelFelicitaciones.Text = "¡Felicitaciones!";
             this.labelFelicitaciones.Visible = false;
             // 
-            // labelSubtFelicitaciones
-            // 
-            this.labelSubtFelicitaciones.AutoSize = true;
-            this.labelSubtFelicitaciones.Location = new System.Drawing.Point(592, 248);
-            this.labelSubtFelicitaciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelSubtFelicitaciones.Name = "labelSubtFelicitaciones";
-            this.labelSubtFelicitaciones.Size = new System.Drawing.Size(161, 23);
-            this.labelSubtFelicitaciones.TabIndex = 134;
-            this.labelSubtFelicitaciones.Text = "Has derrotado a Voldemort.";
-            this.labelSubtFelicitaciones.Visible = false;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.Location = new System.Drawing.Point(616, 280);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(104, 32);
-            this.btnSalir.TabIndex = 136;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Visible = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // labelAvada
             // 
             this.labelAvada.AutoSize = true;
             this.labelAvada.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAvada.Location = new System.Drawing.Point(616, 192);
+            this.labelAvada.Location = new System.Drawing.Point(72, 24);
             this.labelAvada.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAvada.Name = "labelAvada";
             this.labelAvada.Size = new System.Drawing.Size(142, 31);
@@ -1233,7 +1254,7 @@
             // imagenMarcaTeneborsa
             // 
             this.imagenMarcaTeneborsa.Image = ((System.Drawing.Image)(resources.GetObject("imagenMarcaTeneborsa.Image")));
-            this.imagenMarcaTeneborsa.Location = new System.Drawing.Point(568, 192);
+            this.imagenMarcaTeneborsa.Location = new System.Drawing.Point(16, 32);
             this.imagenMarcaTeneborsa.Name = "imagenMarcaTeneborsa";
             this.imagenMarcaTeneborsa.Size = new System.Drawing.Size(48, 50);
             this.imagenMarcaTeneborsa.TabIndex = 138;
@@ -1243,7 +1264,7 @@
             // labelSubtAvada
             // 
             this.labelSubtAvada.AutoSize = true;
-            this.labelSubtAvada.Location = new System.Drawing.Point(624, 224);
+            this.labelSubtAvada.Location = new System.Drawing.Point(80, 56);
             this.labelSubtAvada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSubtAvada.Name = "labelSubtAvada";
             this.labelSubtAvada.Size = new System.Drawing.Size(123, 23);
@@ -1254,134 +1275,168 @@
             // labelPalabraOculta
             // 
             this.labelPalabraOculta.AutoSize = true;
-            this.labelPalabraOculta.Location = new System.Drawing.Point(32, 704);
+            this.labelPalabraOculta.Location = new System.Drawing.Point(432, 248);
             this.labelPalabraOculta.Name = "labelPalabraOculta";
             this.labelPalabraOculta.Size = new System.Drawing.Size(0, 23);
             this.labelPalabraOculta.TabIndex = 140;
             this.labelPalabraOculta.Visible = false;
             // 
-            // labelLapalabra
-            // 
-            this.labelLapalabra.AutoSize = true;
-            this.labelLapalabra.Location = new System.Drawing.Point(592, 248);
-            this.labelLapalabra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelLapalabra.Name = "labelLapalabra";
-            this.labelLapalabra.Size = new System.Drawing.Size(90, 23);
-            this.labelLapalabra.TabIndex = 141;
-            this.labelLapalabra.Text = "La palabra era";
-            this.labelLapalabra.Visible = false;
-            // 
             // labelContadorOculto
             // 
             this.labelContadorOculto.AutoSize = true;
-            this.labelContadorOculto.Location = new System.Drawing.Point(96, 712);
+            this.labelContadorOculto.Location = new System.Drawing.Point(472, 248);
             this.labelContadorOculto.Name = "labelContadorOculto";
             this.labelContadorOculto.Size = new System.Drawing.Size(19, 23);
             this.labelContadorOculto.TabIndex = 142;
             this.labelContadorOculto.Text = "0";
             this.labelContadorOculto.Visible = false;
             // 
+            // panelMensaje
+            // 
+            this.panelMensaje.Controls.Add(this.labelFelicitaciones);
+            this.panelMensaje.Controls.Add(this.labelLapalabra);
+            this.panelMensaje.Controls.Add(this.imagenTrofeo);
+            this.panelMensaje.Controls.Add(this.imagenMarcaTeneborsa);
+            this.panelMensaje.Controls.Add(this.btnSalir);
+            this.panelMensaje.Controls.Add(this.labelSubtAvada);
+            this.panelMensaje.Controls.Add(this.labelSubtFelicitaciones);
+            this.panelMensaje.Controls.Add(this.labelAvada);
+            this.panelMensaje.Location = new System.Drawing.Point(224, 136);
+            this.panelMensaje.Name = "panelMensaje";
+            this.panelMensaje.Size = new System.Drawing.Size(232, 160);
+            this.panelMensaje.TabIndex = 143;
+            this.panelMensaje.Visible = false;
+            // 
+            // panelLogin
+            // 
+            this.panelLogin.Controls.Add(this.labelUsuario);
+            this.panelLogin.Controls.Add(this.tfUsuario);
+            this.panelLogin.Controls.Add(this.btnAtras);
+            this.panelLogin.Controls.Add(this.btnIniciarSesion);
+            this.panelLogin.Controls.Add(this.imagenGafasLuna);
+            this.panelLogin.Controls.Add(this.labelContrasenia);
+            this.panelLogin.Controls.Add(this.tfPassword);
+            this.panelLogin.Location = new System.Drawing.Point(168, 80);
+            this.panelLogin.Name = "panelLogin";
+            this.panelLogin.Size = new System.Drawing.Size(296, 192);
+            this.panelLogin.TabIndex = 144;
+            this.panelLogin.Visible = false;
+            // 
+            // panelAdmin
+            // 
+            this.panelAdmin.Controls.Add(this.labelaniadir);
+            this.panelAdmin.Controls.Add(this.imagenPluma);
+            this.panelAdmin.Controls.Add(this.labelNuevaPalabra);
+            this.panelAdmin.Controls.Add(this.tfPalabra);
+            this.panelAdmin.Controls.Add(this.labelAclaracion);
+            this.panelAdmin.Controls.Add(this.btnCerrarSesion);
+            this.panelAdmin.Controls.Add(this.btnAgregar);
+            this.panelAdmin.Location = new System.Drawing.Point(112, 80);
+            this.panelAdmin.Name = "panelAdmin";
+            this.panelAdmin.Size = new System.Drawing.Size(416, 248);
+            this.panelAdmin.TabIndex = 145;
+            this.panelAdmin.Visible = false;
+            // 
+            // panelHorrocruxes
+            // 
+            this.panelHorrocruxes.Controls.Add(this.labelNodejes);
+            this.panelHorrocruxes.Controls.Add(this.fallosPermitidos);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux1);
+            this.panelHorrocruxes.Controls.Add(this.labelHorrocruxes);
+            this.panelHorrocruxes.Controls.Add(this.imagenVoldemort);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux7);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux2);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux4);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux3);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux6);
+            this.panelHorrocruxes.Controls.Add(this.imagenHorrocrux5);
+            this.panelHorrocruxes.Location = new System.Drawing.Point(136, 336);
+            this.panelHorrocruxes.Name = "panelHorrocruxes";
+            this.panelHorrocruxes.Size = new System.Drawing.Size(416, 168);
+            this.panelHorrocruxes.TabIndex = 146;
+            this.panelHorrocruxes.Visible = false;
+            // 
+            // panelAbecedario
+            // 
+            this.panelAbecedario.Controls.Add(this.btnAbandonarPartida);
+            this.panelAbecedario.Controls.Add(this.mensajes);
+            this.panelAbecedario.Controls.Add(this.labelPalabraOculta);
+            this.panelAbecedario.Controls.Add(this.letra12);
+            this.panelAbecedario.Controls.Add(this.letra1);
+            this.panelAbecedario.Controls.Add(this.guion12);
+            this.panelAbecedario.Controls.Add(this.btnLetraZ);
+            this.panelAbecedario.Controls.Add(this.guion1);
+            this.panelAbecedario.Controls.Add(this.labelContadorOculto);
+            this.panelAbecedario.Controls.Add(this.letra0);
+            this.panelAbecedario.Controls.Add(this.btnLetraY);
+            this.panelAbecedario.Controls.Add(this.guion0);
+            this.panelAbecedario.Controls.Add(this.btnLetraD);
+            this.panelAbecedario.Controls.Add(this.btnLetraX);
+            this.panelAbecedario.Controls.Add(this.btnLetraA);
+            this.panelAbecedario.Controls.Add(this.letra11);
+            this.panelAbecedario.Controls.Add(this.btnLetraW);
+            this.panelAbecedario.Controls.Add(this.guion11);
+            this.panelAbecedario.Controls.Add(this.btnLetraB);
+            this.panelAbecedario.Controls.Add(this.letra10);
+            this.panelAbecedario.Controls.Add(this.btnLetraV);
+            this.panelAbecedario.Controls.Add(this.guion10);
+            this.panelAbecedario.Controls.Add(this.btnLetraC);
+            this.panelAbecedario.Controls.Add(this.letra9);
+            this.panelAbecedario.Controls.Add(this.btnLetraU);
+            this.panelAbecedario.Controls.Add(this.guion9);
+            this.panelAbecedario.Controls.Add(this.btnLetraE);
+            this.panelAbecedario.Controls.Add(this.letra8);
+            this.panelAbecedario.Controls.Add(this.btnLetraT);
+            this.panelAbecedario.Controls.Add(this.guion8);
+            this.panelAbecedario.Controls.Add(this.btnLetraF);
+            this.panelAbecedario.Controls.Add(this.letra7);
+            this.panelAbecedario.Controls.Add(this.btnLetraS);
+            this.panelAbecedario.Controls.Add(this.guion7);
+            this.panelAbecedario.Controls.Add(this.btnLetraG);
+            this.panelAbecedario.Controls.Add(this.letra6);
+            this.panelAbecedario.Controls.Add(this.btnLetraR);
+            this.panelAbecedario.Controls.Add(this.guion6);
+            this.panelAbecedario.Controls.Add(this.letra5);
+            this.panelAbecedario.Controls.Add(this.btnLetraH);
+            this.panelAbecedario.Controls.Add(this.guion5);
+            this.panelAbecedario.Controls.Add(this.btnLetraQ);
+            this.panelAbecedario.Controls.Add(this.letra4);
+            this.panelAbecedario.Controls.Add(this.btnLetraI);
+            this.panelAbecedario.Controls.Add(this.guion4);
+            this.panelAbecedario.Controls.Add(this.btnLetraP);
+            this.panelAbecedario.Controls.Add(this.letra3);
+            this.panelAbecedario.Controls.Add(this.btnLetraJ);
+            this.panelAbecedario.Controls.Add(this.guion3);
+            this.panelAbecedario.Controls.Add(this.btnLetraO);
+            this.panelAbecedario.Controls.Add(this.letra2);
+            this.panelAbecedario.Controls.Add(this.btnLetraK);
+            this.panelAbecedario.Controls.Add(this.guion2);
+            this.panelAbecedario.Controls.Add(this.btnLetraGN);
+            this.panelAbecedario.Controls.Add(this.btnLetraL);
+            this.panelAbecedario.Controls.Add(this.btnLetraN);
+            this.panelAbecedario.Controls.Add(this.btnLetraM);
+            this.panelAbecedario.Location = new System.Drawing.Point(0, 0);
+            this.panelAbecedario.Name = "panelAbecedario";
+            this.panelAbecedario.Size = new System.Drawing.Size(680, 288);
+            this.panelAbecedario.TabIndex = 147;
+            this.panelAbecedario.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 749);
-            this.Controls.Add(this.labelContadorOculto);
-            this.Controls.Add(this.labelLapalabra);
-            this.Controls.Add(this.labelPalabraOculta);
-            this.Controls.Add(this.labelSubtAvada);
-            this.Controls.Add(this.imagenMarcaTeneborsa);
-            this.Controls.Add(this.labelAvada);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.labelSubtFelicitaciones);
-            this.Controls.Add(this.labelFelicitaciones);
-            this.Controls.Add(this.imagenTrofeo);
-            this.Controls.Add(this.btnAbandonarPartida);
-            this.Controls.Add(this.imagenPluma);
-            this.Controls.Add(this.labelAclaracion);
-            this.Controls.Add(this.btnCerrarSesion);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.btnIniciarSesion);
-            this.Controls.Add(this.tfPalabra);
-            this.Controls.Add(this.labelNuevaPalabra);
-            this.Controls.Add(this.labelaniadir);
-            this.Controls.Add(this.imagenGafasLuna);
-            this.Controls.Add(this.tfPassword);
-            this.Controls.Add(this.tfUsuario);
-            this.Controls.Add(this.labelContrasenia);
-            this.Controls.Add(this.labelUsuario);
-            this.Controls.Add(this.imagenHorrocrux7);
-            this.Controls.Add(this.imagenHorrocrux4);
-            this.Controls.Add(this.imagenHorrocrux6);
-            this.Controls.Add(this.imagenHorrocrux5);
-            this.Controls.Add(this.imagenHorrocrux3);
-            this.Controls.Add(this.imagenHorrocrux2);
-            this.Controls.Add(this.imagenVoldemort);
-            this.Controls.Add(this.labelHorrocruxes);
-            this.Controls.Add(this.imagenHorrocrux1);
-            this.Controls.Add(this.fallosPermitidos);
-            this.Controls.Add(this.btnLetraZ);
-            this.Controls.Add(this.btnLetraY);
-            this.Controls.Add(this.btnLetraX);
-            this.Controls.Add(this.btnLetraW);
-            this.Controls.Add(this.btnLetraV);
-            this.Controls.Add(this.btnLetraU);
-            this.Controls.Add(this.btnLetraT);
-            this.Controls.Add(this.btnLetraS);
-            this.Controls.Add(this.btnLetraR);
-            this.Controls.Add(this.btnLetraQ);
-            this.Controls.Add(this.btnLetraP);
-            this.Controls.Add(this.btnLetraO);
-            this.Controls.Add(this.btnLetraGN);
-            this.Controls.Add(this.btnLetraN);
-            this.Controls.Add(this.btnLetraM);
-            this.Controls.Add(this.btnLetraL);
-            this.Controls.Add(this.btnLetraK);
-            this.Controls.Add(this.btnLetraJ);
-            this.Controls.Add(this.btnLetraI);
-            this.Controls.Add(this.btnLetraH);
-            this.Controls.Add(this.btnLetraG);
-            this.Controls.Add(this.btnLetraF);
-            this.Controls.Add(this.btnLetraE);
-            this.Controls.Add(this.btnLetraD);
-            this.Controls.Add(this.btnLetraC);
-            this.Controls.Add(this.btnLetraB);
-            this.Controls.Add(this.btnLetraA);
-            this.Controls.Add(this.labelNodejes);
-            this.Controls.Add(this.mensajes);
-            this.Controls.Add(this.letra1);
-            this.Controls.Add(this.guion1);
-            this.Controls.Add(this.letra0);
-            this.Controls.Add(this.guion0);
-            this.Controls.Add(this.letra12);
-            this.Controls.Add(this.guion12);
-            this.Controls.Add(this.letra11);
-            this.Controls.Add(this.guion11);
-            this.Controls.Add(this.letra10);
-            this.Controls.Add(this.guion10);
-            this.Controls.Add(this.letra9);
-            this.Controls.Add(this.guion9);
-            this.Controls.Add(this.letra8);
-            this.Controls.Add(this.guion8);
-            this.Controls.Add(this.letra7);
-            this.Controls.Add(this.guion7);
-            this.Controls.Add(this.letra6);
-            this.Controls.Add(this.guion6);
-            this.Controls.Add(this.letra5);
-            this.Controls.Add(this.guion5);
-            this.Controls.Add(this.letra4);
-            this.Controls.Add(this.guion4);
-            this.Controls.Add(this.letra3);
-            this.Controls.Add(this.guion3);
-            this.Controls.Add(this.letra2);
-            this.Controls.Add(this.guion2);
+            this.ClientSize = new System.Drawing.Size(705, 513);
+            this.Controls.Add(this.panelAbecedario);
+            this.Controls.Add(this.panelHorrocruxes);
+            this.Controls.Add(this.panelMensaje);
             this.Controls.Add(this.btnIniciarPartida);
             this.Controls.Add(this.imagenSombrero);
             this.Controls.Add(this.gbDificultad);
             this.Controls.Add(this.imagenLlave);
             this.Controls.Add(this.labelSubtitulo);
             this.Controls.Add(this.labelAhorcado);
+            this.Controls.Add(this.panelLogin);
+            this.Controls.Add(this.panelAdmin);
             this.Font = new System.Drawing.Font("Chiller", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 6, 2, 6);
@@ -1404,6 +1459,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenLlave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenTrofeo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenMarcaTeneborsa)).EndInit();
+            this.panelMensaje.ResumeLayout(false);
+            this.panelMensaje.PerformLayout();
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
+            this.panelAdmin.ResumeLayout(false);
+            this.panelAdmin.PerformLayout();
+            this.panelHorrocruxes.ResumeLayout(false);
+            this.panelHorrocruxes.PerformLayout();
+            this.panelAbecedario.ResumeLayout(false);
+            this.panelAbecedario.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1510,6 +1575,11 @@
         private System.Windows.Forms.Label labelPalabraOculta;
         private System.Windows.Forms.Label labelLapalabra;
         private System.Windows.Forms.Label labelContadorOculto;
+        private System.Windows.Forms.Panel panelMensaje;
+        private System.Windows.Forms.Panel panelLogin;
+        private System.Windows.Forms.Panel panelAdmin;
+        private System.Windows.Forms.Panel panelHorrocruxes;
+        private System.Windows.Forms.Panel panelAbecedario;
     }
 }
 
