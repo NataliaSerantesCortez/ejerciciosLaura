@@ -183,6 +183,7 @@
             // nivelMedio
             // 
             this.nivelMedio.AutoSize = true;
+            this.nivelMedio.Checked = true;
             this.nivelMedio.Location = new System.Drawing.Point(56, 72);
             this.nivelMedio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nivelMedio.Name = "nivelMedio";
@@ -200,7 +201,6 @@
             this.nivelAvanzado.Name = "nivelAvanzado";
             this.nivelAvanzado.Size = new System.Drawing.Size(81, 27);
             this.nivelAvanzado.TabIndex = 6;
-            this.nivelAvanzado.TabStop = true;
             this.nivelAvanzado.Text = "Avanzado";
             this.nivelAvanzado.UseVisualStyleBackColor = true;
             // 
@@ -212,7 +212,6 @@
             this.nivelBasico.Name = "nivelBasico";
             this.nivelBasico.Size = new System.Drawing.Size(64, 27);
             this.nivelBasico.TabIndex = 4;
-            this.nivelBasico.TabStop = true;
             this.nivelBasico.Text = "Básico";
             this.nivelBasico.UseVisualStyleBackColor = true;
             this.nivelBasico.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -1101,7 +1100,7 @@
             // 
             // imagenHorrocrux3
             // 
-            this.imagenHorrocrux3.Image = ((System.Drawing.Image)(resources.GetObject("imagenHorrocrux3.Image")));
+            this.imagenHorrocrux3.Image = global::ahorcado.Properties.Resources.relicario2;
             this.imagenHorrocrux3.Location = new System.Drawing.Point(1080, 72);
             this.imagenHorrocrux3.Name = "imagenHorrocrux3";
             this.imagenHorrocrux3.Size = new System.Drawing.Size(56, 50);

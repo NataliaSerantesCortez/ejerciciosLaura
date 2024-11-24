@@ -19,6 +19,7 @@ namespace ahorcado
         private Control[] controlesLetras = new Control[13];
         private Control[] controlesHuecos = new Control[13];
         private Control[] controlesHorrocruxes = new Control[7];
+        private Control[] botonesLetras = new Control[27];
 
         public Form1()
         {
@@ -59,6 +60,34 @@ namespace ahorcado
             controlesHorrocruxes[4] = imagenHorrocrux5;
             controlesHorrocruxes[5] = imagenHorrocrux6;
             controlesHorrocruxes[6] = imagenHorrocrux7;
+
+            botonesLetras[0] = btnLetraA;
+            botonesLetras[1] = btnLetraB;
+            botonesLetras[2] = btnLetraC;
+            botonesLetras[3] = btnLetraD;
+            botonesLetras[4] = btnLetraE;
+            botonesLetras[5] = btnLetraF;
+            botonesLetras[6] = btnLetraG;
+            botonesLetras[7] = btnLetraH;
+            botonesLetras[8] = btnLetraI;
+            botonesLetras[9] = btnLetraJ;
+            botonesLetras[10] = btnLetraK;
+            botonesLetras[11] = btnLetraL;
+            botonesLetras[12] = btnLetraM;
+            botonesLetras[13] = btnLetraN;
+            botonesLetras[14] = btnLetraGN;
+            botonesLetras[15] = btnLetraO;
+            botonesLetras[16] = btnLetraP;
+            botonesLetras[17] = btnLetraQ;
+            botonesLetras[18] = btnLetraR;
+            botonesLetras[19] = btnLetraS;
+            botonesLetras[20] = btnLetraT;
+            botonesLetras[21] = btnLetraU;
+            botonesLetras[22] = btnLetraV;
+            botonesLetras[23] = btnLetraW;
+            botonesLetras[24] = btnLetraX;
+            botonesLetras[25] = btnLetraY;
+            botonesLetras[26] = btnLetraZ;
 
         }
 
@@ -132,8 +161,51 @@ namespace ahorcado
             String palabraRandom = palabras[new Random().Next(0, palabras.Count)];
             MessageBox.Show(palabraRandom);
             labelPalabraOculta.Text = palabraRandom;
+            String palabraAdivinar = labelPalabraOculta.Text;
 
             mostrarHuecos(palabraRandom);
+
+            if (nivelBasico.Checked)
+            {
+                String letraRandom1 = palabraRandom[new Random().Next(0, palabraRandom.Length)].ToString();
+                String letraRandom2;
+
+                do
+                {
+                    letraRandom2 = palabraRandom[new Random().Next(0, palabraRandom.Length)].ToString();
+                } while (letraRandom1.Equals(letraRandom2));                
+
+                mecanismoDeVerificacion(letraRandom1, palabraAdivinar);
+                mecanismoDeVerificacion(letraRandom2, palabraAdivinar);
+
+                for (int i = 0; i < 27; i++)
+                {
+                    String letraBoton = botonesLetras[i].Text;
+                    if (letraBoton.Equals(letraRandom1))
+                    {
+                        inhabilitarBotonLetra(botonesLetras[i]);
+                    }
+
+                    if (letraBoton.Equals(letraRandom2))
+                    {
+                        inhabilitarBotonLetra(botonesLetras[i]);
+                    }
+                }
+            }
+
+            if (nivelMedio.Checked)
+            {
+                String letraRandom = palabraRandom[ new Random().Next(0, palabraRandom.Length)].ToString();             
+                mecanismoDeVerificacion(letraRandom, palabraAdivinar);
+                for (int i = 0; i < 27; i++)
+                {
+                    String letraBoton = botonesLetras[i].Text;
+                    if (letraBoton.Equals(letraRandom))
+                    {
+                        inhabilitarBotonLetra(botonesLetras[i]);
+                    }
+                }                
+            }
         }
 
         public void mostrarHuecos(String palabra)
@@ -251,6 +323,7 @@ namespace ahorcado
 
         public void hacerVisiblePanelInicio()
         {
+            nivelMedio.Checked = true;
             hacerVisibles(labelAhorcado, labelSubtitulo, gbDificultad, nivelBasico, nivelMedio
                 , nivelAvanzado, imagenSombrero, btnIniciarPartida, imagenLlave);
         }
@@ -281,21 +354,13 @@ namespace ahorcado
 
         public void hacerInvisibleAbecedario()
         {
-            hacerInvisibles(btnLetraA, btnLetraB, btnLetraC, btnLetraD, btnLetraD, btnLetraE, btnLetraF, btnLetraG,
-                btnLetraH, btnLetraI, btnLetraJ, btnLetraK, btnLetraL, btnLetraM, btnLetraN, btnLetraGN, btnLetraO,
-                btnLetraP, btnLetraQ, btnLetraR, btnLetraS, btnLetraT, btnLetraU, btnLetraV, btnLetraW, btnLetraX,
-                btnLetraY, btnLetraZ);
+            hacerInvisibles(botonesLetras);
         }
 
         public void hacerVisibleAbecedario()
         {
-            Control[] letras = {btnLetraA, btnLetraB, btnLetraC, btnLetraD, btnLetraD, btnLetraE, btnLetraF, btnLetraG,
-                btnLetraH, btnLetraI, btnLetraJ, btnLetraK, btnLetraL, btnLetraM, btnLetraN, btnLetraGN, btnLetraO,
-                btnLetraP, btnLetraQ, btnLetraR, btnLetraS, btnLetraT, btnLetraU, btnLetraV, btnLetraW, btnLetraX,
-                btnLetraY, btnLetraZ };
-
-            habilitarBotonLetra(letras);
-            hacerVisibles(letras);
+            habilitarBotonLetra(botonesLetras);
+            hacerVisibles(botonesLetras);
         }
 
         public void hacerInvisibles(params Control[] controles)

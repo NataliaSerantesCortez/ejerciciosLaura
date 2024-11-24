@@ -118,14 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="book_19742" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book_19742.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if-37-harry-potter-colour-spectrespecs-2730311_88140 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if-37-harry-potter-colour-spectrespecs-2730311_88140 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if-21-harry-potter-colour-glasses-and-scar-2730334_881261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_881261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if-45-harry-potter-colour-hufflepuff-cup-2730355_88164" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if-45-harry-potter-colour-hufflepuff-cup-2730355_88164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if-27-harry-potter-colour-triwizard-cup-27303391_88129" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if-27-harry-potter-colour-triwizard-cup-27303391_88129.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if-06-harry-potter-colour-sorting-hat-2730319_88134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if-06-harry-potter-colour-sorting-hat-2730319_88134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if-05-harry-potter-colour-death-eater-tattoo-2730318_88128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if-05-harry-potter-colour-death-eater-tattoo-2730318_88128.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +136,11 @@
   <data name="if-08-harry-potter-colour-chamber-of-secrets-key-2730321_88178" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if-08-harry-potter-colour-chamber-of-secrets-key-2730321_88178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="book_19742" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book_19742.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_21_harry_potter_colour_glasses_and_scar_2730334_88126" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_88126.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if-37-harry-potter-colour-spectrespecs-2730311_88140 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if-37-harry-potter-colour-spectrespecs-2730311_88140 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="492snake_100855" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\492snake_100855.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,11 +148,14 @@
   <data name="if_12_harry_potter_colour_harrys_lightning_scar_2730325_88172" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if-12-harry-potter-colour-harrys-lightning-scar-2730325_88172.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="harryPotter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\harryPotter.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="gem-pendant_39134" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gem-pendant_39134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if-06-harry-potter-colour-sorting-hat-2730319_88134" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if-06-harry-potter-colour-sorting-hat-2730319_88134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if-27-harry-potter-colour-triwizard-cup-27303391_88129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if-27-harry-potter-colour-triwizard-cup-27303391_88129.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if-21-harry-potter-colour-glasses-and-scar-2730334_88126" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_88126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,10 +169,7 @@
   <data name="crown_king_queen_icon_161518" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crown_king_queen_icon_161518.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if-21-harry-potter-colour-glasses-and-scar-2730334_881261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if-21-harry-potter-colour-glasses-and-scar-2730334_881261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="harryPotter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\harryPotter.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="relicario2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\relicario2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
