@@ -103,12 +103,11 @@ namespace ahorcado
                 {
                     palabras.Add(line.Trim());
                 }
-
-                //MessageBox.Show("Palabras cargadas con éxito.");
             }
             else
             {
-                MessageBox.Show("El archivo no existe.");
+                MessageBox.Show("El archivo no existe.", "Error",
+                 MessageBoxButtons.OK, MessageBoxIcon.Error);                
             }
         }
 
@@ -122,22 +121,14 @@ namespace ahorcado
                 palabras.Add(nuevaPalabra);
                 File.AppendAllText(filePath, Environment.NewLine + nuevaPalabra);
 
-                MessageBox.Show("Palabra añadida con éxito.");
+                MessageBox.Show("Palabra añadida con éxito.", "Información",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);                
             }
             else
             {
-                MessageBox.Show("El archivo no existe.");
+                MessageBox.Show("El archivo no existe.", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-           // Verifica el contenido del archivo
-            //if (File.Exists(filePath))
-            //{
-            //    string[] lines = File.ReadAllLines(filePath);
-            //    foreach (string line in lines)
-            //    {
-            //        Console.WriteLine(line);  // O muestra en un MessageBox
-            //    }
-            //}
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -159,7 +150,6 @@ namespace ahorcado
             leerPalabras();           
 
             String palabraRandom = palabras[new Random().Next(0, palabras.Count)];
-            //MessageBox.Show(palabraRandom);
             labelPalabraOculta.Text = palabraRandom;
             String palabraAdivinar = labelPalabraOculta.Text;
 
@@ -337,6 +327,7 @@ namespace ahorcado
 
         public void hacerVisiblePanelLogin()
         {
+            tfPassword.PasswordChar = '*';
             hacerVisibles(panelLogin, labelUsuario, labelContrasenia, tfUsuario, tfPassword, imagenGafasLuna,
                 btnIniciarSesion, btnAtras);
         }
@@ -472,8 +463,17 @@ namespace ahorcado
                 }
                 else
                 {
-                    MessageBox.Show("Palabra inválida.", "Error",
-                      MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (palabraNueva.Length > 13)
+                    {
+                        MessageBox.Show("Palabra inválida. Debe tener como máximo 13 letras.", "Error",
+                          MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    if (palabraNueva.Contains(" "))
+                    {
+                        MessageBox.Show("Palabra inválida. No debe tener espacios entre medias.", "Error",
+                          MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             else
