@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const GRAVITY = 980.0
-const JUMP_VELOCITY = -350.0
+const JUMP_VELOCITY = -300.0
 var juego_iniciado = false
 
 func _physics_process(delta: float) -> void:
