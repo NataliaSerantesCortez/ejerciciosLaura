@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://0pouwr6r27hc"]
+
+[ext_resource type="Script" path="res://scripts/nivel.gd" id="1_5pxn2"]
+[ext_resource type="PackedScene" uid="uid://c2f7ntudtqrks" path="res://escenas/marciano.tscn" id="2_73w2s"]
+[ext_resource type="Texture2D" uid="uid://c6q1ufuq2270j" path="res://graficos/281283-nature-landscape-planet-Earth-space-moon-horizon-stars-astronomy-universe.jpg" id="3_jumce"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3cfhn"]
+size = Vector2(386, 105)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5pxn2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1200.0
+scale = Vector2(0.6, 0.559999)
+texture = ExtResource("3_jumce")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_73w2s")]
+position = Vector2(139, 454)
+scale = Vector2(0.679999, 0.64)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(578, 324)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(189, 698)
+shape = SubResource("RectangleShape2D_3cfhn")
+
+[node name="laser_aleatorio" type="Area2D" parent="."]
+position = Vector2(462, 83)
+
+[node name="Timer" type="Timer" parent="."]

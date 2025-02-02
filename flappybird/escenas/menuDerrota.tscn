@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu43v052gb18q"]
+
+[ext_resource type="Script" path="res://scripts/menu_derrota.gd" id="1_fwj5q"]
+[ext_resource type="Texture2D" uid="uid://dr5xl5kqjmu7l" path="res://graficos/rectangulonegro.png" id="1_gdp48"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fwj5q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(573, 317)
+scale = Vector2(-2.09716, 1.47546)
+texture = ExtResource("1_gdp48")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 124.0
+offset_right = 737.0
+offset_bottom = 234.0
+theme_override_colors/font_color = Color(0.988222, 0.988222, 0.988222, 1)
+theme_override_font_sizes/font_size = 80
+text = "PERDISTE"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 422.0
+offset_right = 685.0
+offset_bottom = 499.0
+theme_override_colors/font_color = Color(0.994108, 0.994108, 0.994108, 1)
+theme_override_font_sizes/font_size = 50
+text = "Reiniciar
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

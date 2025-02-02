@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb07kq0usw8po"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_lagvn"]
+[ext_resource type="Texture2D" uid="uid://iwvb14egnk5v" path="res://graficos/rectangulomorado.png" id="1_utuv1"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lagvn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(559, 325)
+scale = Vector2(2.12, 1.12)
+texture = ExtResource("1_utuv1")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 146.0
+offset_right = 904.0
+offset_bottom = 283.0
+theme_override_font_sizes/font_size = 100
+text = "FLAPPY BIRD"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 359.0
+offset_right = 688.0
+offset_bottom = 450.0
+theme_override_font_sizes/font_size = 60
+text = "JUGAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

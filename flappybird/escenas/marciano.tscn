@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2f7ntudtqrks"]
+
+[ext_resource type="Script" path="res://scripts/marciano.gd" id="1_3im5a"]
+[ext_resource type="Texture2D" uid="uid://bewa6rlagb40d" path="res://graficos/shipPink_manned.png" id="1_5if80"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j6yut"]
+radius = 63.3877
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(60, 53)
+script = ExtResource("1_3im5a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 12)
+texture = ExtResource("1_5if80")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 12)
+shape = SubResource("CircleShape2D_j6yut")

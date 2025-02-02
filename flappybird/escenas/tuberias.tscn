@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://tns82gyjfc58"]
+
+[ext_resource type="Script" path="res://scripts/tuberias.gd" id="1_1o6jf"]
+[ext_resource type="Texture2D" uid="uid://s8pnk1gwh3o8" path="res://graficos/laserPink1.png" id="1_geo87"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30rpc"]
+size = Vector2(36.4, 265.761)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mln2n"]
+size = Vector2(36.953, 146.161)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, -2)
+script = ExtResource("1_1o6jf")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(217, -119)
+scale = Vector2(1.26374, 1.84)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(0, -32.0652)
+scale = Vector2(1, 2.68478)
+texture = ExtResource("1_geo87")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(-1.52588e-05, -32.3369)
+shape = SubResource("RectangleShape2D_30rpc")
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+position = Vector2(74, -49)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2"]
+position = Vector2(141, 568)
+scale = Vector2(1.23463, 5.54459)
+texture = ExtResource("1_geo87")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Area2D"]
+position = Vector2(143, 567)
+scale = Vector2(1.22054, 3.78349)
+shape = SubResource("RectangleShape2D_mln2n")
+
+[connection signal="body_entered" from="CharacterBody2D/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="CharacterBody2D2/Area2D" to="." method="_on_area_2d_body_entered"]
