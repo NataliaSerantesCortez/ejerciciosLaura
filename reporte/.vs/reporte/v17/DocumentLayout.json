@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|c:\\users\\natal\\source\\repos\\ejercicioslaura\\reporte\\reporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|solutionrelative:reporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|c:\\users\\natal\\source\\repos\\ejercicioslaura\\reporte\\reporte\\informerealizadopornsc.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|solutionrelative:reporte\\informerealizadopornsc.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|reporte||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|c:\\users\\natal\\source\\repos\\ejercicioslaura\\reporte\\reporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|solutionrelative:reporte\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|c:\\users\\natal\\source\\repos\\ejercicioslaura\\reporte\\reporte\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{E44AD95E-97C7-4FC8-8A6C-28E5137269D9}|reporte\\reporte.csproj|solutionrelative:reporte\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\Form1.cs",
+              "RelativeDocumentMoniker": "reporte\\Form1.cs",
+              "ToolTip": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\Form1.cs",
+              "RelativeToolTip": "reporte\\Form1.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwCEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:53:36.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InformeRealizadoPorNSC.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\InformeRealizadoPorNSC.rdlc",
+              "RelativeDocumentMoniker": "reporte\\InformeRealizadoPorNSC.rdlc",
+              "ToolTip": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\InformeRealizadoPorNSC.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "reporte\\InformeRealizadoPorNSC.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-02-03T07:47:00.719Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "reporte",
+              "DocumentMoniker": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\reporte.csproj",
+              "RelativeDocumentMoniker": "reporte\\reporte.csproj",
+              "ToolTip": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\reporte.csproj",
+              "RelativeToolTip": "reporte\\reporte.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-03T07:41:19.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\Form1.cs",
+              "RelativeDocumentMoniker": "reporte\\Form1.cs",
+              "ToolTip": "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\reporte\\reporte\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "reporte\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:40:07.103Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
