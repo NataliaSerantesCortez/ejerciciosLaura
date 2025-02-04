@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bb07kq0usw8po"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_lagvn"]
-[ext_resource type="Texture2D" uid="uid://iwvb14egnk5v" path="res://graficos/rectangulomorado.png" id="1_utuv1"]
+[ext_resource type="Texture2D" uid="uid://co5t2l8d4bnnm" path="res://graficos/1.png" id="2_tdwf5"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,26 +13,30 @@ grow_vertical = 2
 script = ExtResource("1_lagvn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(559, 325)
-scale = Vector2(2.12, 1.12)
-texture = ExtResource("1_utuv1")
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 288.0
-offset_top = 146.0
-offset_right = 904.0
-offset_bottom = 283.0
-theme_override_font_sizes/font_size = 100
-text = "FLAPPY BIRD"
+texture_filter = 1
+position = Vector2(579, 319.5)
+scale = Vector2(0.601042, 0.597222)
+texture = ExtResource("2_tdwf5")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 496.0
-offset_top = 359.0
-offset_right = 688.0
-offset_bottom = 450.0
-theme_override_font_sizes/font_size = 60
+offset_left = 488.0
+offset_top = 460.0
+offset_right = 680.0
+offset_bottom = 551.0
+theme_override_font_sizes/font_size = 30
 text = "JUGAR"
 
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 487.0
+offset_top = 357.0
+offset_right = 670.0
+offset_bottom = 407.0
+scale = Vector2(1.04, 1.56)
+theme_override_colors/font_color = Color(0.994108, 0.994108, 0.994108, 1)
+theme_override_font_sizes/font_size = 30
+text = "CONTROLES"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

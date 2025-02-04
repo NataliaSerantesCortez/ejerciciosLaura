@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bu43v052gb18q"]
 
 [ext_resource type="Script" path="res://scripts/menu_derrota.gd" id="1_fwj5q"]
-[ext_resource type="Texture2D" uid="uid://dr5xl5kqjmu7l" path="res://graficos/rectangulonegro.png" id="1_gdp48"]
+[ext_resource type="Texture2D" uid="uid://8dkhwckb1yxh" path="res://graficos/2.png" id="2_hahwi"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,29 +13,30 @@ grow_vertical = 2
 script = ExtResource("1_fwj5q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(573, 317)
-scale = Vector2(-2.09716, 1.47546)
-texture = ExtResource("1_gdp48")
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 375.0
-offset_top = 124.0
-offset_right = 737.0
-offset_bottom = 234.0
-theme_override_colors/font_color = Color(0.988222, 0.988222, 0.988222, 1)
-theme_override_font_sizes/font_size = 80
-text = "PERDISTE"
+texture_filter = 1
+position = Vector2(582.01, 323.007)
+scale = Vector2(-0.600187, 0.598325)
+texture = ExtResource("2_hahwi")
+flip_h = true
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 467.0
-offset_top = 422.0
+offset_top = 490.0
 offset_right = 685.0
-offset_bottom = 499.0
+offset_bottom = 567.0
 theme_override_colors/font_color = Color(0.994108, 0.994108, 0.994108, 1)
 theme_override_font_sizes/font_size = 50
 text = "Reiniciar
 "
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 372.0
+offset_right = 597.0
+offset_bottom = 414.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

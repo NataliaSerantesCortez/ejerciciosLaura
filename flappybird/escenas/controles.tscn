@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjpe6rgvyoyxo"]
+
+[ext_resource type="Script" path="res://scripts/controles.gd" id="1_u846t"]
+[ext_resource type="Texture2D" uid="uid://dvnx2y215jxf7" path="res://graficos/3.png" id="2_jxyp2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u846t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(584, 333)
+scale = Vector2(0.602083, 0.607407)
+texture = ExtResource("2_jxyp2")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 544.0
+offset_right = 640.0
+offset_bottom = 594.0
+theme_override_colors/font_color = Color(0.994108, 0.994108, 0.994108, 1)
+theme_override_font_sizes/font_size = 30
+text = "ATRÁS"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

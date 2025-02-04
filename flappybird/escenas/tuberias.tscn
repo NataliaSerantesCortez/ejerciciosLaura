@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://tns82gyjfc58"]
+[gd_scene load_steps=6 format=3 uid="uid://tns82gyjfc58"]
 
 [ext_resource type="Script" path="res://scripts/tuberias.gd" id="1_1o6jf"]
 [ext_resource type="Texture2D" uid="uid://s8pnk1gwh3o8" path="res://graficos/laserPink1.png" id="1_geo87"]
@@ -8,6 +8,8 @@ size = Vector2(36.4, 265.761)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mln2n"]
 size = Vector2(36.953, 146.161)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iujh5"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, -2)
@@ -43,5 +45,14 @@ position = Vector2(143, 567)
 scale = Vector2(1.22054, 3.78349)
 shape = SubResource("RectangleShape2D_mln2n")
 
+[node name="areaPuntos" type="Area2D" parent="."]
+position = Vector2(250, 153)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="areaPuntos"]
+position = Vector2(0, 2)
+scale = Vector2(0.92, 7.72)
+shape = SubResource("RectangleShape2D_iujh5")
+
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="CharacterBody2D2/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="areaPuntos" to="." method="_on_area_puntos_body_exited"]

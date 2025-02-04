@@ -13,10 +13,10 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func aparecer_laser():
-	var tuberia_instanciada = tuberias.instantiate()  # Instanciar las tuberías
-	var random_y = randf_range(min_y, max_y)  # Generar altura aleatoria
-	tuberia_instanciada.position = Vector2(spawn_position.x, random_y)  # Posicionar tuberías
-	$laser_aleatorio.add_child(tuberia_instanciada)  # Agregar a la escena
+	var tuberia_instanciada = tuberias.instantiate() 
+	var random_y = randf_range(min_y, max_y)  
+	tuberia_instanciada.position = Vector2(spawn_position.x, random_y)  
+	$laser_aleatorio.add_child(tuberia_instanciada) 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
