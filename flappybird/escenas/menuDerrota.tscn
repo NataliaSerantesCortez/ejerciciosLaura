@@ -33,10 +33,10 @@ text = "Reiniciar
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 557.0
-offset_top = 372.0
+offset_top = 367.0
 offset_right = 597.0
-offset_bottom = 414.0
+offset_bottom = 422.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 40
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
