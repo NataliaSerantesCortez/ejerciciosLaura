@@ -21,7 +21,7 @@ import org.hibernate.Session;
 public class CristoGames {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       /* System.out.println("Hello World!");
         
         // TEST HIBERNATE
         
@@ -29,31 +29,29 @@ public class CristoGames {
         Session session = HibernateUtil.getCurrentSession();
         
         // Comienzo transaccion
-       // session.beginTransaction();
+        session.beginTransaction();
         
         LocalDate fecha = LocalDate.now();
         LocalDateTime fechaConHora = LocalDateTime.parse("2025-02-05T10:29:16");
         // Inserto Genero
-        //Genero genero = new Genero(0, "Genero inventado");
+        Genero genero = new Genero(0, "Genero inventado");
         // Inserto juego
-       // Juego juego = new Juego(6, "Crash", "estudio", "crash.png", fecha, genero);
+        Juego juego = new Juego(6, "Crash", "estudio", "crash.png", fecha, genero);
         // Inserto perfil
-        //Perfil perfil = new Perfil("teffuka", "imagen.png", "holaaaa");
+        Perfil perfil = new Perfil("teffuka", "imagen.png", "holaaaa");
         
-        /*juego.getListaPerfilesResenias().add(perfil);
-        perfil.getListaJuegosReseniados().add(juego);*/
         PKCompuestaResenia pk = new PKCompuestaResenia("teffuka", 7, fechaConHora);
         
-        //Resenia resenia = new Resenia(pk, perfil, juego, "juego muy bueno", 3);
+        Resenia resenia = new Resenia(pk, perfil, juego, "juego muy bueno", 3);
 
         // Guardo el empleado
-        /*session.persist(genero);
+        session.persist(genero);
         session.persist(juego);
         session.persist(perfil);
-        session.persist(resenia);*/
+        session.persist(resenia);
 
         // Termino transaccion guardando los cambios
-       // session.getTransaction().commit();            
+        session.getTransaction().commit();            
         
         // PRUEBA DE RELACIONES
         
@@ -67,6 +65,6 @@ public class CristoGames {
         session.getTransaction().commit();        
         
         // Cierro base de datos
-        HibernateUtil.closeSessionFactory();
+        HibernateUtil.closeSessionFactory();*/
     }
 }
