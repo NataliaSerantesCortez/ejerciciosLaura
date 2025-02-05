@@ -53,11 +53,11 @@ public class Juego implements Serializable {
     @ManyToMany(mappedBy = "listaJuegosJugados")
     private List<Perfil> listaPerfilesJugadores;
     
-    @OneToMany(mappedBy = "perfil")
-    private List<Perfil> listaPerfilesResenias;
+    @OneToMany(mappedBy = "juego")
+    private List<Resenia> listaResenias;
     
     //Constructor con parámetros
-    public Juego(int idJuego, String nombre, String estudio, String caratula, LocalDate lanzamiento, Genero genero, List<Perfil> listaPerfilesJugadores, List<Perfil> listaPerfilesResenias) {
+    public Juego(int idJuego, String nombre, String estudio, String caratula, LocalDate lanzamiento, Genero genero, List<Perfil> listaPerfilesJugadores, List<Resenia> listaResenias) {
         this.idJuego = idJuego;
         this.nombre = nombre;
         this.estudio = estudio;
@@ -65,7 +65,7 @@ public class Juego implements Serializable {
         this.lanzamiento = lanzamiento;
         this.genero = genero;
         this.listaPerfilesJugadores = listaPerfilesJugadores;
-        this.listaPerfilesResenias = listaPerfilesResenias;
+        this.listaResenias = listaResenias;
     }
     
     //Constructor con parámetros 2
@@ -77,7 +77,7 @@ public class Juego implements Serializable {
         this.lanzamiento = lanzamiento;
         this.genero = genero;
         this.listaPerfilesJugadores = new ArrayList<>();
-        this.listaPerfilesResenias = new ArrayList<>();
+        this.listaResenias = new ArrayList<>();
     }
     
     //Constructor sin parámetros
@@ -114,8 +114,8 @@ public class Juego implements Serializable {
         this.listaPerfilesJugadores = listaPerfilesJugadores;
     }
 
-    public void setListaPerfilesResenias(List<Perfil> listaPerfilesResenias) {
-        this.listaPerfilesResenias = listaPerfilesResenias;
+    public void setListaResenias(List<Resenia> listaResenias) {
+        this.listaResenias = listaResenias;
     }
     
     //Get's
@@ -147,7 +147,7 @@ public class Juego implements Serializable {
         return listaPerfilesJugadores;
     }
 
-    public List<Perfil> getListaPerfilesResenias() {
-        return listaPerfilesResenias;
+    public List<Resenia> getListaResenias() {
+        return listaResenias;
     }
 }

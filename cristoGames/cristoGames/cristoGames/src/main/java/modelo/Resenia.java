@@ -36,12 +36,21 @@ public class Resenia {
     
     @Column(name = "texto", nullable = true)
     private String  texto;
-
-    public Resenia(PKCompuestaResenia pK, Perfil perfil, Juego juego, String texto) {
+    
+    @Column(name = "calificacion", nullable = false)
+    private int calificacion;
+    
+    public Resenia(){
+        this.perfil = new Perfil();
+        this.juego = new Juego();
+    }
+    
+    public Resenia(PKCompuestaResenia pK, Perfil perfil, Juego juego, String texto, int calificacion) {
         this.pK = pK;
         this.perfil = perfil;
         this.juego = juego;
         this.texto = texto;
+        this.calificacion = calificacion;
     }
 
     public Resenia(PKCompuestaResenia pK) {
@@ -49,6 +58,15 @@ public class Resenia {
         this.perfil = new Perfil();
         this.juego = new Juego();
         this.texto = " ";
+        this.calificacion = 0;
+    }
+
+    public int getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(int calificacion) {
+        this.calificacion = calificacion;
     }
 
     public PKCompuestaResenia getpK() {

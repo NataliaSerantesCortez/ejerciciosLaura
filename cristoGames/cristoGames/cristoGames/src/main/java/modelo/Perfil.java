@@ -45,14 +45,14 @@ public class Perfil implements Serializable {
     )
     private List<Juego> listaJuegosJugados;
     
-    @OneToMany(mappedBy = "juego")
-    private List<Juego> listaJuegosReseniados;
+    @OneToMany(mappedBy = "perfil")
+    private List<Resenia> listaJuegosReseniados;
     
     @OneToOne(mappedBy = "perfil")
     private Usuario usuario;
     
     //Constructor con parámetros
-    public Perfil(String username, String avatar, String biografia, List<Juego> listaJuegosJugados, List<Juego> listaJuegosReseniados, Usuario usuario) {
+    public Perfil(String username, String avatar, String biografia, List<Juego> listaJuegosJugados, List<Resenia> listaJuegosReseniados, Usuario usuario) {
         this.username = username;
         this.avatar = avatar;
         this.biografia = biografia;
@@ -94,7 +94,7 @@ public class Perfil implements Serializable {
         this.listaJuegosJugados = listaJuegosJugados;
     }
 
-    public void setListaJuegosReseniados(List<Juego> listaJuegosReseniados) {
+    public void setListaJuegosReseniados(List<Resenia> listaJuegosReseniados) {
         this.listaJuegosReseniados = listaJuegosReseniados;
     }
 
@@ -119,7 +119,7 @@ public class Perfil implements Serializable {
         return listaJuegosJugados;
     }
 
-    public List<Juego> getListaJuegosReseniados() {
+    public List<Resenia> getListaJuegosReseniados() {
         return listaJuegosReseniados;
     }
 
