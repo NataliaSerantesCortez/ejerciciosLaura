@@ -36,7 +36,18 @@ public class Conexion {
     }
     
     public Genero obtenerGeneroPorId( Integer id ) throws Exception{
-        return null;
+        Genero genero = null;
+            
+        try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            genero = sesion.get(Genero.class, id);
+            sesion.getTransaction().commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            throw e;
+        }        
+        return genero;
     }
     
     public List<Juego> leerJuegos() throws Exception{
@@ -58,7 +69,18 @@ public class Conexion {
     }
     
     public Juego obtenerJuegoPorId( Integer id ) throws Exception{
-        return null;
+        Juego juego = null;
+            
+        try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            juego = sesion.get(Juego.class, id);
+            sesion.getTransaction().commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            throw e;
+        }        
+        return juego;
     }
     
     public List<Perfil> leerPerfiles() throws Exception{
@@ -80,7 +102,18 @@ public class Conexion {
     }
     
     public Perfil obtenerPerfilPorUsername( String username ) throws Exception{
-        return null;
+        Perfil perfil = null;
+            
+        try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            perfil = sesion.get(Perfil.class, username);
+            sesion.getTransaction().commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            throw e;
+        }        
+        return perfil;
     }
     
     public List<Usuario> leerUsuarios() throws Exception{
@@ -102,7 +135,18 @@ public class Conexion {
     }
     
     public Usuario obtenerUsuarioPorCorreo( String correo ) throws Exception{
-        return null;
+        Usuario usuario = null;
+            
+        try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            usuario = sesion.get(Usuario.class, correo);
+            sesion.getTransaction().commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            throw e;
+        }        
+        return usuario;
     }
     
     public List<Resenia> leerResenias() throws Exception{
@@ -124,7 +168,18 @@ public class Conexion {
     }
     
     public Resenia obtenerReseniaPorPK( PKCompuestaResenia pk ) throws Exception{
-        return null;
+        Resenia resenia = null;
+            
+        try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            resenia = sesion.get(Resenia.class, pk);
+            sesion.getTransaction().commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            throw e;
+        }        
+        return resenia;
     }
     
     public void insertarGenero( Genero genero ) throws Exception{
@@ -211,51 +266,182 @@ public class Conexion {
     }
     
     public void eliminarGenero( Integer idGenero ) throws Exception{
-        //hacer un get a la base de datos
+        try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            Genero genero = sesion.get(Genero.class, idGenero);
+            sesion.beginTransaction();            
+            sesion.delete(genero);
+            sesion.getTransaction().commit();
+            sesion.close();
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }      
     }
     
     public void eliminarJuego( Integer idJuego ) throws Exception{
-        //hacer un get a la base de datos
+         try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            Juego juego = sesion.get(Juego.class, idJuego);
+            sesion.beginTransaction();            
+            sesion.delete(juego);
+            sesion.getTransaction().commit();
+            sesion.close();
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }     
     }
     
     public void eliminarPerfil( String username ) throws Exception{
-        //hacer un get a la base de datos
+         try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            Perfil perfil = sesion.get(Perfil.class, username);
+            sesion.beginTransaction();            
+            sesion.delete(perfil);
+            sesion.getTransaction().commit();
+            sesion.close();
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }     
     }
     
     public void eliminarUsuario( String correo ) throws Exception{
-        //hacer un get a la base de datos
+         try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            Usuario usuario = sesion.get(Usuario.class, correo);
+            sesion.beginTransaction();            
+            sesion.delete(usuario);
+            sesion.getTransaction().commit();
+            sesion.close();
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }     
     }
     
     public void eliminarResenia( PKCompuestaResenia pk ) throws Exception{
-        //hacer un get a la base de datos
+         try {
+            Session sesion = HibernateUtil.getCurrentSession();
+            Resenia resenia = sesion.get(Resenia.class, pk);
+            sesion.beginTransaction();            
+            sesion.delete(resenia);
+            sesion.getTransaction().commit();
+            sesion.close();
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }     
     }
     
-    public void eliminarJugada( Integer idJuego, String username ) throws Exception{
-        //hacer un get a la base de datos
+    public void eliminarJugada( Juego juego, Perfil perfil ) throws Exception{
+         try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+            juego.getListaPerfilesJugadores().remove(perfil);
+            perfil.getListaJuegosJugados().remove(juego);
+            sesion.update(juego);
+            sesion.update(perfil);
+            
+            sesion.getTransaction().commit();
+            sesion.close();
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
     public void modificarGenero( Genero genero ) throws Exception{
-        
+        try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+            sesion.merge(genero);
+            
+            sesion.getTransaction().commit();
+            sesion.close();     
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
     public void modificarJuego( Juego juego ) throws Exception{
-        
+         try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+            sesion.merge(juego);
+            
+            sesion.getTransaction().commit();
+            sesion.close();     
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
     public void modificarPerfil( Perfil perfil ) throws Exception{
-        
+         try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+            sesion.merge(perfil);
+            
+            sesion.getTransaction().commit();
+            sesion.close();     
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
     public void modificarUsuario( Usuario usuario ) throws Exception{
-        
+         try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+            sesion.merge(usuario);
+            
+            sesion.getTransaction().commit();
+            sesion.close();     
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
     public void modificarResenia( Resenia resenia ) throws Exception{
-        
+         try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+            sesion.merge(resenia);
+            
+            sesion.getTransaction().commit();
+            sesion.close();     
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
-    public void modificarJugada( Juego juego, Perfil perfil ) throws Exception{
-        
+    public void modificarJugada( Juego juego, Perfil perfil, Juego juegoNuevo, Perfil perfilNuevo ) throws Exception{
+         try{
+            Session sesion = HibernateUtil.getCurrentSession();
+            sesion.beginTransaction();
+            
+             insertarJugada(juegoNuevo, perfilNuevo);
+             eliminarJugada(juego, perfil);
+            
+            sesion.getTransaction().commit();
+            sesion.close();     
+        } catch ( Exception e ){
+            System.out.println(e.getMessage());
+            throw e;
+        }
     }
     
     public void cerrarBaseDeDatos() {
