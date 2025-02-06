@@ -5,6 +5,7 @@
 package modelo;
 
 import jakarta.persistence.Query;
+import java.time.LocalDateTime;
 import java.util.List;
 import org.hibernate.Session;
 
@@ -43,6 +44,7 @@ public class Conexion {
             sesion.beginTransaction();
             genero = sesion.get(Genero.class, id);
             sesion.getTransaction().commit();
+           // sesion.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             throw e;
@@ -76,6 +78,7 @@ public class Conexion {
             sesion.beginTransaction();
             juego = sesion.get(Juego.class, id);
             sesion.getTransaction().commit();
+           // sesion.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             throw e;
@@ -109,6 +112,7 @@ public class Conexion {
             sesion.beginTransaction();
             perfil = sesion.get(Perfil.class, username);
             sesion.getTransaction().commit();
+            //sesion.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             throw e;
@@ -142,6 +146,7 @@ public class Conexion {
             sesion.beginTransaction();
             usuario = sesion.get(Usuario.class, correo);
             sesion.getTransaction().commit();
+            //sesion.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             throw e;
@@ -175,6 +180,7 @@ public class Conexion {
             sesion.beginTransaction();
             resenia = sesion.get(Resenia.class, pk);
             sesion.getTransaction().commit();
+           // sesion.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             throw e;
@@ -281,10 +287,16 @@ public class Conexion {
     
     public void eliminarJuego( Integer idJuego ) throws Exception{
          try {
-            Session sesion = HibernateUtil.getCurrentSession();
-            Juego juego = sesion.get(Juego.class, idJuego);
-            sesion.beginTransaction();            
-            sesion.delete(juego);
+            Session sesion = HibernateUtil.getCurrentSession();   
+            sesion.beginTransaction(); 
+            
+            Juego juego = sesion.get(Juego.class, idJuego); 
+            
+            if ( juego !=null ){
+                sesion.delete(juego);
+            } else {
+                System.out.println("el juego con id : " + idJuego + " no existe");
+            }
             sesion.getTransaction().commit();
             sesion.close();
         } catch ( Exception e ){
@@ -418,6 +430,10 @@ public class Conexion {
             Session sesion = HibernateUtil.getCurrentSession();
             sesion.beginTransaction();
             
+            //ponemos la hora actual al hacer la nueva reseña
+            LocalDateTime fechaConHora = LocalDateTime.now();
+            resenia.getpK().setFecha(fechaConHora);            
+            
             sesion.merge(resenia);
             
             sesion.getTransaction().commit();
@@ -433,8 +449,17 @@ public class Conexion {
             Session sesion = HibernateUtil.getCurrentSession();
             sesion.beginTransaction();
             
-             insertarJugada(juegoNuevo, perfilNuevo);
-             eliminarJugada(juego, perfil);
+            //insertar nuevo
+            juegoNuevo.getListaPerfilesJugadores().add(perfilNuevo);
+            perfilNuevo.getListaJuegosJugados().add(juegoNuevo);
+            sesion.update(juegoNuevo);
+            sesion.update(perfilNuevo);
+            
+            //eliminar viejo
+            juego.getListaPerfilesJugadores().remove(perfil);
+            perfil.getListaJuegosJugados().remove(juego);
+            sesion.update(juego);
+            sesion.update(perfil);
             
             sesion.getTransaction().commit();
             sesion.close();     

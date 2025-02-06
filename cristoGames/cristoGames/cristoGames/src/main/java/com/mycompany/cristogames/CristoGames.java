@@ -73,7 +73,22 @@ public class CristoGames {
         
         Conexion conexion = new Conexion();
         
-        try {
+        try {        
+            
+            LocalDate fecha = LocalDate.now();
+            LocalDateTime fechaConHora = LocalDateTime.now();        
+            
+            Genero genero = new Genero("guerra7");
+            Juego juego = new Juego("candycrush", "estudio", "caratula", fecha, genero );
+            Perfil perfil = new Perfil("usuario7", "imagen.png", "biografia" );
+            Usuario usuario = new Usuario("user@example7", "nat", "ser", "1234", "arg", "admin", perfil );
+            
+            System.out.println("PRUEBAS DE INSERTAR");
+            conexion.insertarGenero(genero);
+            conexion.insertarJuego(juego);
+            conexion.insertarPerfil(perfil);
+            conexion.insertarUsuario(usuario);      
+            
             List<Genero> listaGeneros = conexion.leerGeneros();
             List<Juego> listaJuegos = conexion.leerJuegos();
             List<Perfil> listaPerfiles = conexion.leerPerfiles();            
@@ -84,10 +99,81 @@ public class CristoGames {
             System.out.println(listaGeneros);            
             System.out.println(listaJuegos);
             System.out.println( listaPerfiles );
+            System.out.println( listaResenias );         
+            
+            System.out.println("PRUEBAS DE OBTENER PERFIL Y USUARIO");
+            Perfil perfil1 = conexion.obtenerPerfilPorUsername("usuario7");
+            System.out.println(perfil1);
+            Usuario usuario1 = conexion.obtenerUsuarioPorCorreo("user@example7");
+            System.out.println(usuario1);
+           System.out.println("PRUEBAS DE OBTENER GENERO Y JUEGO");
+            Genero genero1 = conexion.obtenerGeneroPorId(1);
+            System.out.println(genero1);
+            Juego juego1 = conexion.obtenerJuegoPorId(1);
+            System.out.println(juego1);
+            
+            PKCompuestaResenia pk = new PKCompuestaResenia(perfil1.getUsername(), juego1.getIdJuego(), fechaConHora);        
+            Resenia resenia = new Resenia(pk, perfil1, juego1, "juego malo", 1);
+            
+            System.out.println("PRUEBAS DE INSERTAR RESEÑA Y JUAGADA; Y OBTENER");
+            conexion.insertarResenia(resenia);
+            conexion.insertarJugada(juego, perfil);
+            
+            Resenia resenia1 = conexion.obtenerReseniaPorPK(pk);
+            System.out.println(resenia1);
+            
+            juego.setCaratula("cambio imagen");
+            genero.setNombre("cambio nombre7");
+            perfil.setAvatar("cambio avatar");
+            usuario.setApellidos("cambio apellidos");
+            resenia.setCalificacion(2);
+            
+            System.out.println("PRUEBAS DE MODIFICAR");
+            conexion.modificarGenero(genero);
+            conexion.modificarJuego(juego);
+            conexion.modificarPerfil(perfil);
+            conexion.modificarUsuario(usuario);
+            conexion.modificarResenia(resenia);
+            
+            /*perfil1 = conexion.obtenerPerfilPorUsername("usuario6");
+            juego1 = conexion.obtenerJuegoPorId(1);
+            conexion.modificarJugada(juego, perfil, juego1, perfil1);*/   
+            
+            listaGeneros = conexion.leerGeneros();
+            listaJuegos = conexion.leerJuegos();
+            listaPerfiles = conexion.leerPerfiles();            
+            listaUsuarios = conexion.leerUsuarios();
+            listaResenias = conexion.leerResenias();
+            
+            System.out.println( listaUsuarios);
+            System.out.println(listaGeneros);            
+            System.out.println(listaJuegos);
+            System.out.println( listaPerfiles );
             System.out.println( listaResenias );
+            
+            conexion.eliminarGenero(1);
+            //conexion.eliminarResenia(pk);
+            conexion.eliminarJugada(juego, perfil);
+            conexion.eliminarJuego(1);
+            conexion.eliminarPerfil("usuario7");
+            //conexion.eliminarUsuario("user@example7");
+           
+            
+            listaGeneros = conexion.leerGeneros();
+            listaJuegos = conexion.leerJuegos();
+            listaPerfiles = conexion.leerPerfiles();            
+            listaUsuarios = conexion.leerUsuarios();
+            listaResenias = conexion.leerResenias();
+            
+            System.out.println( listaUsuarios);
+            System.out.println(listaGeneros);            
+            System.out.println(listaJuegos);
+            System.out.println( listaPerfiles );
+            System.out.println( listaResenias );
+            
 
         } catch ( Exception e ){
-            //e.printStackTrace();
+           e.printStackTrace();
         }    
         
         // Cierro base de datos

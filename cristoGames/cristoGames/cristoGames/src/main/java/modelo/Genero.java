@@ -35,7 +35,7 @@ public class Genero implements Serializable {
     @Column(name="nombre", length = 45, nullable = false)
     private String nombre;
     
-    @OneToMany(mappedBy = "genero", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "genero", fetch = FetchType.EAGER)
     private List<Juego> listaJuegos;
    
     
