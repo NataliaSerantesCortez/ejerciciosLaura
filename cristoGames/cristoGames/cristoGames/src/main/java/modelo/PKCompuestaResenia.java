@@ -17,11 +17,11 @@ import java.time.LocalDateTime;
 public class PKCompuestaResenia implements Serializable {
     
     private String username;
-    private int idJuego;
+    private Integer idJuego;
     private LocalDateTime fecha;
     
     //Constructor con parámetros
-    public PKCompuestaResenia(String username, int idJuego, LocalDateTime fecha) {
+    public PKCompuestaResenia(String username, Integer idJuego, LocalDateTime fecha) {
         this.username = username;
         this.idJuego = idJuego;
         this.fecha = fecha;
@@ -37,7 +37,7 @@ public class PKCompuestaResenia implements Serializable {
         this.username = username;
     }
 
-    public void setIdJuego(int idJuego) {
+    public void setIdJuego(Integer idJuego) {
         this.idJuego = idJuego;
     }
 
@@ -50,11 +50,16 @@ public class PKCompuestaResenia implements Serializable {
         return username;
     }
 
-    public int getIdJuego() {
+    public Integer getIdJuego() {
         return idJuego;
     }
 
     public LocalDateTime getFecha() {
         return fecha;
     }  
+
+    @Override
+    public String toString() {
+        return "PKCompuestaResenia{" + "username=" + username + ", idJuego=" + idJuego + ", fecha=" + fecha + '}';
+    }
 }

@@ -6,6 +6,7 @@ package modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
@@ -37,7 +38,7 @@ public class Perfil implements Serializable {
     @Column(name="biografia", nullable = false)
     private String biografia;
     
-    @ManyToMany()
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "juega",
         joinColumns = @JoinColumn(name = "username"),
@@ -45,7 +46,7 @@ public class Perfil implements Serializable {
     )
     private List<Juego> listaJuegosJugados;
     
-    @OneToMany(mappedBy = "perfil")
+    @OneToMany(mappedBy = "perfil", fetch = FetchType.EAGER)
     private List<Resenia> listaJuegosReseniados;
     
     @OneToOne(mappedBy = "perfil")
@@ -126,4 +127,10 @@ public class Perfil implements Serializable {
     public Usuario getUsuario() {
         return usuario;
     }
+
+    @Override
+    public String toString() {
+        return "Perfil{" + "username=" + username + ", avatar=" + avatar + ", biografia=" + biografia + '}';
+    }
+    
 }

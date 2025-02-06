@@ -118,4 +118,10 @@ public class Usuario implements Serializable {
     public Perfil getPerfil() {
         return perfil;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "correo=" + correo + ", nombre=" + nombre + ", apellidos=" + apellidos + ", contrasenia=" + contrasenia + ", pais=" + pais + ", tipo=" + tipo + ", perfil=" + perfil + '}';
+    }
+    
 }

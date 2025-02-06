@@ -6,12 +6,16 @@ package com.mycompany.cristogames;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import modelo.Conexion;
 import modelo.Genero;
 import modelo.HibernateUtil;
 import modelo.Juego;
 import modelo.PKCompuestaResenia;
 import modelo.Perfil;
 import modelo.Resenia;
+import modelo.Usuario;
 import org.hibernate.Session;
 
 /**
@@ -65,6 +69,28 @@ public class CristoGames {
         session.getTransaction().commit();        
         
         // Cierro base de datos
-        HibernateUtil.closeSessionFactory();*/
+        HibernateUtil.closeSessionFactory();*/ 
+        
+        Conexion conexion = new Conexion();
+        
+        try {
+            List<Genero> listaGeneros = conexion.leerGeneros();
+            List<Juego> listaJuegos = conexion.leerJuegos();
+            List<Perfil> listaPerfiles = conexion.leerPerfiles();            
+            List<Usuario> listaUsuarios = conexion.leerUsuarios();
+            List<Resenia> listaResenias = conexion.leerResenias();
+            
+            System.out.println( listaUsuarios);
+            System.out.println(listaGeneros);            
+            System.out.println(listaJuegos);
+            System.out.println( listaPerfiles );
+            System.out.println( listaResenias );
+
+        } catch ( Exception e ){
+            //e.printStackTrace();
+        }    
+        
+        // Cierro base de datos
+        HibernateUtil.closeSessionFactory();
     }
 }

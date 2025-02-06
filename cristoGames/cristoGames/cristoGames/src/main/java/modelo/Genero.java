@@ -7,6 +7,7 @@ package modelo;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -29,25 +30,23 @@ public class Genero implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idGenero", nullable = false, unique = true)
-    private int idGenero;
+    private Integer idGenero;
     
     @Column(name="nombre", length = 45, nullable = false)
     private String nombre;
     
-    @OneToMany(mappedBy = "genero", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "genero", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Juego> listaJuegos;
    
     
     //Constructor con parámetros
-    public Genero(int idGenero, String nombre, List<Juego> listaJuegos) {
-        this.idGenero = idGenero;
+    public Genero(String nombre, List<Juego> listaJuegos) {
         this.nombre = nombre;
         this.listaJuegos = listaJuegos;
     }
     
     //Constructor con parámetros 2
-    public Genero(int idGenero, String nombre) {
-        this.idGenero = idGenero;
+    public Genero(String nombre) {
         this.nombre = nombre;
         this.listaJuegos = new ArrayList<>();
     }
@@ -58,7 +57,7 @@ public class Genero implements Serializable {
     }
     
     //Set's
-    public void setIdGenero(int idGenero) {
+    public void setIdGenero(Integer idGenero) {
         this.idGenero = idGenero;
     }
 
@@ -71,7 +70,7 @@ public class Genero implements Serializable {
     }
     
     //Get's
-    public int getIdGenero() {
+    public Integer getIdGenero() {
         return idGenero;
     }
 
@@ -82,4 +81,10 @@ public class Genero implements Serializable {
     public List<Juego> getListaJuegos() {
         return listaJuegos;
     }
+
+    @Override
+    public String toString() {
+        return "Genero{" + "idGenero=" + idGenero + ", nombre=" + nombre + '}';
+    }
+    
 }

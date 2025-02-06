@@ -6,6 +6,7 @@ package modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -32,7 +33,7 @@ public class Juego implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idJuego", nullable = false, unique = true)
-    private int idJuego;
+    private Integer idJuego;
     
     @Column(name="nombre", length = 45, nullable = false)
     private String nombre;
@@ -50,15 +51,14 @@ public class Juego implements Serializable {
     @JoinColumn(name = "idGenero")
     private Genero genero;
     
-    @ManyToMany(mappedBy = "listaJuegosJugados")
+    @ManyToMany(mappedBy = "listaJuegosJugados", fetch = FetchType.EAGER)
     private List<Perfil> listaPerfilesJugadores;
     
-    @OneToMany(mappedBy = "juego")
+    @OneToMany(mappedBy = "juego", fetch = FetchType.EAGER)
     private List<Resenia> listaResenias;
     
     //Constructor con parámetros
-    public Juego(int idJuego, String nombre, String estudio, String caratula, LocalDate lanzamiento, Genero genero, List<Perfil> listaPerfilesJugadores, List<Resenia> listaResenias) {
-        this.idJuego = idJuego;
+    public Juego(String nombre, String estudio, String caratula, LocalDate lanzamiento, Genero genero, List<Perfil> listaPerfilesJugadores, List<Resenia> listaResenias) {
         this.nombre = nombre;
         this.estudio = estudio;
         this.caratula = caratula;
@@ -69,8 +69,7 @@ public class Juego implements Serializable {
     }
     
     //Constructor con parámetros 2
-    public Juego(int idJuego, String nombre, String estudio, String caratula, LocalDate lanzamiento, Genero genero) {
-        this.idJuego = idJuego;
+    public Juego(String nombre, String estudio, String caratula, LocalDate lanzamiento, Genero genero) {
         this.nombre = nombre;
         this.estudio = estudio;
         this.caratula = caratula;
@@ -83,10 +82,12 @@ public class Juego implements Serializable {
     //Constructor sin parámetros
     public Juego() {
         this.genero = new Genero();
+        this.listaPerfilesJugadores = new ArrayList<>();
+        this.listaResenias = new ArrayList<>();
     }
     
     //Set's
-    public void setIdJuego(int idJuego) {
+    public void setIdJuego(Integer idJuego) {
         this.idJuego = idJuego;
     }
 
@@ -119,7 +120,7 @@ public class Juego implements Serializable {
     }
     
     //Get's
-    public int getIdJuego() {
+    public Integer getIdJuego() {
         return idJuego;
     }
 
@@ -150,4 +151,10 @@ public class Juego implements Serializable {
     public List<Resenia> getListaResenias() {
         return listaResenias;
     }
+
+    @Override
+    public String toString() {
+        return "Juego{" + "idJuego=" + idJuego + ", nombre=" + nombre + ", estudio=" + estudio + ", caratula=" + caratula + ", lanzamiento=" + lanzamiento + ", genero=" + genero + '}';
+    }    
+    
 }
