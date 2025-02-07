@@ -42,7 +42,7 @@ public class Usuario implements Serializable {
     private String tipo;
     
     @OneToOne()
-    @JoinColumn(name = "username", unique = true)
+    @JoinColumn(name = "username", unique = true, nullable = true)
     private Perfil perfil;
     
     //Constructor con parámetros
