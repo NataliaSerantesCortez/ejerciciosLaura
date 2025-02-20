@@ -52,5 +52,24 @@ namespace MiniProyecto
         {
 
         }
+
+        private void panelBienvenida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabelWeb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Specify that the link was visited.
+            this.linkLabelWeb.LinkVisited = true;
+
+            // Navigate to a URL.
+            System.Diagnostics.Process.Start("https://cescristorey.com/");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

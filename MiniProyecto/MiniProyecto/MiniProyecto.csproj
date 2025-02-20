@@ -112,5 +112,26 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_help_icon_191660.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_wrong_close_delete_icon_191608.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_settings_options_icon_191642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_avatar_account_user_icon_191606.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soloCorona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoVertical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoCorona.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

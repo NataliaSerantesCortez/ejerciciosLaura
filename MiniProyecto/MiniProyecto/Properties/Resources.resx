@@ -118,13 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cross_wrong_close_delete_icon_191608" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross_wrong_close_delete_icon_191608.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dosis_light__allfont_es_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dosis-light_[allfont.es].ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dosis_semibold__allfont_es_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dosis-semibold_[allfont.es].ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="gear_settings_options_icon_191642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gear_settings_options_icon_191642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoCorona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoCorona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoVertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoVertical.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logo_Def_Fun_JGr_Hor__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo Def Fun JGr Hor (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person_avatar_account_user_icon_191606" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person_avatar_account_user_icon_191606.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question_help_icon_191660" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question_help_icon_191660.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soloCorona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soloCorona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

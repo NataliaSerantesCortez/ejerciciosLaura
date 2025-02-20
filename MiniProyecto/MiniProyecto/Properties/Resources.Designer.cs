@@ -61,6 +61,16 @@ namespace MiniProyecto.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cross_wrong_close_delete_icon_191608 {
+            get {
+                object obj = ResourceManager.GetObject("cross_wrong_close_delete_icon_191608", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
         internal static byte[] dosis_light__allfont_es_ {
@@ -83,9 +93,69 @@ namespace MiniProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gear_settings_options_icon_191642 {
+            get {
+                object obj = ResourceManager.GetObject("gear_settings_options_icon_191642", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_Def_Fun_JGr_Hor__1_ {
             get {
                 object obj = ResourceManager.GetObject("Logo_Def_Fun_JGr_Hor__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoCorona {
+            get {
+                object obj = ResourceManager.GetObject("logoCorona", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoVertical {
+            get {
+                object obj = ResourceManager.GetObject("logoVertical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap person_avatar_account_user_icon_191606 {
+            get {
+                object obj = ResourceManager.GetObject("person_avatar_account_user_icon_191606", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_help_icon_191660 {
+            get {
+                object obj = ResourceManager.GetObject("question_help_icon_191660", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soloCorona {
+            get {
+                object obj = ResourceManager.GetObject("soloCorona", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
