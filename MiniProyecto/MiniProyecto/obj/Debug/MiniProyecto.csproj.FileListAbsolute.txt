@@ -1,0 +1,10 @@
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\MiniProyecto.exe.config
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\MiniProyecto.exe
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\MiniProyecto.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.csproj.AssemblyReference.cache
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.Form1.resources
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.Properties.Resources.resources
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.exe
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.pdb
