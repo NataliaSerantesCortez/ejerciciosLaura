@@ -71,5 +71,22 @@ namespace MiniProyecto
         {
 
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            tbUsuario.Text = "";
+            tbContrasenia.Text = "";
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            String usuario = tbUsuario.Text;
+            String contrasenia = tbContrasenia.Text;
+
+            if (usuario.Equals("admin") && contrasenia.Equals("admin"))
+            {
+
+            }
+        }
     }
 }
