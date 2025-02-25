@@ -60,10 +60,7 @@ namespace MiniProyecto
 
         private void linkLabelWeb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Specify that the link was visited.
             this.linkLabelWeb.LinkVisited = true;
-
-            // Navigate to a URL.
             System.Diagnostics.Process.Start("https://cescristorey.com/");
         }
 
@@ -97,6 +94,50 @@ namespace MiniProyecto
         private void label19_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //logo 
+            panelBienvenida.Visible = true;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
+          
+        }
+
+        private void buttonPersonal_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = true;
+            panelPlanos.Visible = false;
+        }
+
+        private void buttonPlanos_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = true;
+        }
+
+        private void buttonInteres_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = true;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
+        }
+
+        private void linkLabelAlbaicin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabelAlbaicin.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://www.viajeroscallejeros.com/que-ver-en-el-albaicin-granada/#:~:text=16%20lugares%20que%20ver%20en%20el%20Albaic%C3%ADn%20%28Granada%29,...%207%207.%20Plaza%20Larga%20...%20M%C3%A1s%20elementos");
         }
     }
 }
