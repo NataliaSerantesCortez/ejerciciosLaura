@@ -63,6 +63,16 @@ namespace MiniProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ana {
+            get {
+                object obj = ResourceManager.GetObject("ana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross_wrong_close_delete_icon_191608 {
             get {
                 object obj = ResourceManager.GetObject("cross_wrong_close_delete_icon_191608", resourceCulture);
@@ -93,9 +103,39 @@ namespace MiniProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap esther {
+            get {
+                object obj = ResourceManager.GetObject("esther", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gear_settings_options_icon_191642 {
             get {
                 object obj = ResourceManager.GetObject("gear_settings_options_icon_191642", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jaime {
+            get {
+                object obj = ResourceManager.GetObject("jaime", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap laura {
+            get {
+                object obj = ResourceManager.GetObject("laura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +173,26 @@ namespace MiniProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap luis {
+            get {
+                object obj = ResourceManager.GetObject("luis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap luispablo {
+            get {
+                object obj = ResourceManager.GetObject("luispablo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap person_avatar_account_user_icon_191606 {
             get {
                 object obj = ResourceManager.GetObject("person_avatar_account_user_icon_191606", resourceCulture);
@@ -143,9 +203,29 @@ namespace MiniProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PrimeraPlanta {
+            get {
+                object obj = ResourceManager.GetObject("PrimeraPlanta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap question_help_icon_191660 {
             get {
                 object obj = ResourceManager.GetObject("question_help_icon_191660", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SegundaPlanta {
+            get {
+                object obj = ResourceManager.GetObject("SegundaPlanta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

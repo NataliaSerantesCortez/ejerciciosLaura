@@ -139,5 +139,29 @@
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2025-02-24 0816381.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luispablo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaime.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luis.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laura.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esther.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SegundaPlanta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrimeraPlanta.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

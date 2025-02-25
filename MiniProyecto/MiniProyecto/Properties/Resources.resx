@@ -154,4 +154,28 @@
   <data name="Captura de pantalla 2025-02-24 081638" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2025-02-24 0816381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ana.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="esther" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\esther.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaime.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laura.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luis.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luispablo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luispablo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrimeraPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrimeraPlanta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SegundaPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SegundaPlanta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -42,6 +42,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabelWeb = new System.Windows.Forms.LinkLabel();
             this.panelPlanos = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,34 +70,53 @@
             this.label5 = new System.Windows.Forms.Label();
             this.labelDireccion = new System.Windows.Forms.Label();
             this.panelPersonal = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.labelTituloProfesores = new System.Windows.Forms.Label();
+            this.pictureBoxLuisP = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEsther = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAna = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLaura = new System.Windows.Forms.PictureBox();
+            this.pictureBoxJaime = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLuis = new System.Windows.Forms.PictureBox();
+            this.labelLaura = new System.Windows.Forms.Label();
+            this.labelDI = new System.Windows.Forms.Label();
+            this.labelLuisPablo = new System.Windows.Forms.Label();
+            this.labelEmpresa = new System.Windows.Forms.Label();
+            this.labelEsther = new System.Windows.Forms.Label();
+            this.labelEmprendedora = new System.Windows.Forms.Label();
+            this.labelIngles = new System.Windows.Forms.Label();
+            this.labelLuis = new System.Windows.Forms.Label();
+            this.labelAD = new System.Windows.Forms.Label();
+            this.labelAna = new System.Windows.Forms.Label();
+            this.labelPMDM = new System.Windows.Forms.Label();
+            this.labelSGE = new System.Windows.Forms.Label();
+            this.labelJaime = new System.Windows.Forms.Label();
+            this.labelPSP = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.panelBienvenida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelIniciosesion.SuspendLayout();
             this.panelPlanos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
+            this.panelInteres.SuspendLayout();
             this.panelSideBar.SuspendLayout();
             this.panelDireccion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelPersonal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuisP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEsther)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAna)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLaura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJaime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuis)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBienvenida
             // 
             this.panelBienvenida.BackColor = System.Drawing.Color.White;
+            this.panelBienvenida.Controls.Add(this.panelPlanos);
             this.panelBienvenida.Controls.Add(this.pictureBox2);
-            this.panelBienvenida.Controls.Add(this.label2);
-            this.panelBienvenida.Controls.Add(this.panelIniciosesion);
             this.panelBienvenida.Controls.Add(this.linkLabelWeb);
             this.panelBienvenida.Location = new System.Drawing.Point(176, 104);
             this.panelBienvenida.Name = "panelBienvenida";
@@ -127,7 +156,7 @@
             this.panelIniciosesion.Controls.Add(this.label4);
             this.panelIniciosesion.Controls.Add(this.label3);
             this.panelIniciosesion.Controls.Add(this.label1);
-            this.panelIniciosesion.Location = new System.Drawing.Point(0, 0);
+            this.panelIniciosesion.Location = new System.Drawing.Point(104, 56);
             this.panelIniciosesion.Name = "panelIniciosesion";
             this.panelIniciosesion.Size = new System.Drawing.Size(624, 432);
             this.panelIniciosesion.TabIndex = 8;
@@ -237,11 +266,121 @@
             this.panelPlanos.Controls.Add(this.label8);
             this.panelPlanos.Controls.Add(this.label7);
             this.panelPlanos.Controls.Add(this.label6);
+            this.panelPlanos.Controls.Add(this.label2);
             this.panelPlanos.Controls.Add(this.pictureBox3);
-            this.panelPlanos.Location = new System.Drawing.Point(176, 104);
+            this.panelPlanos.Location = new System.Drawing.Point(0, 0);
             this.panelPlanos.Name = "panelPlanos";
             this.panelPlanos.Size = new System.Drawing.Size(624, 432);
             this.panelPlanos.TabIndex = 5;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label14.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(272, 304);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(20, 14);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "1°B";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
+            this.label13.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(24, 40);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 14);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "PLANTA BAJA";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label12.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(408, 320);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(38, 14);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "BAÑOS";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label11.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(384, 280);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 14);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "OFICINA DIRECCIÓN";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label10.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(344, 192);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(25, 14);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "2°EI";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label9.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(456, 248);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 14);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "BAÑOS";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label8.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(160, 248);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 14);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "BAÑOS";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label7.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(408, 192);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 14);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "1°DAM";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label6.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(264, 192);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 14);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "2°DAM";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MiniProyecto.Properties.Resources.PrimeraPlanta;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(608, 416);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // labelTitulo
             // 
@@ -259,6 +398,7 @@
             // 
             this.panelLogo.BackColor = System.Drawing.Color.White;
             this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Controls.Add(this.panelIniciosesion);
             this.panelLogo.Controls.Add(this.buttonInicio);
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
@@ -286,7 +426,6 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.panelHeader.Controls.Add(this.panelInteres);
             this.panelHeader.Controls.Add(this.buttonAyuda);
             this.panelHeader.Controls.Add(this.buttonConfig);
             this.panelHeader.Controls.Add(this.buttonLogin);
@@ -298,9 +437,11 @@
             // 
             // panelInteres
             // 
-            this.panelInteres.Location = new System.Drawing.Point(624, 32);
+            this.panelInteres.BackColor = System.Drawing.Color.White;
+            this.panelInteres.Controls.Add(this.label30);
+            this.panelInteres.Location = new System.Drawing.Point(816, 544);
             this.panelInteres.Name = "panelInteres";
-            this.panelInteres.Size = new System.Drawing.Size(624, 272);
+            this.panelInteres.Size = new System.Drawing.Size(624, 632);
             this.panelInteres.TabIndex = 0;
             // 
             // buttonAyuda
@@ -406,7 +547,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(360, 120);
+            this.label5.Location = new System.Drawing.Point(376, 8);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 13);
             this.label5.TabIndex = 1;
@@ -416,7 +557,7 @@
             // 
             this.labelDireccion.AutoSize = true;
             this.labelDireccion.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDireccion.Location = new System.Drawing.Point(368, 144);
+            this.labelDireccion.Location = new System.Drawing.Point(376, 24);
             this.labelDireccion.Name = "labelDireccion";
             this.labelDireccion.Size = new System.Drawing.Size(235, 20);
             this.labelDireccion.TabIndex = 0;
@@ -425,126 +566,261 @@
             // panelPersonal
             // 
             this.panelPersonal.BackColor = System.Drawing.Color.White;
-            this.panelPersonal.Location = new System.Drawing.Point(808, 104);
+            this.panelPersonal.Controls.Add(this.labelPSP);
+            this.panelPersonal.Controls.Add(this.labelJaime);
+            this.panelPersonal.Controls.Add(this.labelSGE);
+            this.panelPersonal.Controls.Add(this.labelPMDM);
+            this.panelPersonal.Controls.Add(this.labelAna);
+            this.panelPersonal.Controls.Add(this.labelAD);
+            this.panelPersonal.Controls.Add(this.labelLuis);
+            this.panelPersonal.Controls.Add(this.labelIngles);
+            this.panelPersonal.Controls.Add(this.labelEmprendedora);
+            this.panelPersonal.Controls.Add(this.labelEsther);
+            this.panelPersonal.Controls.Add(this.labelEmpresa);
+            this.panelPersonal.Controls.Add(this.labelLuisPablo);
+            this.panelPersonal.Controls.Add(this.labelDI);
+            this.panelPersonal.Controls.Add(this.labelLaura);
+            this.panelPersonal.Controls.Add(this.labelTituloProfesores);
+            this.panelPersonal.Controls.Add(this.pictureBoxLuisP);
+            this.panelPersonal.Controls.Add(this.pictureBoxEsther);
+            this.panelPersonal.Controls.Add(this.pictureBoxAna);
+            this.panelPersonal.Controls.Add(this.pictureBoxLaura);
+            this.panelPersonal.Controls.Add(this.pictureBoxJaime);
+            this.panelPersonal.Controls.Add(this.pictureBoxLuis);
+            this.panelPersonal.Location = new System.Drawing.Point(320, 104);
             this.panelPersonal.Name = "panelPersonal";
             this.panelPersonal.Size = new System.Drawing.Size(624, 432);
             this.panelPersonal.TabIndex = 8;
             // 
-            // pictureBox3
+            // labelTituloProfesores
             // 
-            this.pictureBox3.BackgroundImage = global::MiniProyecto.Properties.Resources.Captura_de_pantalla_2025_02_24_081638;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(616, 416);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.labelTituloProfesores.AutoSize = true;
+            this.labelTituloProfesores.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTituloProfesores.ForeColor = System.Drawing.Color.Black;
+            this.labelTituloProfesores.Location = new System.Drawing.Point(184, 8);
+            this.labelTituloProfesores.Name = "labelTituloProfesores";
+            this.labelTituloProfesores.Size = new System.Drawing.Size(221, 41);
+            this.labelTituloProfesores.TabIndex = 3;
+            this.labelTituloProfesores.Text = "Profesores DAM";
             // 
-            // label6
+            // pictureBoxLuisP
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label6.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(248, 96);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 14);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "2°DAM";
+            this.pictureBoxLuisP.Image = global::MiniProyecto.Properties.Resources.luispablo;
+            this.pictureBoxLuisP.Location = new System.Drawing.Point(264, 272);
+            this.pictureBoxLuisP.Name = "pictureBoxLuisP";
+            this.pictureBoxLuisP.Size = new System.Drawing.Size(104, 96);
+            this.pictureBoxLuisP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLuisP.TabIndex = 5;
+            this.pictureBoxLuisP.TabStop = false;
             // 
-            // label7
+            // pictureBoxEsther
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label7.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(472, 104);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 14);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "1°DAM";
+            this.pictureBoxEsther.Image = global::MiniProyecto.Properties.Resources.esther;
+            this.pictureBoxEsther.Location = new System.Drawing.Point(456, 88);
+            this.pictureBoxEsther.Name = "pictureBoxEsther";
+            this.pictureBoxEsther.Size = new System.Drawing.Size(104, 96);
+            this.pictureBoxEsther.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEsther.TabIndex = 4;
+            this.pictureBoxEsther.TabStop = false;
             // 
-            // label8
+            // pictureBoxAna
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label8.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(104, 160);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 14);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "BAÑOS";
+            this.pictureBoxAna.Image = global::MiniProyecto.Properties.Resources.ana;
+            this.pictureBoxAna.Location = new System.Drawing.Point(256, 80);
+            this.pictureBoxAna.Name = "pictureBoxAna";
+            this.pictureBoxAna.Size = new System.Drawing.Size(104, 104);
+            this.pictureBoxAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAna.TabIndex = 3;
+            this.pictureBoxAna.TabStop = false;
             // 
-            // label9
+            // pictureBoxLaura
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label9.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(544, 176);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 14);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "BAÑOS";
+            this.pictureBoxLaura.Image = global::MiniProyecto.Properties.Resources.laura;
+            this.pictureBoxLaura.Location = new System.Drawing.Point(48, 88);
+            this.pictureBoxLaura.Name = "pictureBoxLaura";
+            this.pictureBoxLaura.Size = new System.Drawing.Size(104, 96);
+            this.pictureBoxLaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLaura.TabIndex = 2;
+            this.pictureBoxLaura.TabStop = false;
             // 
-            // label10
+            // pictureBoxJaime
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label10.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(360, 96);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 14);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "2°EI";
+            this.pictureBoxJaime.Image = global::MiniProyecto.Properties.Resources.jaime;
+            this.pictureBoxJaime.Location = new System.Drawing.Point(456, 264);
+            this.pictureBoxJaime.Name = "pictureBoxJaime";
+            this.pictureBoxJaime.Size = new System.Drawing.Size(104, 104);
+            this.pictureBoxJaime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxJaime.TabIndex = 1;
+            this.pictureBoxJaime.TabStop = false;
+            this.pictureBoxJaime.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // label11
+            // pictureBoxLuis
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label11.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(440, 304);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 14);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "OFICINA DIRECCIÓN";
+            this.pictureBoxLuis.Image = global::MiniProyecto.Properties.Resources.luis;
+            this.pictureBoxLuis.Location = new System.Drawing.Point(48, 264);
+            this.pictureBoxLuis.Name = "pictureBoxLuis";
+            this.pictureBoxLuis.Size = new System.Drawing.Size(104, 104);
+            this.pictureBoxLuis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLuis.TabIndex = 0;
+            this.pictureBoxLuis.TabStop = false;
             // 
-            // label12
+            // labelLaura
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label12.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(560, 272);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 14);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "BAÑOS";
+            this.labelLaura.AutoSize = true;
+            this.labelLaura.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLaura.Location = new System.Drawing.Point(24, 64);
+            this.labelLaura.Name = "labelLaura";
+            this.labelLaura.Size = new System.Drawing.Size(156, 20);
+            this.labelLaura.TabIndex = 6;
+            this.labelLaura.Text = "Laura Florido Banqueri ";
             // 
-            // label13
+            // labelDI
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
-            this.label13.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(16, 24);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 14);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "PLANTA BAJA";
+            this.labelDI.AutoSize = true;
+            this.labelDI.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDI.Location = new System.Drawing.Point(24, 192);
+            this.labelDI.Name = "labelDI";
+            this.labelDI.Size = new System.Drawing.Size(148, 20);
+            this.labelDI.TabIndex = 7;
+            this.labelDI.Text = "Desarrollo de interfaces";
             // 
-            // label14
+            // labelLuisPablo
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label14.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(256, 224);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(20, 14);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "1°B";
+            this.labelLuisPablo.AutoSize = true;
+            this.labelLuisPablo.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLuisPablo.Location = new System.Drawing.Point(240, 248);
+            this.labelLuisPablo.Name = "labelLuisPablo";
+            this.labelLuisPablo.Size = new System.Drawing.Size(145, 20);
+            this.labelLuisPablo.TabIndex = 8;
+            this.labelLuisPablo.Text = "Luis Pablo Hernández";
+            // 
+            // labelEmpresa
+            // 
+            this.labelEmpresa.AutoSize = true;
+            this.labelEmpresa.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmpresa.Location = new System.Drawing.Point(256, 376);
+            this.labelEmpresa.Name = "labelEmpresa";
+            this.labelEmpresa.Size = new System.Drawing.Size(127, 20);
+            this.labelEmpresa.TabIndex = 9;
+            this.labelEmpresa.Text = "Empresa e iniciativa";
+            this.labelEmpresa.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // labelEsther
+            // 
+            this.labelEsther.AutoSize = true;
+            this.labelEsther.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEsther.Location = new System.Drawing.Point(432, 64);
+            this.labelEsther.Name = "labelEsther";
+            this.labelEsther.Size = new System.Drawing.Size(183, 20);
+            this.labelEsther.TabIndex = 10;
+            this.labelEsther.Text = "Esther Hernández Carmona";
+            // 
+            // labelEmprendedora
+            // 
+            this.labelEmprendedora.AutoSize = true;
+            this.labelEmprendedora.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmprendedora.Location = new System.Drawing.Point(272, 400);
+            this.labelEmprendedora.Name = "labelEmprendedora";
+            this.labelEmprendedora.Size = new System.Drawing.Size(98, 20);
+            this.labelEmprendedora.TabIndex = 11;
+            this.labelEmprendedora.Text = "emprendedora";
+            // 
+            // labelIngles
+            // 
+            this.labelIngles.AutoSize = true;
+            this.labelIngles.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIngles.Location = new System.Drawing.Point(488, 192);
+            this.labelIngles.Name = "labelIngles";
+            this.labelIngles.Size = new System.Drawing.Size(43, 20);
+            this.labelIngles.TabIndex = 12;
+            this.labelIngles.Text = "Inglés";
+            // 
+            // labelLuis
+            // 
+            this.labelLuis.AutoSize = true;
+            this.labelLuis.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLuis.Location = new System.Drawing.Point(24, 248);
+            this.labelLuis.Name = "labelLuis";
+            this.labelLuis.Size = new System.Drawing.Size(140, 20);
+            this.labelLuis.TabIndex = 13;
+            this.labelLuis.Text = "Luis Serrano Donaire";
+            // 
+            // labelAD
+            // 
+            this.labelAD.AutoSize = true;
+            this.labelAD.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAD.Location = new System.Drawing.Point(264, 192);
+            this.labelAD.Name = "labelAD";
+            this.labelAD.Size = new System.Drawing.Size(95, 20);
+            this.labelAD.TabIndex = 14;
+            this.labelAD.Text = "Acceso a datos";
+            // 
+            // labelAna
+            // 
+            this.labelAna.AutoSize = true;
+            this.labelAna.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAna.Location = new System.Drawing.Point(224, 64);
+            this.labelAna.Name = "labelAna";
+            this.labelAna.Size = new System.Drawing.Size(168, 20);
+            this.labelAna.TabIndex = 15;
+            this.labelAna.Text = "Ana Buendía Ruiz-Azuaga";
+            // 
+            // labelPMDM
+            // 
+            this.labelPMDM.AutoSize = true;
+            this.labelPMDM.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPMDM.Location = new System.Drawing.Point(72, 376);
+            this.labelPMDM.Name = "labelPMDM";
+            this.labelPMDM.Size = new System.Drawing.Size(48, 20);
+            this.labelPMDM.TabIndex = 16;
+            this.labelPMDM.Text = "PMDM";
+            // 
+            // labelSGE
+            // 
+            this.labelSGE.AutoSize = true;
+            this.labelSGE.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSGE.Location = new System.Drawing.Point(8, 400);
+            this.labelSGE.Name = "labelSGE";
+            this.labelSGE.Size = new System.Drawing.Size(194, 20);
+            this.labelSGE.TabIndex = 17;
+            this.labelSGE.Text = "Sistema de gestión empresarial";
+            // 
+            // labelJaime
+            // 
+            this.labelJaime.AutoSize = true;
+            this.labelJaime.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJaime.Location = new System.Drawing.Point(440, 240);
+            this.labelJaime.Name = "labelJaime";
+            this.labelJaime.Size = new System.Drawing.Size(132, 20);
+            this.labelJaime.TabIndex = 18;
+            this.labelJaime.Text = "Jaime Matas Bustos";
+            // 
+            // labelPSP
+            // 
+            this.labelPSP.AutoSize = true;
+            this.labelPSP.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPSP.Location = new System.Drawing.Point(488, 376);
+            this.labelPSP.Name = "labelPSP";
+            this.labelPSP.Size = new System.Drawing.Size(33, 20);
+            this.labelPSP.TabIndex = 19;
+            this.labelPSP.Text = "PSP";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(1040, 384);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(118, 41);
+            this.label30.TabIndex = 8;
+            this.label30.Text = "Albaicín";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.panelPlanos);
+            this.Controls.Add(this.panelInteres);
             this.Controls.Add(this.panelPersonal);
             this.Controls.Add(this.panelDireccion);
             this.Controls.Add(this.panelSideBar);
@@ -560,14 +836,24 @@
             this.panelIniciosesion.PerformLayout();
             this.panelPlanos.ResumeLayout(false);
             this.panelPlanos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
+            this.panelInteres.ResumeLayout(false);
+            this.panelInteres.PerformLayout();
             this.panelSideBar.ResumeLayout(false);
             this.panelDireccion.ResumeLayout(false);
             this.panelDireccion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panelPersonal.ResumeLayout(false);
+            this.panelPersonal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuisP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEsther)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAna)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLaura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJaime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuis)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -616,6 +902,28 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBoxLuis;
+        private System.Windows.Forms.PictureBox pictureBoxJaime;
+        private System.Windows.Forms.PictureBox pictureBoxAna;
+        private System.Windows.Forms.PictureBox pictureBoxLaura;
+        private System.Windows.Forms.PictureBox pictureBoxEsther;
+        private System.Windows.Forms.PictureBox pictureBoxLuisP;
+        private System.Windows.Forms.Label labelTituloProfesores;
+        private System.Windows.Forms.Label labelLaura;
+        private System.Windows.Forms.Label labelEmpresa;
+        private System.Windows.Forms.Label labelLuisPablo;
+        private System.Windows.Forms.Label labelDI;
+        private System.Windows.Forms.Label labelEsther;
+        private System.Windows.Forms.Label labelIngles;
+        private System.Windows.Forms.Label labelEmprendedora;
+        private System.Windows.Forms.Label labelAD;
+        private System.Windows.Forms.Label labelLuis;
+        private System.Windows.Forms.Label labelSGE;
+        private System.Windows.Forms.Label labelPMDM;
+        private System.Windows.Forms.Label labelAna;
+        private System.Windows.Forms.Label labelPSP;
+        private System.Windows.Forms.Label labelJaime;
+        private System.Windows.Forms.Label label30;
     }
 }
 
