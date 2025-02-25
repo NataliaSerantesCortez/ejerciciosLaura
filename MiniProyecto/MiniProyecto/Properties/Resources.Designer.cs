@@ -73,6 +73,16 @@ namespace MiniProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_02_25_122650 {
+            get {
+                object obj = ResourceManager.GetObject("Captura_de_pantalla_2025_02_25_122650", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross_wrong_close_delete_icon_191608 {
             get {
                 object obj = ResourceManager.GetObject("cross_wrong_close_delete_icon_191608", resourceCulture);
