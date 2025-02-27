@@ -22,14 +22,18 @@ namespace MiniProyecto
     public partial class Form1 : Form
     {
         private PdfViewer pdfViewer;
+        private PdfViewer pdfViewer2;
         private bool modoAdmin;
         private String rutaPDF;
+        private String rutaPDFCalendario;
         public Form1()
         {
             InitializeComponent();
 
             modoAdmin = false;
             rutaPDF = "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\MiniProyecto\\MiniProyecto\\Resources\\Normas Convivencia 23-24.pdf";
+
+            rutaPDFCalendario = "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\MiniProyecto\\MiniProyecto\\Resources\\calendario-escolar-24-25.pdf";
 
             panelBienvenida.Visible = true;
             panelIniciosesion.Visible = false;
@@ -38,12 +42,19 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
             panelPDF.Visible = false;
+            panelPDFCalendario.Visible = false;
 
 
             pdfViewer = new PdfViewer();
             pdfViewer.Dock = DockStyle.Fill;
             panelPDF.Controls.Add(pdfViewer);
 
+            pdfViewer2 = new PdfViewer();
+            pdfViewer2.Dock = DockStyle.Fill;
+            panelPDFCalendario.Controls.Add(pdfViewer2);
+
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(tbMensaje, "Escribe aquí tu sugerencia y te responderemos a la brevedad.");
 
             /*PrivateFontCollection pfc = new PrivateFontCollection();
             byte[] fontData = Properties.Resources.dosis_semibold__allfont_es_; 
@@ -78,6 +89,19 @@ namespace MiniProyecto
             {
                 pdfViewer.Document?.Dispose(); // Liberar documento anterior si hay uno cargado
                 pdfViewer.Document = PdfDocument.Load(ruta);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void CargarPDF2(string ruta)
+        {
+            try
+            {
+                pdfViewer2.Document?.Dispose(); // Liberar documento anterior si hay uno cargado
+                pdfViewer2.Document = PdfDocument.Load(ruta);
             }
             catch (Exception ex)
             {
@@ -147,6 +171,7 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
             panelPDF.Visible = false;
+            panelPDFCalendario.Visible = false;
 
         }
 
@@ -159,6 +184,7 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
             panelPDF.Visible = false;
+            panelPDFCalendario.Visible = false;
         }
 
         private void buttonPlanos_Click(object sender, EventArgs e)
@@ -170,6 +196,7 @@ namespace MiniProyecto
             panelPlanos.Visible = true;
             panelFormulario.Visible = false;
             panelPDF.Visible=false;
+            panelPDFCalendario.Visible = false;
         }
 
         private void buttonInteres_Click(object sender, EventArgs e)
@@ -181,6 +208,7 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
             panelPDF.Visible=false;
+            panelPDFCalendario.Visible = false;
         }
 
         private void linkLabelAlbaicin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -198,6 +226,7 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
             panelPDF.Visible=false;
+            panelPDFCalendario.Visible = false;
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -245,6 +274,7 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = true;
             panelPDF.Visible = false;
+            panelPDFCalendario.Visible = false;
         }
 
         private void buttonNormas_Click(object sender, EventArgs e)
@@ -256,6 +286,7 @@ namespace MiniProyecto
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
             panelPDF.Visible = true;
+            panelPDFCalendario.Visible = false;
 
             if (modoAdmin)
             {
@@ -324,6 +355,52 @@ namespace MiniProyecto
         private void rbSegunda_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCalendario_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
+            panelFormulario.Visible = false;
+            panelPDF.Visible = false;
+            panelPDFCalendario.Visible = true;
+
+            if (modoAdmin)
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Filter = "Archivos PDF|*.pdf",
+                    Title = "Seleccionar un archivo PDF"
+                };
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    rutaPDFCalendario = openFileDialog.FileName;
+                    CargarPDF2(openFileDialog.FileName);
+                }
+            }
+            else
+            {
+                CargarPDF2(rutaPDFCalendario);
+            }
+        }
+
+        private void buttonAyuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Inicio de sesión como admin: al abrir la aplicación encontrarás la ventana de Bienvenida" +
+                " al punto de información. Arriba del todo a la derecha verás el ícono de usuario, pincha en el botón " +
+                "para acceder a la ventana de inicio de sesión. Ingresa tus datos en los campos y pincha el botón “Iniciar”." +
+                " Si las credenciales son correctas un mensaje te dará la bienvenida como admin, sino verás un mensaje de Error " +
+                "y tendrás que volver a intentarlo, puedes limpiar los campos con el botón “Limpiar”.\r\nFuncionalidades como admin:" +
+                " como usuario admin puedes gestionar los botones “Normas de Convivencia” y “Calendario”. Tu trabajo como administrador " +
+                "implica poder cambiar el archivo que se va a visualizar en estas dos ventanas. Elige el nuevo archivo previamente " +
+                "incluido en la carpeta resources de la aplicación.\r\nCierre de sesión: si quieres cerrar sesión simplemente vuelve a" +
+                " la ventana de Inicio de Sesión a través del ícono de usuario y pincha en el botón “Cerrar sesión”.\r\n", 
+                "Manual de Administración", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

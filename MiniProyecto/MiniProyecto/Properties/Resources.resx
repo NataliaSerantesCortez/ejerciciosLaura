@@ -190,4 +190,7 @@
   <data name="_4105939_info_information_113916" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4105939-info-information_113916.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calendario_escolar_24_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendario-escolar-24-25.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

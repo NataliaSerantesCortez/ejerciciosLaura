@@ -54,19 +54,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxPrimeraplanta = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbSegunda = new System.Windows.Forms.RadioButton();
-            this.rbPrimera = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbPrimera = new System.Windows.Forms.RadioButton();
+            this.rbSegunda = new System.Windows.Forms.RadioButton();
             this.panelIniciosesion = new System.Windows.Forms.Panel();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.labelInicioSesion = new System.Windows.Forms.Label();
+            this.labelUsuario = new System.Windows.Forms.Label();
+            this.tbUsuario = new System.Windows.Forms.TextBox();
+            this.labelContrasenia = new System.Windows.Forms.Label();
+            this.tbContrasenia = new System.Windows.Forms.TextBox();
+            this.cbContrasenia = new System.Windows.Forms.CheckBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnIniciar = new System.Windows.Forms.Button();
-            this.tbContrasenia = new System.Windows.Forms.TextBox();
-            this.tbUsuario = new System.Windows.Forms.TextBox();
-            this.cbContrasenia = new System.Windows.Forms.CheckBox();
-            this.labelContrasenia = new System.Windows.Forms.Label();
-            this.labelUsuario = new System.Windows.Forms.Label();
-            this.labelInicioSesion = new System.Windows.Forms.Label();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -122,6 +122,8 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelFormulario = new System.Windows.Forms.Label();
             this.panelPDF = new System.Windows.Forms.Panel();
+            this.panelPDFCalendario = new System.Windows.Forms.Panel();
+            this.btnCalendario = new System.Windows.Forms.Button();
             this.panelBienvenida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelPlanos.SuspendLayout();
@@ -433,29 +435,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Planta";
             // 
-            // rbSegunda
-            // 
-            this.rbSegunda.AutoSize = true;
-            this.rbSegunda.Location = new System.Drawing.Point(16, 72);
-            this.rbSegunda.Name = "rbSegunda";
-            this.rbSegunda.Size = new System.Drawing.Size(68, 17);
-            this.rbSegunda.TabIndex = 15;
-            this.rbSegunda.Text = "Segunda";
-            this.rbSegunda.UseVisualStyleBackColor = true;
-            this.rbSegunda.Visible = false;
-            this.rbSegunda.CheckedChanged += new System.EventHandler(this.rbSegunda_CheckedChanged);
-            // 
-            // rbPrimera
-            // 
-            this.rbPrimera.AutoSize = true;
-            this.rbPrimera.Location = new System.Drawing.Point(16, 48);
-            this.rbPrimera.Name = "rbPrimera";
-            this.rbPrimera.Size = new System.Drawing.Size(60, 17);
-            this.rbPrimera.TabIndex = 14;
-            this.rbPrimera.Text = "Primera";
-            this.rbPrimera.UseVisualStyleBackColor = true;
-            this.rbPrimera.CheckedChanged += new System.EventHandler(this.rbPrimera_CheckedChanged);
-            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -468,6 +447,29 @@
             this.radioButton1.Text = "Baja";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // rbPrimera
+            // 
+            this.rbPrimera.AutoSize = true;
+            this.rbPrimera.Location = new System.Drawing.Point(16, 48);
+            this.rbPrimera.Name = "rbPrimera";
+            this.rbPrimera.Size = new System.Drawing.Size(60, 17);
+            this.rbPrimera.TabIndex = 14;
+            this.rbPrimera.Text = "Primera";
+            this.rbPrimera.UseVisualStyleBackColor = true;
+            this.rbPrimera.CheckedChanged += new System.EventHandler(this.rbPrimera_CheckedChanged);
+            // 
+            // rbSegunda
+            // 
+            this.rbSegunda.AutoSize = true;
+            this.rbSegunda.Location = new System.Drawing.Point(16, 72);
+            this.rbSegunda.Name = "rbSegunda";
+            this.rbSegunda.Size = new System.Drawing.Size(68, 17);
+            this.rbSegunda.TabIndex = 15;
+            this.rbSegunda.Text = "Segunda";
+            this.rbSegunda.UseVisualStyleBackColor = true;
+            this.rbSegunda.Visible = false;
+            this.rbSegunda.CheckedChanged += new System.EventHandler(this.rbSegunda_CheckedChanged);
             // 
             // panelIniciosesion
             // 
@@ -486,17 +488,64 @@
             this.panelIniciosesion.Size = new System.Drawing.Size(624, 432);
             this.panelIniciosesion.TabIndex = 8;
             // 
-            // btnCerrarSesion
+            // labelInicioSesion
             // 
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(8, 8);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(104, 32);
-            this.btnCerrarSesion.TabIndex = 8;
-            this.btnCerrarSesion.Text = "Cerrar Sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            this.labelInicioSesion.AutoSize = true;
+            this.labelInicioSesion.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInicioSesion.Location = new System.Drawing.Point(200, 8);
+            this.labelInicioSesion.Name = "labelInicioSesion";
+            this.labelInicioSesion.Size = new System.Drawing.Size(201, 41);
+            this.labelInicioSesion.TabIndex = 0;
+            this.labelInicioSesion.Text = "Inicio de Sesión";
+            // 
+            // labelUsuario
+            // 
+            this.labelUsuario.AutoSize = true;
+            this.labelUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsuario.Location = new System.Drawing.Point(192, 100);
+            this.labelUsuario.Name = "labelUsuario";
+            this.labelUsuario.Size = new System.Drawing.Size(60, 20);
+            this.labelUsuario.TabIndex = 1;
+            this.labelUsuario.Text = "Usuario:";
+            // 
+            // tbUsuario
+            // 
+            this.tbUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.Location = new System.Drawing.Point(304, 100);
+            this.tbUsuario.Name = "tbUsuario";
+            this.tbUsuario.Size = new System.Drawing.Size(100, 28);
+            this.tbUsuario.TabIndex = 2;
+            // 
+            // labelContrasenia
+            // 
+            this.labelContrasenia.AutoSize = true;
+            this.labelContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContrasenia.Location = new System.Drawing.Point(192, 160);
+            this.labelContrasenia.Name = "labelContrasenia";
+            this.labelContrasenia.Size = new System.Drawing.Size(85, 20);
+            this.labelContrasenia.TabIndex = 3;
+            this.labelContrasenia.Text = "Contraseña:";
+            // 
+            // tbContrasenia
+            // 
+            this.tbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContrasenia.Location = new System.Drawing.Point(304, 160);
+            this.tbContrasenia.Name = "tbContrasenia";
+            this.tbContrasenia.Size = new System.Drawing.Size(100, 28);
+            this.tbContrasenia.TabIndex = 4;
+            this.tbContrasenia.UseSystemPasswordChar = true;
+            // 
+            // cbContrasenia
+            // 
+            this.cbContrasenia.AutoSize = true;
+            this.cbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbContrasenia.Location = new System.Drawing.Point(296, 200);
+            this.cbContrasenia.Name = "cbContrasenia";
+            this.cbContrasenia.Size = new System.Drawing.Size(116, 24);
+            this.cbContrasenia.TabIndex = 5;
+            this.cbContrasenia.Text = "Ver contraseña";
+            this.cbContrasenia.UseVisualStyleBackColor = true;
+            this.cbContrasenia.CheckedChanged += new System.EventHandler(this.cbContrasenia_CheckedChanged);
             // 
             // btnLimpiar
             // 
@@ -522,64 +571,17 @@
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
-            // tbContrasenia
+            // btnCerrarSesion
             // 
-            this.tbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbContrasenia.Location = new System.Drawing.Point(304, 160);
-            this.tbContrasenia.Name = "tbContrasenia";
-            this.tbContrasenia.Size = new System.Drawing.Size(100, 28);
-            this.tbContrasenia.TabIndex = 4;
-            this.tbContrasenia.UseSystemPasswordChar = true;
-            // 
-            // tbUsuario
-            // 
-            this.tbUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsuario.Location = new System.Drawing.Point(304, 100);
-            this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(100, 28);
-            this.tbUsuario.TabIndex = 2;
-            // 
-            // cbContrasenia
-            // 
-            this.cbContrasenia.AutoSize = true;
-            this.cbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbContrasenia.Location = new System.Drawing.Point(296, 200);
-            this.cbContrasenia.Name = "cbContrasenia";
-            this.cbContrasenia.Size = new System.Drawing.Size(116, 24);
-            this.cbContrasenia.TabIndex = 5;
-            this.cbContrasenia.Text = "Ver contraseña";
-            this.cbContrasenia.UseVisualStyleBackColor = true;
-            this.cbContrasenia.CheckedChanged += new System.EventHandler(this.cbContrasenia_CheckedChanged);
-            // 
-            // labelContrasenia
-            // 
-            this.labelContrasenia.AutoSize = true;
-            this.labelContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContrasenia.Location = new System.Drawing.Point(192, 160);
-            this.labelContrasenia.Name = "labelContrasenia";
-            this.labelContrasenia.Size = new System.Drawing.Size(85, 20);
-            this.labelContrasenia.TabIndex = 3;
-            this.labelContrasenia.Text = "Contraseña:";
-            // 
-            // labelUsuario
-            // 
-            this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsuario.Location = new System.Drawing.Point(192, 100);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(60, 20);
-            this.labelUsuario.TabIndex = 1;
-            this.labelUsuario.Text = "Usuario:";
-            // 
-            // labelInicioSesion
-            // 
-            this.labelInicioSesion.AutoSize = true;
-            this.labelInicioSesion.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInicioSesion.Location = new System.Drawing.Point(200, 8);
-            this.labelInicioSesion.Name = "labelInicioSesion";
-            this.labelInicioSesion.Size = new System.Drawing.Size(201, 41);
-            this.labelInicioSesion.TabIndex = 0;
-            this.labelInicioSesion.Text = "Inicio de Sesión";
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.Location = new System.Drawing.Point(8, 8);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(104, 32);
+            this.btnCerrarSesion.TabIndex = 8;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // labelTitulo
             // 
@@ -644,6 +646,7 @@
             this.buttonAyuda.TabIndex = 0;
             this.buttonAyuda.TabStop = false;
             this.buttonAyuda.UseVisualStyleBackColor = false;
+            this.buttonAyuda.Click += new System.EventHandler(this.buttonAyuda_Click);
             // 
             // buttonConfig
             // 
@@ -991,6 +994,7 @@
             // panelSideBar
             // 
             this.panelSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.panelSideBar.Controls.Add(this.btnCalendario);
             this.panelSideBar.Controls.Add(this.btnContacto);
             this.panelSideBar.Controls.Add(this.buttonInteres);
             this.panelSideBar.Controls.Add(this.buttonNormas);
@@ -1006,7 +1010,7 @@
             this.btnContacto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
             this.btnContacto.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.btnContacto.Location = new System.Drawing.Point(8, 344);
+            this.btnContacto.Location = new System.Drawing.Point(8, 376);
             this.btnContacto.Name = "btnContacto";
             this.btnContacto.Size = new System.Drawing.Size(160, 48);
             this.btnContacto.TabIndex = 4;
@@ -1019,7 +1023,7 @@
             this.buttonInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
             this.buttonInteres.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInteres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.buttonInteres.Location = new System.Drawing.Point(8, 272);
+            this.buttonInteres.Location = new System.Drawing.Point(8, 232);
             this.buttonInteres.Name = "buttonInteres";
             this.buttonInteres.Size = new System.Drawing.Size(160, 48);
             this.buttonInteres.TabIndex = 3;
@@ -1032,7 +1036,7 @@
             this.buttonNormas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
             this.buttonNormas.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNormas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.buttonNormas.Location = new System.Drawing.Point(8, 200);
+            this.buttonNormas.Location = new System.Drawing.Point(8, 160);
             this.buttonNormas.Name = "buttonNormas";
             this.buttonNormas.Size = new System.Drawing.Size(160, 48);
             this.buttonNormas.TabIndex = 2;
@@ -1045,7 +1049,7 @@
             this.buttonPlanos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
             this.buttonPlanos.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlanos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.buttonPlanos.Location = new System.Drawing.Point(8, 128);
+            this.buttonPlanos.Location = new System.Drawing.Point(8, 88);
             this.buttonPlanos.Name = "buttonPlanos";
             this.buttonPlanos.Size = new System.Drawing.Size(160, 48);
             this.buttonPlanos.TabIndex = 1;
@@ -1058,7 +1062,7 @@
             this.buttonPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
             this.buttonPersonal.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.buttonPersonal.Location = new System.Drawing.Point(8, 56);
+            this.buttonPersonal.Location = new System.Drawing.Point(8, 16);
             this.buttonPersonal.Name = "buttonPersonal";
             this.buttonPersonal.Size = new System.Drawing.Size(160, 48);
             this.buttonPersonal.TabIndex = 0;
@@ -1199,11 +1203,33 @@
             this.panelPDF.Size = new System.Drawing.Size(624, 440);
             this.panelPDF.TabIndex = 10;
             // 
+            // panelPDFCalendario
+            // 
+            this.panelPDFCalendario.BackColor = System.Drawing.Color.White;
+            this.panelPDFCalendario.Location = new System.Drawing.Point(176, 104);
+            this.panelPDFCalendario.Name = "panelPDFCalendario";
+            this.panelPDFCalendario.Size = new System.Drawing.Size(624, 440);
+            this.panelPDFCalendario.TabIndex = 3;
+            // 
+            // btnCalendario
+            // 
+            this.btnCalendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.btnCalendario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalendario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.btnCalendario.Location = new System.Drawing.Point(8, 304);
+            this.btnCalendario.Name = "btnCalendario";
+            this.btnCalendario.Size = new System.Drawing.Size(160, 48);
+            this.btnCalendario.TabIndex = 5;
+            this.btnCalendario.Text = "Calendario";
+            this.btnCalendario.UseVisualStyleBackColor = false;
+            this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 592);
+            this.Controls.Add(this.panelPDFCalendario);
             this.Controls.Add(this.panelPlanos);
             this.Controls.Add(this.panelPDF);
             this.Controls.Add(this.panelFormulario);
@@ -1351,6 +1377,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelPDFCalendario;
+        private System.Windows.Forms.Button btnCalendario;
     }
 }
 

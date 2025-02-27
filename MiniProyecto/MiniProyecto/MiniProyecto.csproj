@@ -98,6 +98,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\calendario-escolar-24-25.pdf" />
     <None Include="Resources\dosis-light_[allfont.es].ttf" />
     <None Include="Resources\dosis-semibold_[allfont.es].ttf" />
   </ItemGroup>
