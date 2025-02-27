@@ -21,6 +21,14 @@ namespace MiniProyecto
         public Form1()
         {
             InitializeComponent();
+
+            panelBienvenida.Visible = true;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
+
+
             /*PrivateFontCollection pfc = new PrivateFontCollection();
             byte[] fontData = Properties.Resources.dosis_semibold__allfont_es_; 
             IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
@@ -29,10 +37,10 @@ namespace MiniProyecto
 
             label1.Font = new Font(pfc.Families[0], 12);*/
 
-            PrivateFontCollection pfc = new PrivateFontCollection();
+           /* PrivateFontCollection pfc = new PrivateFontCollection();
 
             // Obtener los bytes de la fuente desde los recursos
-            byte[] fontData = Properties.Resources.dosis_semibold__allfont_es_; // Usa el nombre exacto del recurso
+            byte[] fontData = Properties.Resources.dosis_semibold__allfont_es_;
 
             // Reservar memoria para la fuente
             IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
@@ -45,7 +53,7 @@ namespace MiniProyecto
             Marshal.FreeCoTaskMem(fontPtr);
 
             // Aplicar la fuente a un Label u otro control
-            labelTitulo.Font = new Font(pfc.Families[0], 12);
+            labelTitulo.Font = new Font(pfc.Families[0], 12);*/
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -138,6 +146,15 @@ namespace MiniProyecto
         {
             linkLabelAlbaicin.LinkVisited = true;
             System.Diagnostics.Process.Start("https://www.viajeroscallejeros.com/que-ver-en-el-albaicin-granada/#:~:text=16%20lugares%20que%20ver%20en%20el%20Albaic%C3%ADn%20%28Granada%29,...%207%207.%20Plaza%20Larga%20...%20M%C3%A1s%20elementos");
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = true;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
         }
     }
 }

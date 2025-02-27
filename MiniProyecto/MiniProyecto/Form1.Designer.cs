@@ -31,6 +31,15 @@
             this.panelBienvenida = new System.Windows.Forms.Panel();
             this.panelPlanos = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
+            this.panelIniciosesion = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.tbContrasenia = new System.Windows.Forms.TextBox();
+            this.tbUsuario = new System.Windows.Forms.TextBox();
+            this.cbContrasenia = new System.Windows.Forms.CheckBox();
+            this.labelContrasenia = new System.Windows.Forms.Label();
+            this.labelUsuario = new System.Windows.Forms.Label();
+            this.labelInicioSesion = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -39,19 +48,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelBienvenida = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkLabelWeb = new System.Windows.Forms.LinkLabel();
-            this.panelIniciosesion = new System.Windows.Forms.Panel();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.tbContrasenia = new System.Windows.Forms.TextBox();
-            this.tbUsuario = new System.Windows.Forms.TextBox();
-            this.cbContrasenia = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -83,9 +83,10 @@
             this.buttonConfig = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panelInteres = new System.Windows.Forms.Panel();
+            this.linkLabelAlbaicin = new System.Windows.Forms.LinkLabel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.listBox10Lugares = new System.Windows.Forms.ListBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.labelAlbaicin = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panelSideBar = new System.Windows.Forms.Panel();
             this.buttonInteres = new System.Windows.Forms.Button();
@@ -95,12 +96,11 @@
             this.panelDireccion = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.labelDireccion = new System.Windows.Forms.Label();
-            this.linkLabelAlbaicin = new System.Windows.Forms.LinkLabel();
             this.panelBienvenida.SuspendLayout();
             this.panelPlanos.SuspendLayout();
+            this.panelIniciosesion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelIniciosesion.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
@@ -120,7 +120,7 @@
             // panelBienvenida
             // 
             this.panelBienvenida.BackColor = System.Drawing.Color.White;
-            this.panelBienvenida.Controls.Add(this.panelPlanos);
+            this.panelBienvenida.Controls.Add(this.labelBienvenida);
             this.panelBienvenida.Controls.Add(this.pictureBox2);
             this.panelBienvenida.Controls.Add(this.linkLabelWeb);
             this.panelBienvenida.Location = new System.Drawing.Point(176, 104);
@@ -133,7 +133,6 @@
             // 
             this.panelPlanos.BackColor = System.Drawing.Color.White;
             this.panelPlanos.Controls.Add(this.label14);
-            this.panelPlanos.Controls.Add(this.panelIniciosesion);
             this.panelPlanos.Controls.Add(this.label13);
             this.panelPlanos.Controls.Add(this.label12);
             this.panelPlanos.Controls.Add(this.label11);
@@ -142,9 +141,8 @@
             this.panelPlanos.Controls.Add(this.label8);
             this.panelPlanos.Controls.Add(this.label7);
             this.panelPlanos.Controls.Add(this.label6);
-            this.panelPlanos.Controls.Add(this.label2);
             this.panelPlanos.Controls.Add(this.pictureBox3);
-            this.panelPlanos.Location = new System.Drawing.Point(0, 0);
+            this.panelPlanos.Location = new System.Drawing.Point(176, 104);
             this.panelPlanos.Name = "panelPlanos";
             this.panelPlanos.Size = new System.Drawing.Size(624, 440);
             this.panelPlanos.TabIndex = 5;
@@ -159,6 +157,103 @@
             this.label14.Size = new System.Drawing.Size(20, 14);
             this.label14.TabIndex = 9;
             this.label14.Text = "1°B";
+            // 
+            // panelIniciosesion
+            // 
+            this.panelIniciosesion.BackColor = System.Drawing.Color.White;
+            this.panelIniciosesion.Controls.Add(this.btnLimpiar);
+            this.panelIniciosesion.Controls.Add(this.btnIniciar);
+            this.panelIniciosesion.Controls.Add(this.tbContrasenia);
+            this.panelIniciosesion.Controls.Add(this.tbUsuario);
+            this.panelIniciosesion.Controls.Add(this.cbContrasenia);
+            this.panelIniciosesion.Controls.Add(this.labelContrasenia);
+            this.panelIniciosesion.Controls.Add(this.labelUsuario);
+            this.panelIniciosesion.Controls.Add(this.labelInicioSesion);
+            this.panelIniciosesion.Location = new System.Drawing.Point(176, 104);
+            this.panelIniciosesion.Name = "panelIniciosesion";
+            this.panelIniciosesion.Size = new System.Drawing.Size(624, 432);
+            this.panelIniciosesion.TabIndex = 8;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.btnLimpiar.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(192, 304);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 32);
+            this.btnLimpiar.TabIndex = 7;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnIniciar
+            // 
+            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.btnIniciar.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.Location = new System.Drawing.Point(320, 304);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(75, 32);
+            this.btnIniciar.TabIndex = 6;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // tbContrasenia
+            // 
+            this.tbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContrasenia.Location = new System.Drawing.Point(304, 200);
+            this.tbContrasenia.Name = "tbContrasenia";
+            this.tbContrasenia.Size = new System.Drawing.Size(100, 28);
+            this.tbContrasenia.TabIndex = 5;
+            // 
+            // tbUsuario
+            // 
+            this.tbUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.Location = new System.Drawing.Point(304, 152);
+            this.tbUsuario.Name = "tbUsuario";
+            this.tbUsuario.Size = new System.Drawing.Size(100, 28);
+            this.tbUsuario.TabIndex = 4;
+            // 
+            // cbContrasenia
+            // 
+            this.cbContrasenia.AutoSize = true;
+            this.cbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbContrasenia.Location = new System.Drawing.Point(296, 256);
+            this.cbContrasenia.Name = "cbContrasenia";
+            this.cbContrasenia.Size = new System.Drawing.Size(116, 24);
+            this.cbContrasenia.TabIndex = 3;
+            this.cbContrasenia.Text = "Ver contraseña";
+            this.cbContrasenia.UseVisualStyleBackColor = true;
+            // 
+            // labelContrasenia
+            // 
+            this.labelContrasenia.AutoSize = true;
+            this.labelContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContrasenia.Location = new System.Drawing.Point(192, 208);
+            this.labelContrasenia.Name = "labelContrasenia";
+            this.labelContrasenia.Size = new System.Drawing.Size(85, 20);
+            this.labelContrasenia.TabIndex = 2;
+            this.labelContrasenia.Text = "Contraseña:";
+            // 
+            // labelUsuario
+            // 
+            this.labelUsuario.AutoSize = true;
+            this.labelUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsuario.Location = new System.Drawing.Point(192, 152);
+            this.labelUsuario.Name = "labelUsuario";
+            this.labelUsuario.Size = new System.Drawing.Size(60, 20);
+            this.labelUsuario.TabIndex = 1;
+            this.labelUsuario.Text = "Usuario:";
+            // 
+            // labelInicioSesion
+            // 
+            this.labelInicioSesion.AutoSize = true;
+            this.labelInicioSesion.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInicioSesion.Location = new System.Drawing.Point(192, 8);
+            this.labelInicioSesion.Name = "labelInicioSesion";
+            this.labelInicioSesion.Size = new System.Drawing.Size(201, 41);
+            this.labelInicioSesion.TabIndex = 0;
+            this.labelInicioSesion.Text = "Inicio de Sesión";
             // 
             // label13
             // 
@@ -248,16 +343,16 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "2°DAM";
             // 
-            // label2
+            // labelBienvenida
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(104, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(441, 41);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Bienvenido al Punto de Información";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelBienvenida.AutoSize = true;
+            this.labelBienvenida.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBienvenida.Location = new System.Drawing.Point(100, 8);
+            this.labelBienvenida.Name = "labelBienvenida";
+            this.labelBienvenida.Size = new System.Drawing.Size(441, 41);
+            this.labelBienvenida.TabIndex = 3;
+            this.labelBienvenida.Text = "Bienvenido al Punto de Información";
+            this.labelBienvenida.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox3
             // 
@@ -290,103 +385,6 @@
             this.linkLabelWeb.TabStop = true;
             this.linkLabelWeb.Text = "Página Web Oficial";
             this.linkLabelWeb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWeb_LinkClicked);
-            // 
-            // panelIniciosesion
-            // 
-            this.panelIniciosesion.BackColor = System.Drawing.Color.White;
-            this.panelIniciosesion.Controls.Add(this.btnLimpiar);
-            this.panelIniciosesion.Controls.Add(this.btnIniciar);
-            this.panelIniciosesion.Controls.Add(this.tbContrasenia);
-            this.panelIniciosesion.Controls.Add(this.tbUsuario);
-            this.panelIniciosesion.Controls.Add(this.cbContrasenia);
-            this.panelIniciosesion.Controls.Add(this.label4);
-            this.panelIniciosesion.Controls.Add(this.label3);
-            this.panelIniciosesion.Controls.Add(this.label1);
-            this.panelIniciosesion.Location = new System.Drawing.Point(0, 0);
-            this.panelIniciosesion.Name = "panelIniciosesion";
-            this.panelIniciosesion.Size = new System.Drawing.Size(624, 432);
-            this.panelIniciosesion.TabIndex = 8;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.btnLimpiar.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(192, 304);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 32);
-            this.btnLimpiar.TabIndex = 7;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.btnIniciar.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(320, 304);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 32);
-            this.btnIniciar.TabIndex = 6;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = false;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
-            // 
-            // tbContrasenia
-            // 
-            this.tbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbContrasenia.Location = new System.Drawing.Point(304, 200);
-            this.tbContrasenia.Name = "tbContrasenia";
-            this.tbContrasenia.Size = new System.Drawing.Size(100, 28);
-            this.tbContrasenia.TabIndex = 5;
-            // 
-            // tbUsuario
-            // 
-            this.tbUsuario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsuario.Location = new System.Drawing.Point(304, 152);
-            this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(100, 28);
-            this.tbUsuario.TabIndex = 4;
-            // 
-            // cbContrasenia
-            // 
-            this.cbContrasenia.AutoSize = true;
-            this.cbContrasenia.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbContrasenia.Location = new System.Drawing.Point(296, 256);
-            this.cbContrasenia.Name = "cbContrasenia";
-            this.cbContrasenia.Size = new System.Drawing.Size(116, 24);
-            this.cbContrasenia.TabIndex = 3;
-            this.cbContrasenia.Text = "Ver contraseña";
-            this.cbContrasenia.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(192, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Contraseña:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(192, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Usuario:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(192, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Inicio de Sesión";
             // 
             // labelTitulo
             // 
@@ -433,7 +431,6 @@
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
             this.panelHeader.Controls.Add(this.buttonAyuda);
-            this.panelHeader.Controls.Add(this.panelPersonal);
             this.panelHeader.Controls.Add(this.buttonConfig);
             this.panelHeader.Controls.Add(this.buttonLogin);
             this.panelHeader.Controls.Add(this.labelTitulo);
@@ -476,7 +473,7 @@
             this.panelPersonal.Controls.Add(this.pictureBoxLaura);
             this.panelPersonal.Controls.Add(this.pictureBoxJaime);
             this.panelPersonal.Controls.Add(this.pictureBoxLuis);
-            this.panelPersonal.Location = new System.Drawing.Point(368, 0);
+            this.panelPersonal.Location = new System.Drawing.Point(176, 104);
             this.panelPersonal.Name = "panelPersonal";
             this.panelPersonal.Size = new System.Drawing.Size(624, 432);
             this.panelPersonal.TabIndex = 8;
@@ -713,6 +710,7 @@
             this.buttonLogin.Size = new System.Drawing.Size(48, 48);
             this.buttonLogin.TabIndex = 1;
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panelInteres
             // 
@@ -720,12 +718,24 @@
             this.panelInteres.Controls.Add(this.linkLabelAlbaicin);
             this.panelInteres.Controls.Add(this.pictureBox4);
             this.panelInteres.Controls.Add(this.listBox10Lugares);
-            this.panelInteres.Controls.Add(this.label15);
+            this.panelInteres.Controls.Add(this.labelAlbaicin);
             this.panelInteres.Controls.Add(this.label30);
-            this.panelInteres.Location = new System.Drawing.Point(808, 56);
+            this.panelInteres.Location = new System.Drawing.Point(176, 104);
             this.panelInteres.Name = "panelInteres";
             this.panelInteres.Size = new System.Drawing.Size(624, 432);
             this.panelInteres.TabIndex = 0;
+            // 
+            // linkLabelAlbaicin
+            // 
+            this.linkLabelAlbaicin.AutoSize = true;
+            this.linkLabelAlbaicin.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAlbaicin.Location = new System.Drawing.Point(24, 392);
+            this.linkLabelAlbaicin.Name = "linkLabelAlbaicin";
+            this.linkLabelAlbaicin.Size = new System.Drawing.Size(107, 20);
+            this.linkLabelAlbaicin.TabIndex = 15;
+            this.linkLabelAlbaicin.TabStop = true;
+            this.linkLabelAlbaicin.Text = "Más información";
+            this.linkLabelAlbaicin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelAlbaicin_LinkClicked);
             // 
             // pictureBox4
             // 
@@ -759,15 +769,15 @@
             this.listBox10Lugares.Size = new System.Drawing.Size(224, 240);
             this.listBox10Lugares.TabIndex = 13;
             // 
-            // label15
+            // labelAlbaicin
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(112, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(388, 41);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "10 lugares que ver en el Albaicín";
+            this.labelAlbaicin.AutoSize = true;
+            this.labelAlbaicin.Font = new System.Drawing.Font("Dosis", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAlbaicin.Location = new System.Drawing.Point(112, 8);
+            this.labelAlbaicin.Name = "labelAlbaicin";
+            this.labelAlbaicin.Size = new System.Drawing.Size(388, 41);
+            this.labelAlbaicin.TabIndex = 11;
+            this.labelAlbaicin.Text = "10 lugares que ver en el Albaicín";
             // 
             // label30
             // 
@@ -871,23 +881,14 @@
             this.labelDireccion.TabIndex = 0;
             this.labelDireccion.Text = "San Gregorio Alto, 5 - 18010 Granada";
             // 
-            // linkLabelAlbaicin
-            // 
-            this.linkLabelAlbaicin.AutoSize = true;
-            this.linkLabelAlbaicin.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelAlbaicin.Location = new System.Drawing.Point(24, 392);
-            this.linkLabelAlbaicin.Name = "linkLabelAlbaicin";
-            this.linkLabelAlbaicin.Size = new System.Drawing.Size(107, 20);
-            this.linkLabelAlbaicin.TabIndex = 15;
-            this.linkLabelAlbaicin.TabStop = true;
-            this.linkLabelAlbaicin.Text = "Más información";
-            this.linkLabelAlbaicin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelAlbaicin_LinkClicked);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panelPlanos);
+            this.Controls.Add(this.panelIniciosesion);
+            this.Controls.Add(this.panelPersonal);
             this.Controls.Add(this.panelInteres);
             this.Controls.Add(this.panelDireccion);
             this.Controls.Add(this.panelSideBar);
@@ -900,10 +901,10 @@
             this.panelBienvenida.PerformLayout();
             this.panelPlanos.ResumeLayout(false);
             this.panelPlanos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelIniciosesion.ResumeLayout(false);
             this.panelIniciosesion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHeader.ResumeLayout(false);
@@ -945,15 +946,15 @@
         private System.Windows.Forms.Button buttonInicio;
         private System.Windows.Forms.Button buttonAyuda;
         private System.Windows.Forms.LinkLabel linkLabelWeb;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelBienvenida;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelPlanos;
         private System.Windows.Forms.TextBox tbContrasenia;
         private System.Windows.Forms.TextBox tbUsuario;
         private System.Windows.Forms.CheckBox cbContrasenia;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelContrasenia;
+        private System.Windows.Forms.Label labelUsuario;
+        private System.Windows.Forms.Label labelInicioSesion;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label5;
@@ -992,7 +993,7 @@
         private System.Windows.Forms.Label labelPSP;
         private System.Windows.Forms.Label labelJaime;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label labelAlbaicin;
         private System.Windows.Forms.ListBox listBox10Lugares;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.LinkLabel linkLabelAlbaicin;
