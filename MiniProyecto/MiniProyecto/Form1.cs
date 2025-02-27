@@ -290,5 +290,40 @@ namespace MiniProyecto
 
             }
         }
+
+        private void cbContrasenia_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbContrasenia.Checked)
+            {
+                tbContrasenia.UseSystemPasswordChar = false; 
+            }
+            else
+            {
+                tbContrasenia.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                panelPlantaBaja.Visible = true;
+                panelPrimeraPlanta.Visible = false;
+            }
+        }
+
+        private void rbPrimera_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPrimera.Checked)
+            {
+                panelPlantaBaja.Visible = false;
+                panelPrimeraPlanta.Visible = true;
+            }
+        }
+
+        private void rbSegunda_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,18 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelBienvenida = new System.Windows.Forms.Panel();
             this.labelBienvenida = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkLabelWeb = new System.Windows.Forms.LinkLabel();
             this.panelPlanos = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.picturePlantaBaja = new System.Windows.Forms.PictureBox();
             this.panelIniciosesion = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.tbContrasenia = new System.Windows.Forms.TextBox();
@@ -53,8 +54,12 @@
             this.labelInicioSesion = new System.Windows.Forms.Label();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonInicio = new System.Windows.Forms.Button();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.buttonAyuda = new System.Windows.Forms.Button();
+            this.buttonConfig = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.panelPersonal = new System.Windows.Forms.Panel();
             this.labelPSP = new System.Windows.Forms.Label();
             this.labelJaime = new System.Windows.Forms.Label();
@@ -71,8 +76,15 @@
             this.labelDI = new System.Windows.Forms.Label();
             this.labelLaura = new System.Windows.Forms.Label();
             this.labelTituloProfesores = new System.Windows.Forms.Label();
+            this.pictureBoxLuisP = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEsther = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAna = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLaura = new System.Windows.Forms.PictureBox();
+            this.pictureBoxJaime = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLuis = new System.Windows.Forms.PictureBox();
             this.panelInteres = new System.Windows.Forms.Panel();
             this.linkLabelAlbaicin = new System.Windows.Forms.LinkLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.listBox10Lugares = new System.Windows.Forms.ListBox();
             this.labelAlbaicin = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -95,40 +107,45 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelFormulario = new System.Windows.Forms.Label();
             this.panelPDF = new System.Windows.Forms.Panel();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.picturePlantaBaja = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLuisP = new System.Windows.Forms.PictureBox();
-            this.pictureBoxEsther = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAna = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLaura = new System.Windows.Forms.PictureBox();
-            this.pictureBoxJaime = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLuis = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonAyuda = new System.Windows.Forms.Button();
-            this.buttonConfig = new System.Windows.Forms.Button();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbPrimera = new System.Windows.Forms.RadioButton();
+            this.rbSegunda = new System.Windows.Forms.RadioButton();
+            this.panelPlantaBaja = new System.Windows.Forms.Panel();
+            this.panelPrimeraPlanta = new System.Windows.Forms.Panel();
+            this.pictureBoxPrimeraplanta = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panelBienvenida.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelPlanos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePlantaBaja)).BeginInit();
             this.panelIniciosesion.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
             this.panelPersonal.SuspendLayout();
-            this.panelInteres.SuspendLayout();
-            this.panelSideBar.SuspendLayout();
-            this.panelDireccion.SuspendLayout();
-            this.panelFormulario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePlantaBaja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuisP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEsther)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAna)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLaura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJaime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuis)).BeginInit();
+            this.panelInteres.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelSideBar.SuspendLayout();
+            this.panelDireccion.SuspendLayout();
+            this.panelFormulario.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panelPlantaBaja.SuspendLayout();
+            this.panelPrimeraPlanta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrimeraplanta)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBienvenida
@@ -154,6 +171,16 @@
             this.labelBienvenida.Text = "Bienvenido al Punto de Información";
             this.labelBienvenida.Click += new System.EventHandler(this.label2_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MiniProyecto.Properties.Resources.logoCorona;
+            this.pictureBox2.Location = new System.Drawing.Point(200, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(208, 184);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // linkLabelWeb
             // 
             this.linkLabelWeb.AutoSize = true;
@@ -169,16 +196,9 @@
             // panelPlanos
             // 
             this.panelPlanos.BackColor = System.Drawing.Color.White;
-            this.panelPlanos.Controls.Add(this.label14);
-            this.panelPlanos.Controls.Add(this.label13);
-            this.panelPlanos.Controls.Add(this.label12);
-            this.panelPlanos.Controls.Add(this.label11);
-            this.panelPlanos.Controls.Add(this.label10);
-            this.panelPlanos.Controls.Add(this.label9);
-            this.panelPlanos.Controls.Add(this.label8);
-            this.panelPlanos.Controls.Add(this.label7);
-            this.panelPlanos.Controls.Add(this.label6);
-            this.panelPlanos.Controls.Add(this.picturePlantaBaja);
+            this.panelPlanos.Controls.Add(this.panelPlantaBaja);
+            this.panelPlanos.Controls.Add(this.panelPrimeraPlanta);
+            this.panelPlanos.Controls.Add(this.groupBox1);
             this.panelPlanos.Location = new System.Drawing.Point(176, 104);
             this.panelPlanos.Name = "panelPlanos";
             this.panelPlanos.Size = new System.Drawing.Size(624, 440);
@@ -189,29 +209,18 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label14.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(272, 304);
+            this.label14.Location = new System.Drawing.Point(200, 288);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(20, 14);
             this.label14.TabIndex = 9;
             this.label14.Text = "1°B";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
-            this.label13.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(24, 40);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 14);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "PLANTA BAJA";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label12.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(408, 320);
+            this.label12.Location = new System.Drawing.Point(376, 240);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(38, 14);
             this.label12.TabIndex = 10;
@@ -222,7 +231,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label11.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(384, 280);
+            this.label11.Location = new System.Drawing.Point(320, 304);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(95, 14);
             this.label11.TabIndex = 9;
@@ -233,7 +242,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label10.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(344, 192);
+            this.label10.Location = new System.Drawing.Point(272, 184);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(25, 14);
             this.label10.TabIndex = 9;
@@ -244,29 +253,18 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label9.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(456, 248);
+            this.label9.Location = new System.Drawing.Point(104, 232);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 14);
             this.label9.TabIndex = 4;
             this.label9.Text = "BAÑOS";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
-            this.label8.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(160, 248);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 14);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "BAÑOS";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label7.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(408, 192);
+            this.label7.Location = new System.Drawing.Point(328, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 14);
             this.label7.TabIndex = 2;
@@ -277,11 +275,21 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
             this.label6.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(264, 192);
+            this.label6.Location = new System.Drawing.Point(192, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 14);
             this.label6.TabIndex = 1;
             this.label6.Text = "2°DAM";
+            // 
+            // picturePlantaBaja
+            // 
+            this.picturePlantaBaja.Image = global::MiniProyecto.Properties.Resources.PrimeraPlanta;
+            this.picturePlantaBaja.Location = new System.Drawing.Point(8, 8);
+            this.picturePlantaBaja.Name = "picturePlantaBaja";
+            this.picturePlantaBaja.Size = new System.Drawing.Size(464, 400);
+            this.picturePlantaBaja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePlantaBaja.TabIndex = 0;
+            this.picturePlantaBaja.TabStop = false;
             // 
             // panelIniciosesion
             // 
@@ -299,6 +307,18 @@
             this.panelIniciosesion.Name = "panelIniciosesion";
             this.panelIniciosesion.Size = new System.Drawing.Size(624, 432);
             this.panelIniciosesion.TabIndex = 8;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.Location = new System.Drawing.Point(8, 8);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(104, 32);
+            this.btnCerrarSesion.TabIndex = 11;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnLimpiar
             // 
@@ -331,6 +351,7 @@
             this.tbContrasenia.Name = "tbContrasenia";
             this.tbContrasenia.Size = new System.Drawing.Size(100, 28);
             this.tbContrasenia.TabIndex = 5;
+            this.tbContrasenia.UseSystemPasswordChar = true;
             // 
             // tbUsuario
             // 
@@ -350,6 +371,7 @@
             this.cbContrasenia.TabIndex = 3;
             this.cbContrasenia.Text = "Ver contraseña";
             this.cbContrasenia.UseVisualStyleBackColor = true;
+            this.cbContrasenia.CheckedChanged += new System.EventHandler(this.cbContrasenia_CheckedChanged);
             // 
             // labelContrasenia
             // 
@@ -403,6 +425,17 @@
             this.panelLogo.Size = new System.Drawing.Size(176, 100);
             this.panelLogo.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MiniProyecto.Properties.Resources.Logo_Def_Fun_JGr_Hor__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(136, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // buttonInicio
             // 
             this.buttonInicio.Location = new System.Drawing.Point(16, 16);
@@ -422,6 +455,37 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(624, 100);
             this.panelHeader.TabIndex = 2;
+            // 
+            // buttonAyuda
+            // 
+            this.buttonAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.buttonAyuda.Image = global::MiniProyecto.Properties.Resources.question_help_icon_191660;
+            this.buttonAyuda.Location = new System.Drawing.Point(448, 32);
+            this.buttonAyuda.Name = "buttonAyuda";
+            this.buttonAyuda.Size = new System.Drawing.Size(48, 48);
+            this.buttonAyuda.TabIndex = 0;
+            this.buttonAyuda.UseVisualStyleBackColor = false;
+            // 
+            // buttonConfig
+            // 
+            this.buttonConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.buttonConfig.Image = global::MiniProyecto.Properties.Resources.gear_settings_options_icon_191642;
+            this.buttonConfig.Location = new System.Drawing.Point(504, 32);
+            this.buttonConfig.Name = "buttonConfig";
+            this.buttonConfig.Size = new System.Drawing.Size(48, 48);
+            this.buttonConfig.TabIndex = 2;
+            this.buttonConfig.UseVisualStyleBackColor = false;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.buttonLogin.Image = global::MiniProyecto.Properties.Resources.person_avatar_account_user_icon_191606;
+            this.buttonLogin.Location = new System.Drawing.Point(560, 32);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(48, 48);
+            this.buttonLogin.TabIndex = 1;
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panelPersonal
             // 
@@ -604,6 +668,67 @@
             this.labelTituloProfesores.TabIndex = 3;
             this.labelTituloProfesores.Text = "Profesores DAM";
             // 
+            // pictureBoxLuisP
+            // 
+            this.pictureBoxLuisP.Image = global::MiniProyecto.Properties.Resources.luispablo;
+            this.pictureBoxLuisP.Location = new System.Drawing.Point(264, 272);
+            this.pictureBoxLuisP.Name = "pictureBoxLuisP";
+            this.pictureBoxLuisP.Size = new System.Drawing.Size(104, 96);
+            this.pictureBoxLuisP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLuisP.TabIndex = 5;
+            this.pictureBoxLuisP.TabStop = false;
+            // 
+            // pictureBoxEsther
+            // 
+            this.pictureBoxEsther.Image = global::MiniProyecto.Properties.Resources.esther;
+            this.pictureBoxEsther.Location = new System.Drawing.Point(456, 88);
+            this.pictureBoxEsther.Name = "pictureBoxEsther";
+            this.pictureBoxEsther.Size = new System.Drawing.Size(104, 96);
+            this.pictureBoxEsther.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEsther.TabIndex = 4;
+            this.pictureBoxEsther.TabStop = false;
+            // 
+            // pictureBoxAna
+            // 
+            this.pictureBoxAna.Image = global::MiniProyecto.Properties.Resources.ana;
+            this.pictureBoxAna.Location = new System.Drawing.Point(256, 80);
+            this.pictureBoxAna.Name = "pictureBoxAna";
+            this.pictureBoxAna.Size = new System.Drawing.Size(104, 104);
+            this.pictureBoxAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAna.TabIndex = 3;
+            this.pictureBoxAna.TabStop = false;
+            // 
+            // pictureBoxLaura
+            // 
+            this.pictureBoxLaura.Image = global::MiniProyecto.Properties.Resources.laura;
+            this.pictureBoxLaura.Location = new System.Drawing.Point(48, 88);
+            this.pictureBoxLaura.Name = "pictureBoxLaura";
+            this.pictureBoxLaura.Size = new System.Drawing.Size(104, 96);
+            this.pictureBoxLaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLaura.TabIndex = 2;
+            this.pictureBoxLaura.TabStop = false;
+            // 
+            // pictureBoxJaime
+            // 
+            this.pictureBoxJaime.Image = global::MiniProyecto.Properties.Resources.jaime;
+            this.pictureBoxJaime.Location = new System.Drawing.Point(456, 264);
+            this.pictureBoxJaime.Name = "pictureBoxJaime";
+            this.pictureBoxJaime.Size = new System.Drawing.Size(104, 104);
+            this.pictureBoxJaime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxJaime.TabIndex = 1;
+            this.pictureBoxJaime.TabStop = false;
+            this.pictureBoxJaime.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBoxLuis
+            // 
+            this.pictureBoxLuis.Image = global::MiniProyecto.Properties.Resources.luis;
+            this.pictureBoxLuis.Location = new System.Drawing.Point(48, 264);
+            this.pictureBoxLuis.Name = "pictureBoxLuis";
+            this.pictureBoxLuis.Size = new System.Drawing.Size(104, 104);
+            this.pictureBoxLuis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLuis.TabIndex = 0;
+            this.pictureBoxLuis.TabStop = false;
+            // 
             // panelInteres
             // 
             this.panelInteres.BackColor = System.Drawing.Color.White;
@@ -629,6 +754,16 @@
             this.linkLabelAlbaicin.TabStop = true;
             this.linkLabelAlbaicin.Text = "Más información";
             this.linkLabelAlbaicin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelAlbaicin_LinkClicked);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MiniProyecto.Properties.Resources.Captura_de_pantalla_2025_02_25_122650;
+            this.pictureBox4.Location = new System.Drawing.Point(280, 50);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(328, 304);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
             // 
             // listBox10Lugares
             // 
@@ -883,159 +1018,192 @@
             this.panelPDF.Size = new System.Drawing.Size(624, 440);
             this.panelPDF.TabIndex = 10;
             // 
-            // btnCerrarSesion
+            // radioButton1
             // 
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(8, 8);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(104, 32);
-            this.btnCerrarSesion.TabIndex = 11;
-            this.btnCerrarSesion.Text = "Cerrar Sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(16, 24);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(46, 17);
+            this.radioButton1.TabIndex = 13;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Baja";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // picturePlantaBaja
+            // groupBox1
             // 
-            this.picturePlantaBaja.Image = global::MiniProyecto.Properties.Resources.PrimeraPlanta;
-            this.picturePlantaBaja.Location = new System.Drawing.Point(8, 8);
-            this.picturePlantaBaja.Name = "picturePlantaBaja";
-            this.picturePlantaBaja.Size = new System.Drawing.Size(608, 416);
-            this.picturePlantaBaja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturePlantaBaja.TabIndex = 0;
-            this.picturePlantaBaja.TabStop = false;
+            this.groupBox1.Controls.Add(this.rbSegunda);
+            this.groupBox1.Controls.Add(this.rbPrimera);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(8, 16);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(88, 72);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Planta";
             // 
-            // pictureBoxLuisP
+            // rbPrimera
             // 
-            this.pictureBoxLuisP.Image = global::MiniProyecto.Properties.Resources.luispablo;
-            this.pictureBoxLuisP.Location = new System.Drawing.Point(264, 272);
-            this.pictureBoxLuisP.Name = "pictureBoxLuisP";
-            this.pictureBoxLuisP.Size = new System.Drawing.Size(104, 96);
-            this.pictureBoxLuisP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLuisP.TabIndex = 5;
-            this.pictureBoxLuisP.TabStop = false;
+            this.rbPrimera.AutoSize = true;
+            this.rbPrimera.Location = new System.Drawing.Point(16, 48);
+            this.rbPrimera.Name = "rbPrimera";
+            this.rbPrimera.Size = new System.Drawing.Size(60, 17);
+            this.rbPrimera.TabIndex = 14;
+            this.rbPrimera.Text = "Primera";
+            this.rbPrimera.UseVisualStyleBackColor = true;
+            this.rbPrimera.CheckedChanged += new System.EventHandler(this.rbPrimera_CheckedChanged);
             // 
-            // pictureBoxEsther
+            // rbSegunda
             // 
-            this.pictureBoxEsther.Image = global::MiniProyecto.Properties.Resources.esther;
-            this.pictureBoxEsther.Location = new System.Drawing.Point(456, 88);
-            this.pictureBoxEsther.Name = "pictureBoxEsther";
-            this.pictureBoxEsther.Size = new System.Drawing.Size(104, 96);
-            this.pictureBoxEsther.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxEsther.TabIndex = 4;
-            this.pictureBoxEsther.TabStop = false;
+            this.rbSegunda.AutoSize = true;
+            this.rbSegunda.Location = new System.Drawing.Point(16, 72);
+            this.rbSegunda.Name = "rbSegunda";
+            this.rbSegunda.Size = new System.Drawing.Size(68, 17);
+            this.rbSegunda.TabIndex = 15;
+            this.rbSegunda.Text = "Segunda";
+            this.rbSegunda.UseVisualStyleBackColor = true;
+            this.rbSegunda.Visible = false;
+            this.rbSegunda.CheckedChanged += new System.EventHandler(this.rbSegunda_CheckedChanged);
             // 
-            // pictureBoxAna
+            // panelPlantaBaja
             // 
-            this.pictureBoxAna.Image = global::MiniProyecto.Properties.Resources.ana;
-            this.pictureBoxAna.Location = new System.Drawing.Point(256, 80);
-            this.pictureBoxAna.Name = "pictureBoxAna";
-            this.pictureBoxAna.Size = new System.Drawing.Size(104, 104);
-            this.pictureBoxAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAna.TabIndex = 3;
-            this.pictureBoxAna.TabStop = false;
+            this.panelPlantaBaja.Controls.Add(this.label14);
+            this.panelPlantaBaja.Controls.Add(this.label11);
+            this.panelPlantaBaja.Controls.Add(this.label9);
+            this.panelPlantaBaja.Controls.Add(this.label10);
+            this.panelPlantaBaja.Controls.Add(this.label12);
+            this.panelPlantaBaja.Controls.Add(this.label6);
+            this.panelPlantaBaja.Controls.Add(this.label7);
+            this.panelPlantaBaja.Controls.Add(this.picturePlantaBaja);
+            this.panelPlantaBaja.Location = new System.Drawing.Point(104, 16);
+            this.panelPlantaBaja.Name = "panelPlantaBaja";
+            this.panelPlantaBaja.Size = new System.Drawing.Size(496, 416);
+            this.panelPlantaBaja.TabIndex = 15;
             // 
-            // pictureBoxLaura
+            // panelPrimeraPlanta
             // 
-            this.pictureBoxLaura.Image = global::MiniProyecto.Properties.Resources.laura;
-            this.pictureBoxLaura.Location = new System.Drawing.Point(48, 88);
-            this.pictureBoxLaura.Name = "pictureBoxLaura";
-            this.pictureBoxLaura.Size = new System.Drawing.Size(104, 96);
-            this.pictureBoxLaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLaura.TabIndex = 2;
-            this.pictureBoxLaura.TabStop = false;
+            this.panelPrimeraPlanta.BackColor = System.Drawing.Color.White;
+            this.panelPrimeraPlanta.Controls.Add(this.label15);
+            this.panelPrimeraPlanta.Controls.Add(this.label13);
+            this.panelPrimeraPlanta.Controls.Add(this.label8);
+            this.panelPrimeraPlanta.Controls.Add(this.label5);
+            this.panelPrimeraPlanta.Controls.Add(this.label4);
+            this.panelPrimeraPlanta.Controls.Add(this.label3);
+            this.panelPrimeraPlanta.Controls.Add(this.label2);
+            this.panelPrimeraPlanta.Controls.Add(this.label1);
+            this.panelPrimeraPlanta.Controls.Add(this.pictureBoxPrimeraplanta);
+            this.panelPrimeraPlanta.Location = new System.Drawing.Point(104, 16);
+            this.panelPrimeraPlanta.Name = "panelPrimeraPlanta";
+            this.panelPrimeraPlanta.Size = new System.Drawing.Size(496, 416);
+            this.panelPrimeraPlanta.TabIndex = 11;
             // 
-            // pictureBoxJaime
+            // pictureBoxPrimeraplanta
             // 
-            this.pictureBoxJaime.Image = global::MiniProyecto.Properties.Resources.jaime;
-            this.pictureBoxJaime.Location = new System.Drawing.Point(456, 264);
-            this.pictureBoxJaime.Name = "pictureBoxJaime";
-            this.pictureBoxJaime.Size = new System.Drawing.Size(104, 104);
-            this.pictureBoxJaime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxJaime.TabIndex = 1;
-            this.pictureBoxJaime.TabStop = false;
-            this.pictureBoxJaime.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pictureBoxPrimeraplanta.Image = global::MiniProyecto.Properties.Resources.SegundaPlanta;
+            this.pictureBoxPrimeraplanta.Location = new System.Drawing.Point(8, 8);
+            this.pictureBoxPrimeraplanta.Name = "pictureBoxPrimeraplanta";
+            this.pictureBoxPrimeraplanta.Size = new System.Drawing.Size(464, 400);
+            this.pictureBoxPrimeraplanta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPrimeraplanta.TabIndex = 0;
+            this.pictureBoxPrimeraplanta.TabStop = false;
             // 
-            // pictureBoxLuis
+            // label1
             // 
-            this.pictureBoxLuis.Image = global::MiniProyecto.Properties.Resources.luis;
-            this.pictureBoxLuis.Location = new System.Drawing.Point(48, 264);
-            this.pictureBoxLuis.Name = "pictureBoxLuis";
-            this.pictureBoxLuis.Size = new System.Drawing.Size(104, 104);
-            this.pictureBoxLuis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLuis.TabIndex = 0;
-            this.pictureBoxLuis.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label1.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(128, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 14);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "1°B";
             // 
-            // pictureBox4
+            // label2
             // 
-            this.pictureBox4.Image = global::MiniProyecto.Properties.Resources.Captura_de_pantalla_2025_02_25_122650;
-            this.pictureBox4.Location = new System.Drawing.Point(280, 50);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(328, 304);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label2.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(200, 288);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 14);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "2°B";
             // 
-            // pictureBox1
+            // label3
             // 
-            this.pictureBox1.Image = global::MiniProyecto.Properties.Resources.Logo_Def_Fun_JGr_Hor__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label3.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(96, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 14);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Sala de profesores";
             // 
-            // buttonAyuda
+            // label4
             // 
-            this.buttonAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.buttonAyuda.Image = global::MiniProyecto.Properties.Resources.question_help_icon_191660;
-            this.buttonAyuda.Location = new System.Drawing.Point(448, 32);
-            this.buttonAyuda.Name = "buttonAyuda";
-            this.buttonAyuda.Size = new System.Drawing.Size(48, 48);
-            this.buttonAyuda.TabIndex = 0;
-            this.buttonAyuda.UseVisualStyleBackColor = false;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label4.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(200, 184);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 14);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "2°A";
             // 
-            // buttonConfig
+            // label5
             // 
-            this.buttonConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.buttonConfig.Image = global::MiniProyecto.Properties.Resources.gear_settings_options_icon_191642;
-            this.buttonConfig.Location = new System.Drawing.Point(504, 32);
-            this.buttonConfig.Name = "buttonConfig";
-            this.buttonConfig.Size = new System.Drawing.Size(48, 48);
-            this.buttonConfig.TabIndex = 2;
-            this.buttonConfig.UseVisualStyleBackColor = false;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label5.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(328, 184);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 14);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "1°EI";
             // 
-            // buttonLogin
+            // label8
             // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.buttonLogin.Image = global::MiniProyecto.Properties.Resources.person_avatar_account_user_icon_191606;
-            this.buttonLogin.Location = new System.Drawing.Point(560, 32);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(48, 48);
-            this.buttonLogin.TabIndex = 1;
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label8.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(264, 184);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 14);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "1°IS";
             // 
-            // pictureBox2
+            // label13
             // 
-            this.pictureBox2.Image = global::MiniProyecto.Properties.Resources.logoCorona;
-            this.pictureBox2.Location = new System.Drawing.Point(200, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(208, 184);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label13.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(264, 288);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(25, 14);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "2°IS";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(33)))));
+            this.label15.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(312, 288);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(64, 14);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Audovisuales";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(797, 592);
+            this.Controls.Add(this.panelPlanos);
             this.Controls.Add(this.panelPDF);
             this.Controls.Add(this.panelFormulario);
-            this.Controls.Add(this.panelPlanos);
             this.Controls.Add(this.panelIniciosesion);
             this.Controls.Add(this.panelPersonal);
             this.Controls.Add(this.panelInteres);
@@ -1049,32 +1217,38 @@
             this.Text = "Punto de Información";
             this.panelBienvenida.ResumeLayout(false);
             this.panelBienvenida.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelPlanos.ResumeLayout(false);
-            this.panelPlanos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePlantaBaja)).EndInit();
             this.panelIniciosesion.ResumeLayout(false);
             this.panelIniciosesion.PerformLayout();
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panelPersonal.ResumeLayout(false);
             this.panelPersonal.PerformLayout();
-            this.panelInteres.ResumeLayout(false);
-            this.panelInteres.PerformLayout();
-            this.panelSideBar.ResumeLayout(false);
-            this.panelDireccion.ResumeLayout(false);
-            this.panelDireccion.PerformLayout();
-            this.panelFormulario.ResumeLayout(false);
-            this.panelFormulario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePlantaBaja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuisP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEsther)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAna)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLaura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJaime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuis)).EndInit();
+            this.panelInteres.ResumeLayout(false);
+            this.panelInteres.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelSideBar.ResumeLayout(false);
+            this.panelDireccion.ResumeLayout(false);
+            this.panelDireccion.PerformLayout();
+            this.panelFormulario.ResumeLayout(false);
+            this.panelFormulario.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panelPlantaBaja.ResumeLayout(false);
+            this.panelPlantaBaja.PerformLayout();
+            this.panelPrimeraPlanta.ResumeLayout(false);
+            this.panelPrimeraPlanta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrimeraplanta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1117,10 +1291,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBoxLuis;
         private System.Windows.Forms.PictureBox pictureBoxJaime;
@@ -1161,6 +1333,21 @@
         private System.Windows.Forms.Button btnContacto;
         private System.Windows.Forms.Panel panelPDF;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbSegunda;
+        private System.Windows.Forms.RadioButton rbPrimera;
+        private System.Windows.Forms.Panel panelPlantaBaja;
+        private System.Windows.Forms.Panel panelPrimeraPlanta;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxPrimeraplanta;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
     }
 }
 
