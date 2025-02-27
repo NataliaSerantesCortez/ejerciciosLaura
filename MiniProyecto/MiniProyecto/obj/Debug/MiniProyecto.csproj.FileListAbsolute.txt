@@ -8,3 +8,8 @@ C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\
 C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.csproj.CoreCompileInputs.cache
 C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.exe
 C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProyecto.pdb
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\PdfiumViewer.dll
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\PdfiumViewer.xml
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\nl\PdfiumViewer.resources.dll
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\obj\Debug\MiniProy.775DB4D4.Up2Date
+C:\Users\natal\source\repos\ejerciciosLaura\MiniProyecto\MiniProyecto\bin\Debug\x86\pdfium.dll

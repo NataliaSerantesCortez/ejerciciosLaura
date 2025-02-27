@@ -61,6 +61,16 @@ namespace MiniProyecto.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon _4105939_info_information_113916 {
+            get {
+                object obj = ResourceManager.GetObject("_4105939_info_information_113916", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ana {
@@ -151,6 +161,16 @@ namespace MiniProyecto.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Listado_Requisitos_Punto_de_Información {
+            get {
+                object obj = ResourceManager.GetObject("Listado_Requisitos_Punto_de_Información", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Logo_Def_Fun_JGr_Hor__1_ {
@@ -197,6 +217,16 @@ namespace MiniProyecto.Properties {
             get {
                 object obj = ResourceManager.GetObject("luispablo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Normas_Convivencia_23_24 {
+            get {
+                object obj = ResourceManager.GetObject("Normas_Convivencia_23_24", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

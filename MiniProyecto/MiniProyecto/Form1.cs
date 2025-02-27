@@ -15,14 +15,21 @@ using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.Net.Mail;
 using System.Net;
+using PdfiumViewer;
 
 namespace MiniProyecto
 {
     public partial class Form1 : Form
     {
+        private PdfViewer pdfViewer;
+        private bool modoAdmin;
+        private String rutaPDF;
         public Form1()
         {
             InitializeComponent();
+
+            modoAdmin = false;
+            rutaPDF = "C:\\Users\\natal\\source\\repos\\ejerciciosLaura\\MiniProyecto\\MiniProyecto\\Resources\\Normas Convivencia 23-24.pdf";
 
             panelBienvenida.Visible = true;
             panelIniciosesion.Visible = false;
@@ -30,6 +37,12 @@ namespace MiniProyecto
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
+            panelPDF.Visible = false;
+
+
+            pdfViewer = new PdfViewer();
+            pdfViewer.Dock = DockStyle.Fill;
+            panelPDF.Controls.Add(pdfViewer);
 
 
             /*PrivateFontCollection pfc = new PrivateFontCollection();
@@ -57,6 +70,19 @@ namespace MiniProyecto
 
              // Aplicar la fuente a un Label u otro control
              labelTitulo.Font = new Font(pfc.Families[0], 12);*/
+        }
+
+        private void CargarPDF(string ruta)
+        {
+            try
+            {
+                pdfViewer.Document?.Dispose(); // Liberar documento anterior si hay uno cargado
+                pdfViewer.Document = PdfDocument.Load(ruta);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -93,7 +119,11 @@ namespace MiniProyecto
 
             if (usuario.Equals("admin") && contrasenia.Equals("admin"))
             {
-
+                modoAdmin = true;
+                MessageBox.Show("Bienvenido usuario admin", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else
+            {
+                MessageBox.Show("Credenciales incorrectas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -116,6 +146,7 @@ namespace MiniProyecto
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
+            panelPDF.Visible = false;
 
         }
 
@@ -127,6 +158,7 @@ namespace MiniProyecto
             panelPersonal.Visible = true;
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
+            panelPDF.Visible = false;
         }
 
         private void buttonPlanos_Click(object sender, EventArgs e)
@@ -137,6 +169,7 @@ namespace MiniProyecto
             panelPersonal.Visible = false;
             panelPlanos.Visible = true;
             panelFormulario.Visible = false;
+            panelPDF.Visible=false;
         }
 
         private void buttonInteres_Click(object sender, EventArgs e)
@@ -147,6 +180,7 @@ namespace MiniProyecto
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
+            panelPDF.Visible=false;
         }
 
         private void linkLabelAlbaicin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -163,6 +197,7 @@ namespace MiniProyecto
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
             panelFormulario.Visible = false;
+            panelPDF.Visible=false;
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -209,6 +244,51 @@ namespace MiniProyecto
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
             panelFormulario.Visible = true;
+            panelPDF.Visible = false;
+        }
+
+        private void buttonNormas_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
+            panelFormulario.Visible = false;
+            panelPDF.Visible = true;
+
+            if (modoAdmin)
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Filter = "Archivos PDF|*.pdf",
+                    Title = "Seleccionar un archivo PDF"
+                };
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    rutaPDF = openFileDialog.FileName;
+                    CargarPDF(openFileDialog.FileName);
+                }
+            } else
+            {
+                CargarPDF(rutaPDF);
+            }
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (modoAdmin)
+            {
+                modoAdmin = false;
+                MessageBox.Show("Hasta pronto usuario admin", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("No hay ningún usuario conectado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }
