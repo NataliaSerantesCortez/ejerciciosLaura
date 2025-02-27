@@ -13,6 +13,8 @@ using System.Reflection.Emit;
 
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
+using System.Net.Mail;
+using System.Net;
 
 namespace MiniProyecto
 {
@@ -27,6 +29,7 @@ namespace MiniProyecto
             panelInteres.Visible = false;
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
+            panelFormulario.Visible = false;
 
 
             /*PrivateFontCollection pfc = new PrivateFontCollection();
@@ -37,23 +40,23 @@ namespace MiniProyecto
 
             label1.Font = new Font(pfc.Families[0], 12);*/
 
-           /* PrivateFontCollection pfc = new PrivateFontCollection();
+            /* PrivateFontCollection pfc = new PrivateFontCollection();
 
-            // Obtener los bytes de la fuente desde los recursos
-            byte[] fontData = Properties.Resources.dosis_semibold__allfont_es_;
+             // Obtener los bytes de la fuente desde los recursos
+             byte[] fontData = Properties.Resources.dosis_semibold__allfont_es_;
 
-            // Reservar memoria para la fuente
-            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
-            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+             // Reservar memoria para la fuente
+             IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
+             Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
 
-            // Agregar la fuente a la colección
-            pfc.AddMemoryFont(fontPtr, fontData.Length);
+             // Agregar la fuente a la colección
+             pfc.AddMemoryFont(fontPtr, fontData.Length);
 
-            // Liberar la memoria asignada
-            Marshal.FreeCoTaskMem(fontPtr);
+             // Liberar la memoria asignada
+             Marshal.FreeCoTaskMem(fontPtr);
 
-            // Aplicar la fuente a un Label u otro control
-            labelTitulo.Font = new Font(pfc.Families[0], 12);*/
+             // Aplicar la fuente a un Label u otro control
+             labelTitulo.Font = new Font(pfc.Families[0], 12);*/
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -112,7 +115,8 @@ namespace MiniProyecto
             panelInteres.Visible = false;
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
-          
+            panelFormulario.Visible = false;
+
         }
 
         private void buttonPersonal_Click(object sender, EventArgs e)
@@ -122,6 +126,7 @@ namespace MiniProyecto
             panelInteres.Visible = false;
             panelPersonal.Visible = true;
             panelPlanos.Visible = false;
+            panelFormulario.Visible = false;
         }
 
         private void buttonPlanos_Click(object sender, EventArgs e)
@@ -131,6 +136,7 @@ namespace MiniProyecto
             panelInteres.Visible = false;
             panelPersonal.Visible = false;
             panelPlanos.Visible = true;
+            panelFormulario.Visible = false;
         }
 
         private void buttonInteres_Click(object sender, EventArgs e)
@@ -140,6 +146,7 @@ namespace MiniProyecto
             panelInteres.Visible = true;
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
+            panelFormulario.Visible = false;
         }
 
         private void linkLabelAlbaicin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -155,6 +162,53 @@ namespace MiniProyecto
             panelInteres.Visible = false;
             panelPersonal.Visible = false;
             panelPlanos.Visible = false;
+            panelFormulario.Visible = false;
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("natalia.serantes17@gmail.com"); //remitente
+                mail.To.Add("nataliaserantescortez@gmail.com"); //destinatario
+                mail.Subject = "Nueva Sugerencia";
+                mail.Body = $"Nombre: {tbNombre.Text}\n" +
+                            $"Correo: {tbCorreo.Text}\n" +
+                            $"Mensaje:\n{tbMensaje.Text}";
+                mail.IsBodyHtml = false;
+
+                // Configuración del servidor SMTP
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                smtp.Credentials = new NetworkCredential("natalia.serantes17@gmail.com", "mbak agdo sekc fovo");
+                smtp.EnableSsl = true;
+
+                // Enviar el correo
+                smtp.Send(mail);
+                MessageBox.Show("Sugerencia enviada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al enviar el correo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }        
+    
+        }
+
+        private void btnLimpiarFormulario_Click(object sender, EventArgs e)
+        {
+            tbNombre.Text = "";
+            tbCorreo.Text = "";
+            tbMensaje.Text = "";
+        }
+
+        private void btnContacto_Click(object sender, EventArgs e)
+        {
+            panelBienvenida.Visible = false;
+            panelIniciosesion.Visible = false;
+            panelInteres.Visible = false;
+            panelPersonal.Visible = false;
+            panelPlanos.Visible = false;
+            panelFormulario.Visible = true;
         }
     }
 }
