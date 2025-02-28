@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Resenias</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    
+
+
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Crear Reseña</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">                
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/juegos}">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/generos}">Géneros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/perfiles}">Perfiles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/usuarios}">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/resenias}">Reseñas</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+          <div class = "container">
+              <div class = "row">
+                  <div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+                      <h1 class = "text-center"> Crear Reseña Nueva </h1>
+                      <div class = "card-body">
+                          <form th:action="@{/resenias}" th:object = "${resenia}" method="POST">
+            
+
+                            <div class ="form-group">
+                                <label for="juego"> Juego </label>
+                                <select id="juego" th:field="*{pK.idJuego}">
+                                    <option th:each="j : ${juegos}" th:value="${j.idJuego}" th:text="${j.nombre}"></option>
+                                </select>
+                            </div>
+
+                            <div class ="form-group">
+                                <label for="perfil"> Username </label>
+                                <select id="perfil" th:field="*{pK.username}">
+                                    <option th:each="p : ${perfiles}" th:value="${p.username}" th:text="${p.username}"></option>
+                                </select>
+                            </div>
+
+                            <label for="calificacion">Calificación:</label>
+                            <select id="calificacion" th:field="*{calificacion}">
+                                <option th:each="i : ${#numbers.sequence(0,5)}" th:value="${i}" th:text="${i}"></option>
+                            </select>
+
+                              <div class ="form-group">
+                                <label> Texto </label>
+                                <input
+                                type = "text"
+                                name = "texto"
+                                th:field = "*{texto}"
+                                class = "form-control"
+                                placeholder="Ingresar el texto de la Reseña" 
+                                required
+                                />
+                            </div>            
+                                                
+                              <div class = "box-footer">
+                                  <button type="submit" class = "btn btn-primary">
+                                      Guardar
+                                  </button>
+                              </div>
+                          </form>
+                      
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+</body>
+</html>

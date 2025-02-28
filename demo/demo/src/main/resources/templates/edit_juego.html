@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Juegos</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Editar Juego</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/juegos}">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/generos}">Géneros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/perfiles}">Perfiles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/usuarios}">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/resenias}">Reseñas</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+          <div class = "container">
+              <div class = "row">
+                  <div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+                      <h1 class = "text-center"> Modificar Juego </h1>
+                      <div class = "card-body">
+                          <form th:action="@{/juegos/{id} (id=${juego.idJuego})}" th:object = "${juego}" method="POST">
+                              <div class ="form-group">
+                                  <label> Nombre </label>
+                                  <input
+                                  type = "text"
+                                  name = "nombre"
+                                  th:field = "*{nombre}"
+                                  class = "form-control"
+                                  placeholder="Ingresa el Nombre del Juego" 
+                                  required
+                                  />
+                              </div>
+                              
+                              <div class ="form-group">
+                                  <label> Estudio </label>
+                                  <input
+                                  type = "text"
+                                  name = "estudio"
+                                  th:field = "*{estudio}"
+                                  class = "form-control"
+                                  placeholder="Ingresa el Estudio del Juego" 
+                                  required
+                                  />
+                              </div>
+                              
+                              <div class ="form-group">
+                                  <label> Caratula </label>
+                                  <input
+                                  type = "text"
+                                  name = "caratula"
+                                  th:field = "*{caratula}"
+                                  class = "form-control"
+                                  placeholder="Ingresa la ruta de la carátula" 
+                                  />
+                              </div>
+
+                              <div class ="form-group">
+                                <label for="fechaLanzamiento">Fecha de Lanzamiento</label>
+                                <input 
+                                    type="date" 
+                                    id="fechaLanzamiento" 
+                                    name="fechaLanzamiento" 
+                                    th:field="*{lanzamiento}" 
+                                    required
+                                />                               
+                            </div>
+
+                            <div class ="form-group">
+                                <label for="genero"> Género </label>
+                                <select id="genero" th:field="*{genero.idGenero}">
+                                    <option th:each="g : ${generos}" th:value="${g.idGenero}" th:text="${g.nombre}"></option>
+                                </select>
+                            </div>
+                              
+                              <div class = "box-footer">
+                                  <button type="submit" class = "btn btn-primary">
+                                      Guardar cambios
+                                  </button>
+                              </div>
+                          </form>
+                      
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+</body>
+</html>
