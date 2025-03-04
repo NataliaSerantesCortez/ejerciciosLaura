@@ -104,6 +104,7 @@
             this.labelAlbaicin = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panelSideBar = new System.Windows.Forms.Panel();
+            this.btnCalendario = new System.Windows.Forms.Button();
             this.btnContacto = new System.Windows.Forms.Button();
             this.buttonInteres = new System.Windows.Forms.Button();
             this.buttonNormas = new System.Windows.Forms.Button();
@@ -123,7 +124,7 @@
             this.labelFormulario = new System.Windows.Forms.Label();
             this.panelPDF = new System.Windows.Forms.Panel();
             this.panelPDFCalendario = new System.Windows.Forms.Panel();
-            this.btnCalendario = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.panelBienvenida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelPlanos.SuspendLayout();
@@ -208,6 +209,7 @@
             // 
             // panelPlantaBaja
             // 
+            this.panelPlantaBaja.Controls.Add(this.label16);
             this.panelPlantaBaja.Controls.Add(this.label14);
             this.panelPlantaBaja.Controls.Add(this.label11);
             this.panelPlantaBaja.Controls.Add(this.label9);
@@ -230,7 +232,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(20, 14);
             this.label14.TabIndex = 9;
-            this.label14.Text = "1°B";
+            this.label14.Text = "1°A";
             // 
             // label11
             // 
@@ -1005,6 +1007,19 @@
             this.panelSideBar.Size = new System.Drawing.Size(176, 488);
             this.panelSideBar.TabIndex = 3;
             // 
+            // btnCalendario
+            // 
+            this.btnCalendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.btnCalendario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalendario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.btnCalendario.Location = new System.Drawing.Point(8, 304);
+            this.btnCalendario.Name = "btnCalendario";
+            this.btnCalendario.Size = new System.Drawing.Size(160, 48);
+            this.btnCalendario.TabIndex = 5;
+            this.btnCalendario.Text = "Calendario";
+            this.btnCalendario.UseVisualStyleBackColor = false;
+            this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
+            // 
             // btnContacto
             // 
             this.btnContacto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
@@ -1211,18 +1226,16 @@
             this.panelPDFCalendario.Size = new System.Drawing.Size(624, 440);
             this.panelPDFCalendario.TabIndex = 3;
             // 
-            // btnCalendario
+            // label16
             // 
-            this.btnCalendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.btnCalendario.Font = new System.Drawing.Font("Dosis", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.btnCalendario.Location = new System.Drawing.Point(8, 304);
-            this.btnCalendario.Name = "btnCalendario";
-            this.btnCalendario.Size = new System.Drawing.Size(160, 48);
-            this.btnCalendario.TabIndex = 5;
-            this.btnCalendario.Text = "Calendario";
-            this.btnCalendario.UseVisualStyleBackColor = false;
-            this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(214)))));
+            this.label16.Font = new System.Drawing.Font("Dosis", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(48, 184);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(44, 14);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "FUENTE";
             // 
             // Form1
             // 
@@ -1379,6 +1392,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelPDFCalendario;
         private System.Windows.Forms.Button btnCalendario;
+        private System.Windows.Forms.Label label16;
     }
 }
 
